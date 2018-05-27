@@ -1,0 +1,177 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {vietnamese}{}
+\babel@toc {english}{}
+\babel@toc {vietnamese}{}
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Figures}{2}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{5}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{6}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossary}{8}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Semantic Labelling Problem of Aerial Photography in Remote Sensing}{9}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Introduction to \Gls {remote-sensing} and \Gls {aerial-photography}}{9}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}\Gls {remote-sensing}}{9}{subsection.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}\Gls {aerial-photography}}{12}{subsection.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Introduction to Semantic Image Segmentation Problem}{13}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Image Segmentation}{13}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Semantic Segmentation}{14}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Semantic Labelling Problem of Aerial Photography in Remote Sensing}{17}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Urban Object Classification in Aerial Photography}{17}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}2D Semantic Labelling Contest by \acrfull {isprs} \cite {isprs_semantic}}{18}{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Deep Learning in Computer Vision}{21}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Machine Learning Basics}{21}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Learning Algorithms}{21}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The Task, $T$}{21}{section*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The Performance Measure, $P$}{23}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The Experience, $E$}{24}{section*.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Capacity, Overfitting and Underfitting}{28}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Hyperparameters and Validation Sets}{29}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Deep Learning Algorithms}{31}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Introduction to Deep Feedforward Networks}{31}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Gradient-Based Learning}{34}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Architecture Design}{34}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}\acrlong {cnn} for Image Classification Problem}{35}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Introduction to \acrlong {cnn}}{35}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Architecture Overview}{35}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}\acrshort {cnn} Layers}{36}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Convolutional Layer}{38}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Pooling Layer}{41}{section*.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Normalisation Layer}{43}{section*.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Fully-Connected Layer}{43}{section*.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Converting Fully-Connected Layers to Convolutional Layers}{44}{section*.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}\acrshort {cnn} Architectures}{45}{subsection.2.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{LeNet}{45}{section*.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{AlexNet}{45}{section*.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{VGGNet}{46}{section*.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ResNet}{47}{section*.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Proposed Architectures and Detailed Implementation}{48}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Fully Convolutional Network}{48}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Encoding Phase}{48}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{VGG19}{49}{section*.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ResNet-101}{51}{section*.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Decoding and Upsampling}{53}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{In-Network Upsampling: Unpooling and Max-unpooling}{53}{section*.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Learnable Upsampling: Transpose Convolution}{54}{section*.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}\acrshort {fcn} Architectures}{55}{subsection.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Proposed Models}{57}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Pretrained Models}{57}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}\acrshort {fcn}-8s using VGG19}{57}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}\acrshort {fcn}-8s and \acrshort {fcn}-4s using ResNet101}{58}{subsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}Generalisation Difficulties and Overfitting}{58}{subsection.3.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.5}Hyperparameters and Environment Settings}{58}{subsection.3.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Hyperparameters}{58}{section*.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Environment Settings}{59}{section*.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Detailed Implementation}{60}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Input Tensor}{60}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Additional Filters}{60}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Output Tensor, Loss Function and Optimisation Method}{60}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Validation and Inference Method}{60}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Validation Method}{60}{section*.86}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Inference Method}{61}{section*.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Checkpoints and Ensemble Learning}{61}{subsection.3.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Experimental Results and Evaluations}{62}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Datasets}{62}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Vaihingen Dataset}{62}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Potsdam Dataset}{64}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Data Preprocessing and Features Extraction}{67}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Data Preprocessing}{67}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Features Extraction}{69}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Experimental Results}{70}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}The superiority of \acrshort {fcn}8s-VGG19-5c and 5-channel data for Vaihingen}{70}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Potential improvements of \acrshort {fcn}-8s-ResNet101-5c-v3.0 and the two best model configurations}{71}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}\acrshort {fcn}-4s-ResNet101-5c-v3.3 model on Potsdam validation}{73}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Benchmark Test: Results}{74}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Vaihingen benchmark dataset}{74}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Potsdam benchmark dataset}{75}{subsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Demonstrations}{78}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}\acrshort {fcn}-8s-ResNet101-5c-v3.2}{78}{subsection.4.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}\acrshort {fcn}-4s-ResNet101-5c-v3.3}{78}{subsection.4.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.3}\acrshort {fcn}-4s-ResNet101-6c-v3.3}{78}{subsection.4.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.4}Commentary}{80}{subsection.4.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusion}{81}{subsection.4.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{83}{chapter*.105}

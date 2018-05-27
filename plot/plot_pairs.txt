@@ -1,0 +1,9 @@
+LEFT            vs  RIGHT
+
+vgg_3c          vs  vgg_5c
+resnet_3c_v1    vs  resnet_5c_v1
+vgg_5c          vs  resnet_5c_v1
+resnet_5c_v1    vs  resnet_5c_v3
+resnet_5c_v3    vs  resnet_5c_v3_1
+resnet_5c_v3_1  vs  resnet_5c_v3_2
+resnet_5c_v3_2  vs  resnet_5c_v3_3

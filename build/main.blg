@@ -1,0 +1,26 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[1] Config.pm:305> INFO - Logfile is 'main.blg'
+[56] biber:313> INFO - === Sun May 27, 2018, 22:04:04
+[94] Biber.pm:371> INFO - Reading 'main.bcf'
+[226] Biber.pm:857> INFO - Found 61 citekeys in bib section 0
+[267] Biber.pm:3981> INFO - Processing section 0
+[287] Biber.pm:4154> INFO - Looking for bibtex format file '../bibliography.bib' for section 0
+[293] bibtex.pm:1468> INFO - LaTeX decoding ...
+[405] bibtex.pm:1294> INFO - Found BibTeX data source '../bibliography.bib'
+[448] Utils.pm:169> WARN - ISBN '160918176X, 9781609181765' in entry 'book:731838' is invalid - run biber with '--validate_datamodel' for details.
+[483] Utils.pm:169> WARN - ISBN '0470879386, 9780470879382' in entry 'book:834597' is invalid - run biber with '--validate_datamodel' for details.
+[491] Utils.pm:169> WARN - ISBN '9780130307965, 0130307963' in entry 'book:28867' is invalid - run biber with '--validate_datamodel' for details.
+[639] Utils.pm:169> WARN - ISBN '978-0071154673, 0071154671' in entry 'mitchell1997machine' is invalid - run biber with '--validate_datamodel' for details.
+[693] Utils.pm:169> WARN - month field 'March' in entry '5453203' is not an integer - this will probably not sort properly.
+[708] Utils.pm:169> WARN - month field 'May' in entry 'Krizhevsky:2017:ICD:3098997.3065386' is not an integer - this will probably not sort properly.
+[735] Utils.pm:169> WARN - month field 'June' in entry '6909616' is not an integer - this will probably not sort properly.
+[768] Utils.pm:169> WARN - ISBN '978-0262193986, 0262193981' in entry 'sutton1998reinforcement' is invalid - run biber with '--validate_datamodel' for details.
+[776] Utils.pm:169> WARN - ISBN '978-1886529106, 1886529108' in entry 'bertsekas1996neuro-dynamic' is invalid - run biber with '--validate_datamodel' for details.
+[1002] Utils.pm:169> WARN - month field 'June' in entry 'Long_2015_CVPR' is not an integer - this will probably not sort properly.
+[1114] Utils.pm:169> WARN - month field 'December' in entry 'duytv-2017' is not an integer - this will probably not sort properly.
+[1224] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1225] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1225] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'vi-VN'
+[1305] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1346] bbl.pm:720> INFO - Output to main.bbl
+[1346] Biber.pm:110> INFO - WARNINGS: 11

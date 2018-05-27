@@ -1,0 +1,148 @@
+\section{Benchmark Test: Results}
+\subsection{Vaihingen benchmark dataset}
+\acrshort{fcn}-8s-ResNet101-5c-v3.2 and \acrshort{fcn}-4s-ResNet101-5c-v3.3
+were trained with the entire available \gls{gt} (16 patches) before being
+sumitted to \acrshort{isprs} to be evaluated against the hidden ground truths.
+(Table~\ref{tab:bkhn_10_full_reference}, \ref{tab:bkhn_10_no_boundary},
+\ref{tab:bkhn_11_full_reference}, \ref{tab:bkhn_11_no_boundary})
+\begin{table}[h!]
+    \centering
+    \includegraphics[width=\textwidth]
+    {conf_matrices/Vaihingen_BKHKN_10_full_reference}
+    \caption{\acrshort{fcn}-8s-ResNet101-5c-v3.2 confusion matrix
+    on full\_reference \gls{gt}s.}
+    \label{tab:bkhn_10_full_reference}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \includegraphics[width=\textwidth]
+    {conf_matrices/Vaihingen_BKHKN_10_no_boundary}
+    \caption{\acrshort{fcn}-8s-ResNet101-5c-v3.2 confusion matrix
+    on no\_boundary \gls{gt}s.}
+    \label{tab:bkhn_10_no_boundary}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \includegraphics[width=\textwidth]
+    {conf_matrices/Vaihingen_BKHKN_11_full_reference}
+    \caption{\acrshort{fcn}-4s-ResNet101-5c-v3.3 confusion matrix
+    on full\_reference \gls{gt}s.}
+    \label{tab:bkhn_11_full_reference}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \includegraphics[width=\textwidth]
+    {conf_matrices/Vaihingen_BKHKN_11_no_boundary}
+    \caption{\acrshort{fcn}-4s-ResNet101-5c-v3.3 confusion matrix
+    on no\_boundary \gls{gt}s.}
+    \label{tab:bkhn_11_no_boundary}
+\end{table}
+
+Both model has scored and achieved the same overall accuracy as the fourth
+position out of 135 submissions globally for the Vaihingen: 2D Labelling
+challenge (Table~\ref{tab:vaihingen_test},
+\ref{tab:vaihingen_benchmark})
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c | c | c | }
+        \hline
+        Models & full\_reference & no\_boundary & Position \\
+        \hline
+        \acrshort{fcn}-8s Ensemble & 87.9\% & 90.7\% & 5 \\
+        \acrshort{fcn}-8s-ResNet101-5c-v3.2 Ensemble & \textbf{88.2\%}
+        & \textbf{91.0\%} & \textbf{4} \\
+        \acrshort{fcn}-4s-ResNet101-5c-v3.3 Ensemble & \textbf{88.2\%}
+        & \textbf{91.0\%} & \textbf{4} \\
+        \hline
+    \end{tabular}
+    \caption{Benchmark test accuracies on Vaihingen dataset
+    \cite{bkhn_4, bkhn_10, bkhn_11}.}
+    \label{tab:vaihingen_test}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c | c | c | c | c | c | c | }
+        \hline
+        Abbrev. & imp surf & building & low\_veg & tree & car & Overall
+        & Strategy \\
+        \hline
+        HUSTW5 & 93.3 & 96.1 & 86.4 & 90.8 & 74.6 & 91.6 & supervised \\
+        NLPR3 & 93 & 95.6 & 85.6 & 90.3 & 84.5 & 91.2 & supervised \\
+        CASIA2 & 93.2 & 96 & 84.7 & 89.9 & 86.7 & 91.1 & supervised \\
+        \textbf{BKHN10} & \textbf{92.9} & \textbf{96} & \textbf{84.6}
+        & \textbf{89.8} & \textbf{88.8} & \textbf{91}
+        & \textbf{supervised} \\
+        \textbf{BKHN11} & \textbf{92.9} & \textbf{96} & \textbf{84.6}
+        & \textbf{89.9} & \textbf{88.6} & \textbf{91} & \textbf{supervised} \\
+        \hline
+    \end{tabular}
+    \caption{Top global results on Vaihingen dataset
+    \cite{vaihingen_benchmark}.}
+    \label{tab:vaihingen_benchmark}
+\end{table}
+
+\subsection{Potsdam benchmark dataset}
+\acrshort{fcn}-4s-ResNet101-6c-v3.3 was trained with the entire available
+\gls{gt} (24 patches) before being sumitted to \acrshort{isprs} to be
+evaluated against the hidden ground truths.
+(Table~\ref{tab:bkhn_3_full_reference}, \ref{tab:bkhn_3_no_boundary})
+
+\begin{table}[h!]
+    \centering
+    \includegraphics[width=\textwidth]
+    {conf_matrices/Potsdam_BKHKN_3_full_reference}
+    \caption{\acrshort{fcn}-4s-ResNet101-6c-v3.3 confusion matrix
+    on full\_reference \gls{gt}s.}
+    \label{tab:bkhn_3_full_reference}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \includegraphics[width=\textwidth]
+    {conf_matrices/Potsdam_BKHKN_3_no_boundary}
+    \caption{\acrshort{fcn}-4s-ResNet101-6c-v3.3 confusion matrix
+    on no\_boundary \gls{gt}s.}
+    \label{tab:bkhn_3_no_boundary}
+\end{table}
+
+The model has scored and achieved the third position out of 61 submissions 
+globally on the Potsdam: 2D Labelling challenge (Table~\ref{tab:potsdam_test},
+\ref{tab:potsdam_benchmark})
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c | c | c | }
+        \hline
+        Models & full\_reference & no\_boundary & Position \\
+        \hline
+        \acrshort{fcn}-8s Ensemble & 88.5\% & 90.6\% & 7 \\
+        \acrshort{fcn}-4s-ResNet101-6c-v3.3 Ensemble & \textbf{89.0\%}
+        & \textbf{91.1\%} & \textbf{3} \\
+        \hline
+    \end{tabular}
+    \caption{Benchmark test accuracies on Potsdam dataset
+    \cite{bkhn_2, bkhn_3}.}
+    \label{tab:potsdam_test}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c | c | c | c | c | c | c | }
+        \hline
+        Abbrev. & imp surf & building & low\_veg & tree & car & Overall
+        & Strategy \\
+        \hline
+        HUSTW3 & 93.8 & 96.7 & 88 & 89 & 96 & 91.6 & supervised \\
+        HUSTW4 & 93.6 & 97.6 & 88.5 & 88.8 & 94.6 & 91.6 & supervised \\
+        AMA\_1 & 93.4 & 96.8 & 87.7 & 88.8 & 96 & 91.2 & supervised \\
+        \textbf{BKHN\_3} & \textbf{93.3} & \textbf{97.2} & \textbf{88}
+        & \textbf{88.5} & \textbf{96} & \textbf{91.1} & \textbf{supervised} \\
+        \hline
+    \end{tabular}
+    \caption{Top global results on Potsdam dataset
+    \cite{potsdam_benchmark}.}
+    \label{tab:potsdam_benchmark}
+\end{table}

@@ -1,0 +1,141 @@
+\section{Data Preprocessing and Features Extraction}
+\subsection{Data Preprocessing}
+For Vaihingen dataset, 16 patches are split into 2 subsets with the ratio of 75
+: 25 for training : validation (i.e. 12 patches for training and 4 for
+validation) (Table~\ref{tab:vaihingen_train_val}).
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ c | l }
+        & Ground Truth \\
+        \hline
+        \multirow{12}{*}{Training set} & top\_mosaic\_09cm\_area1 \\
+        & top\_mosaic\_09cm\_area3 \\
+        & top\_mosaic\_09cm\_area5 \\
+        & top\_mosaic\_09cm\_area11 \\
+        & top\_mosaic\_09cm\_area13 \\
+        & top\_mosaic\_09cm\_area15 \\
+        & top\_mosaic\_09cm\_area21 \\
+        & top\_mosaic\_09cm\_area26 \\
+        & top\_mosaic\_09cm\_area28 \\
+        & top\_mosaic\_09cm\_area30 \\
+        & top\_mosaic\_09cm\_area32 \\
+        & top\_mosaic\_09cm\_area34 \\
+        \hline
+        \multirow{4}{*}{Validation set} & top\_mosaic\_09cm\_area7 \\
+        & top\_mosaic\_09cm\_area17 \\
+        & top\_mosaic\_09cm\_area23 \\
+        & top\_mosaic\_09cm\_area37
+    \end{tabular}
+    \caption{Training - Validation split for Vaihingen dataset.}
+    \label{tab:vaihingen_train_val}
+\end{table}
+
+
+With regards to Potsdam dataset, the training : validation split ratio is
+approximately 80 : 20 (i.e. 19 patches for training and 5 patches for
+validation) (Table~\ref{tab:potsdam_train_val}).
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ c | l }
+        & Ground Truth \\
+        \hline
+        \multirow{19}{*}{Training set} & top\_potsdam\_2\_10\_label \\
+        & top\_potsdam\_2\_12\_label \\
+        & top\_potsdam\_3\_10\_label \\
+        & top\_potsdam\_3\_11\_label \\
+        & top\_potsdam\_4\_11\_label \\
+        & top\_potsdam\_4\_12\_label \\
+        & top\_potsdam\_5\_10\_label \\
+        & top\_potsdam\_5\_11\_label \\
+        & top\_potsdam\_5\_12\_label \\
+        & top\_potsdam\_6\_7\_label \\
+        & top\_potsdam\_6\_8\_label \\
+        & top\_potsdam\_6\_9\_label \\
+        & top\_potsdam\_6\_10\_label \\
+        & top\_potsdam\_6\_12\_label \\
+        & top\_potsdam\_7\_7\_label \\
+        & top\_potsdam\_7\_8\_label \\
+        & top\_potsdam\_7\_9\_label \\
+        & top\_potsdam\_7\_10\_label \\
+        & top\_potsdam\_7\_11\_label \\
+        \hline
+        \multirow{5}{*}{Validation set} & top\_potsdam\_2\_11\_label \\
+        & top\_potsdam\_3\_12\_label \\
+        & top\_potsdam\_4\_10\_label \\
+        & top\_potsdam\_6\_11\_label \\
+        & top\_potsdam\_7\_12\_label
+    \end{tabular}
+    \caption{Training - Validation split for Potsdam dataset.}
+    \label{tab:potsdam_train_val}
+\end{table}
+Because the input size for both ResNet and VGGNet is $224 \times 224$ and
+given patches have enormously high resolution, every patch is randomly cropped
+with uniform distribution 4096 times (Figure~\ref{fig:data_augmentation}a).
+Furthermore, to improve both diversity and quantity, The number of training
+examples as ($224 \times 224$) input images is also increased by four times by
+left-to-right and upside down flipping the entire randomly cropped training
+dataset (Figure~\ref{fig:data_augmentation}b, c and d). Totally, for the purpose
+of internal validation, each dataset contains:
+\begin{enumerate}
+    \item Vaihingen dataset:
+    \begin{itemize}
+        \item Number of training examples: 196608
+        \item Number of validation examples: 16384
+    \end{itemize}
+    \item Potsdam dataset:
+    \begin{itemize}
+        \item Number of training examples: 311296
+        \item Number of validation examples: 20480
+    \end{itemize}
+\end{enumerate}
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.37125\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{augmentation_1}
+        \caption{$224 \times 224$ randomly cropped image.}
+    \end{subfigure}\hspace{1cm}\vspace{0.5cm}
+    \begin{subfigure}[b]{0.37125\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{augmentation_2}
+        \caption{Left-to-right flip of the cropped image.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.37125\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{augmentation_3}
+        \caption{Upside down flip of the cropped image.}
+    \end{subfigure}\hspace{1cm}\vspace{0.5cm}
+    \begin{subfigure}[b]{0.37125\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{augmentation_4}
+        \caption{Upside down flip of the left-to-right flip of the cropped
+        image.}
+    \end{subfigure}
+    \caption{Random crop and image flipping augmentation for Vaihingen
+    dataset.}
+    \label{fig:data_augmentation}
+\end{figure}
+
+
+However, those examples above is used only to monitor optimisation process and
+loss function. Actual training and validation accuracy are measured on full size
+patches instead of $224 \times 224$  randomly cropped images.
+
+
+As following training method from pretrained models VGG19 and ResNet101 with
+ImageNet dataset, mean normalisation is performed for each channel of an image.
+However, the mean values for the first three channels are kept and delivered
+from pretrained model \cite{matconvnet_vgg19, matconvnet_resnet101} and each
+extra channels would be calculated separately if necessary.
+
+\subsection{Features Extraction}
+Typically, 5 (IRRG, \acrshort{dsm_acr}, n\acrshort{dsm_acr}) or 6
+(IR\acrshort{rgb}, \acrshort{dsm_acr}, n\acrshort{dsm_acr}) features supplied
+by \acrshort{isprs} are sufficient for building a decent deep learning
+model. Nevertheless, for experimental purpose, even more features are possibly
+derived from the given features using either remote sensing expertise or other
+non-deep learning approaches. For example, NDVI, L, A, B, texton, entropy,
+saturation, etc could also be experimented to train such deep learning models
+\cite{quang2015efficient, duytv-2017}. In this project, I fully adapted
+3-channel and 5-channel data for Vaihingen dataset and 6-channel for Potsdam
+dataset.

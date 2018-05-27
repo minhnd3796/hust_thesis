@@ -1,0 +1,37 @@
+\selectlanguage{english}
+% \addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+One of the major topics in photogrammetry is the automated extraction of
+urban objects from data acquired by airborne sensors. What makes this task
+challenging is the very heterogeneous appearance of objects like buildings,
+streets, trees and cars in very high-resolution data, which leads to high
+intra-class variance while the inter-class variance is low. Focus is on
+detailed 2D semantic segmentation that assigns labels to multiple object
+categories. Further research drivers are very high-resolution data from new
+sensors and advanced processing techniques that rely on increasingly mature
+machine learning techniques. Despite the enormous efforts spent, these tasks
+cannot be considered solved, yet. To my knowledge, no fully automated method
+for 2D object recognition is applied in practice today although at least two
+decades of research have tried solving this task.
+
+
+There are many approaches in solving this problem, either machine learning
+approach or rule-based algorithm. This thesis focuses on dealing with the
+issue as a semantic segmentation perspective. This problem had been being
+tackled by applying many supervised machine learning models proposed in
+former research works. However, previous models lacked accuracies and
+automated transferability when considering different given input data.
+Therefore, this thesis comes up with a new problem formulation that can
+transfer learnt expertise from basic areas of computer vision in common
+sense and fine-tune to adapt for any given data in terms of semantic
+segmentation.
+
+
+Throughout this thesis, a deep learning approach is chosen which two
+contemporary classification networks (the VGG net and ResNet), have been
+adapted into fully convolutional networks and transfer their learnt
+representations by fine-tuning to the segmentation task. With this solution,
+not much special domain knowledge is needed to build a high-accuracy model
+but only enough relevant data. Practically, my proposed models have achieved
+very competitive positions in the 2D Semantic Labelling Contest hosted by
+International Society for Photogrammetry and Remote Sensing.

@@ -1,0 +1,52 @@
+\section{Detailed Implementation}
+\subsection{Input Tensor}
+All models were implemented using \gls{tf} 1.4. Each computational graph has
+the input tensor of shape \texttt{(batch\_size, 224, 224, n)} with $n$ is the
+number of input channels. This number can be 3 (for IR-R-G Vaihingen), 5 (for
+IR-R-G-n\acrshort{dsm_acr}-\acrshort{dsm_acr} Vaihingen) or 6 (for
+\acrshort{rgb}IR-n\acrshort{dsm_acr}-\acrshort{dsm_acr} Potsdam).
+
+\subsection{Additional Filters}
+Because of pretrained models VGG19 and ResNet101 are trained with 3-channel
+\acrshort{rgb} images so the number of input channel for immediate
+\acrshort{conv} layer must be modified and appended with additional filters to
+fit with the dimension of the successor input tensor. The additional filters
+were randomly initialised with Gaussian (normal) distribution which has 0 mean
+centre and 0.02 standard deviation.
+
+\subsection{Output Tensor, Loss Function and Optimisation Method}
+All models had the same output tensor of size \texttt{(batch\_size, 244, 244,
+6)} because the problem needs to classify every pixel into one in six
+categories. Thus these could be treated as typical classification models with
+cross-entropy loss function to optimise using Adam Optimiser as Stochastic
+Optimisation technique \cite{DBLP:journals/corr/KingmaB14}.
+
+\subsection{Validation and Inference Method}
+\subsubsection{Validation Method}
+To validate actual models' capacities to choose the best configurations of
+hyperparameters, after every epoch, all large patches from both training set
+and validation set were inferred to evaluate the overall pixel-wise accuracy
+for each model against the ``full\_reference'' \gls{gt}s
+(Figure~\ref{fig:gts_full_vs_eroded_example} on the left).
+
+\subsubsection{Inference Method}
+Each patch is inferred using sliding window method. A $224 \times 224$ windows
+would be slid across all the patch. Each time the sliding window would produce
+a 3-dimensional array of class scores with the dimension of
+$[224 \times 224 \times 6]$. All these arrays where overlapped would be summed
+together. Finally, a 3-dimensional array with the same spatial dimension as the
+large input patch would be produced. Then every position in terms of width and
+height would be reduced along the depth dimension (depth of 6 categories) by the
+maximum argument operation to classify every pixel into one out of six given
+categories.
+
+\subsection{Checkpoints and Ensemble Learning}
+Because the validation accuracy did not always increase along training time,
+ensemble learning was definitely adapted to deal with it. Checkpoints were
+saved with two different options:
+\begin{itemize}
+    \item The 5 latest checkpoints were kept and used to ensemble, each of them
+    was saved after every 600 iterations
+    \item The 15 latest checkpoints were kept and used to ensemble, each of them
+    was saved after every 1 epoch.
+\end{itemize}

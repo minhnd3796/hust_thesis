@@ -1,0 +1,75 @@
+\section{Demonstrations}
+\subsection{\acrshort{fcn}-8s-ResNet101-5c-v3.2}
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{vaihingen8s/in}
+        \caption{\acrshort{top_acr}.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{vaihingen8s/label}
+        \caption{\Gls{gt}.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{vaihingen8s/inference}
+        \caption{Inference.}
+    \end{subfigure}
+    \caption{Demonstration for \acrshort{fcn}-8s-ResNet101-5c-v3.2.}
+    \label{fig:8s_demo}
+\end{figure}
+
+\subsection{\acrshort{fcn}-4s-ResNet101-5c-v3.3}
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{vaihingen4s/in}
+        \caption{\acrshort{top_acr}.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{vaihingen4s/label}
+        \caption{\Gls{gt}.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{vaihingen4s/inference}
+        \caption{Inference.}
+    \end{subfigure}
+    \caption{Demonstration for \acrshort{fcn}-4s-ResNet101-5c-v3.3.}
+    \label{fig:4s_demo}
+\end{figure}
+
+\subsection{\acrshort{fcn}-4s-ResNet101-6c-v3.3}
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{potsdam4s/in}
+        \caption{\acrshort{top_acr}.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{potsdam4s/label}
+        \caption{\Gls{gt}.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{potsdam4s/inference}
+        \caption{Inference.}
+    \end{subfigure}
+    \caption{Demonstration for \acrshort{fcn}-4s-ResNet101-6c-v3.3.}
+    \label{fig:4s_potsdam_demo}
+\end{figure}
+
+\clearpage
+\subsection{Commentary}
+Both 3 models perform extremely well on impervious surfaces building and car
+classes because data of these classes are sufficiently and diversely given in
+two datasets despite the fact that the size of car objects are relatively
+smaller than other objects.
+
+However, there are some ambiguities between the inferences of low vegetation
+and and tree classes as the result of similarly brightness in input images and
+high intra-variance. To solve this issue, \acrshort{dsm_acr} and
+n\acrshort{dsm_acr} were fully used to distinguish the two classes based on
+their heights.
+
+In above confusion matrices, the clutter/background class has the lowest
+F1-score because the number of pixels belong to this class is very small
+compared to total number of given pixels. Therefore, overall accuracies are not
+significantly affected by wrong inference of this class.

@@ -1,0 +1,549 @@
+\section{\acrlong{cnn} for Image Classification Problem}
+\subsection{Introduction to \acrlong{cnn}}
+\textbf{\glspl{cnn}} are very similar to ordinary neural networks have been
+seen so far: they are made up of neurons which have learnable weights and
+biases. Each neuron receives some inputs, performs a dot product and optionally
+follows it with a nonlinearity. The whole network still expresses a single
+differentiable score function: from the raw image pixels on one end to class
+scores at the other. And they still have a loss function (e.g.
+\acrshort{svm}/Softmax) on the last (fully-connected) layer and all the tips
+and tricks we developed for learning regular neural networks still apply.
+
+
+\acrshort{cnn} architectures make the explicit assumption that the inputs are
+images, which allows us to encode certain properties into the architecture.
+These then make the forward function more efficient to implement and vastly
+reduce the amount of parameters in the network.
+
+\subsection{Architecture Overview}
+As we saw in previous sections, neural networks receive an input (a single
+vector) and transform it through a series of \emph{hidden layers}. Each hidden
+layer is made up of a set of neurons, where each neuron is fully connected to
+all neurons in the previous layer, and where neurons in a single layer function
+completely independently and do not share any connections. The last
+fully-connected layer is called the ``output layer'' and in classification
+settings it represents the class scores (Figure~\ref{fig:nn_vs_cnn}a).
+
+
+In CIFAR-10 dataset (Figure~\ref{fig:cifar10}), images are only of
+size $[32\times32\times3]$ (32 wide, 32 high, 3 \acrshort{rgb} colour channels),
+so a single fully-connected neuron in a first hidden layer of a regular neural
+network would have $32\times32\times3=120000$ weights. Moreover, we would
+almost certainly want to have serveral such neurons, so the parameters would
+add up quickly. Clearly, this full connectivity is wasteful and the huge number
+of parameters would quickly lead to overfitting.
+
+
+\acrlong{cnn} takes advantage of the fact that the input consists of images and
+it constrains the architecture in a more sensible way. In particular, unlike a
+regular neural Network, the layers of a \acrshort{cnn} have neurons arranged in
+3 dimensions: \textbf{width}, \textbf{height}, \textbf{depth}. (Note that the
+word \emph{depth} here refers to the third dimension of an activation volume,
+not to the depth of a full neural Network, which can refer to the total number
+of layers in a network). For example, the input images in CIFAR-10 are an input
+volume of activations and the volume has dimensions $[32\times32\times3]$ (width,
+height, depth respectively). As we will soon see, the neurons in a layer will
+only be connected to a small region of the layer before it, instead of all the
+neurons in a fully-connected manner. Moreover, the final output layer would for
+CIFAR-10 have dimension $[1\times1\times10]$, because by the end of the
+\acrshort{cnn} architecture the full image will be reduced into a single vector
+of class scores, arranged along the depth dimension
+(Figure~\ref{fig:nn_vs_cnn}b).
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{neural_net2}
+        \caption{A regular 3-layer neural network.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{cnn}
+        \caption{
+            A \acrshort{cnn} arranges its neurons in three dimensions (width,
+            height, depth).
+        }
+    \end{subfigure}
+    \caption{Regular neural network versus \acrlong{cnn}.}
+    \label{fig:nn_vs_cnn}
+\end{figure}
+
+\subsection{\acrshort{cnn} Layers}
+\paragraph*{}
+As described above, a simple \acrshort{cnn} is a sequence of layers and every
+layer of a \acrshort{cnn} transforms one volume of activations to another
+through a differentiable function. Three main types of layers will be used to
+build \acrshort{cnn} architectures: \textbf{Convolutional Layer},
+\textbf{Pooling Layer} and \textbf{Fully-Connected Layer} (exactly as seen in
+regular neural Networks). These layers will be stacked to form a full
+\acrshort{cnn} \textbf{architecture}. A simple \acrshort{cnn} for CIFAR-10
+classification could have the architecture [INPUT - \acrshort{conv} -
+\acrshort{relu} - \acrshort{pool} - \acrshort{fc}]
+(Figure~\ref{fig:web_demo_cnn}).
+In more detail:
+\begin{itemize}
+    \item INPUT [32x32x3] will hold the raw pixel values of the image, in this
+    case an image of width 32, height 32, and with three colour channels
+    \acrshort{rgb}.
+    \item \acrshort{conv} layer will compute the output of neurons that are
+    connected to local regions in the input, each computing a dot product
+    between their weights and a small region they are connected to in the input
+    volume. This may result in volume such as $[32\times32\times12]$ if 12
+    filters are used.
+    \item \acrshort{relu} layer will apply an elementwise activation function,
+    such as the $\boldsymbol{max(0, x)}$ thresholding at zero. This leaves the
+    size of the volume unchanged ($[32\times32\times12]$).
+    \item \acrshort{pool} layer will perform a downsampling operation along the
+    spatial dimensions (width, height), resulting in volume such as
+    $[16\times16\times12]$.
+    \item \acrshort{fc} (i.e. fully-connected) layer will compute the class
+    scores, resulting in volume of size $[1\times1\times10]$, where each of the
+    10 numbers correspond to a class score, such as among the 10 categories of
+    CIFAR-10. As with ordinary neural networks and as the name implies, each
+    neuron in this layer will be connected to all the numbers in the previous
+    volume.
+\end{itemize}
+
+
+In this way, \acrshort{cnn}s transform the original image layer by layer from
+the original pixel values to the final class scores. Note that some layers
+contain parameters and other don’t. In particular, the
+\acrshort{conv}/\acrshort{fc} layers perform transformations that are a
+function of not only the activations in the input volume, but also of the
+parameters (the weights and biases of the neurons). On the other hand,
+the \acrshort{relu}/\acrshort{pool} layers will implement a fixed function.
+The parameters in the \acrshort{conv}/\acrshort{fc} layers will be trained with
+gradient descent so that the class scores that the ConvNet computes are
+consistent with the labels in the training set for each image.
+
+
+In summary:
+\begin{itemize}
+    \item A \acrshort{cnn} architecture is in the simplest case a list of
+    layers that transform the image volume into an output volume (e.g. holding
+    the class scores).
+    \item There are a few distinct types of layers (e.g.
+    \acrshort{conv}/\acrshort{fc}/\acrshort{relu}/\acrshort{pool} are by far
+    the most popular).
+    \item Each layer accepts an input 3D volume and transforms it to an output
+    3D volume through a differentiable function.
+    \item Each layer may or may not have parameters (e.g.
+    \acrshort{conv}/\acrshort{fc} do, \acrshort{relu}/\acrshort{pool} do not).
+    \item Each layer may or may not have additional hyperparameters (e.g.
+    \acrshort{conv}/\acrshort{fc}/\acrshort{pool} do, \acrshort{relu} does
+    not).
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{convnet}
+    \caption{An example \acrshort{cnn} architecture.}
+    \label{fig:web_demo_cnn}
+\end{figure}
+
+\subsubsection{Convolutional Layer}
+The convolutional layer is the core building block of a \acrlong{cnn} that does
+most of the computational heavy lifting. The convolutional layer's parameters
+consists of a set of learnable filters. Every filter is spatially small (along
+with width and height), but extends through the full depth of the input volume.
+For example, a typical filter on a first layer of a \acrshort{cnn} might have
+the size of $[5\times5\times3]$ (i.e. 5 pixels width and height, and 3 pixels
+depth because \acrshort{rgb} images have the depth of 3 as the number of colour
+channels). During the forward pass, each filter across the width and height of
+the input volume is slid (more precisely, convolved) to compute dot products
+between the entries of the filter and the input at any position. As sliding the
+filter over the width and height of the input volume, a 2-dimensional
+activation map will be produced that gives the responses of that filter at
+every spatial position. Intuitively, the network will learn the filters that
+activate when they see some types of visual feature such an edge or some
+orientations or a blotch of some colours on the first layer or eventually
+entire honeycomb or wheel-like patterns on higher layers of the network. Now in
+an intire set of filters in each convolutional layer (e.g. 12 filters), each of
+them will produce a separate 2-dimensional activation map. These activation
+maps will be stacked along the depth dimension and produce the output volume.
+
+
+Every entry in the 3D output volume and also be interpreted as an output of a
+biological neuron which looks at a small region in the input and shares
+parameters with all neurons to the left and right spatially
+(Figure~\ref{fig:cnn_neuron}) (since these numbers all result from applying the
+same filter). Each neuron in the convolutional layer is connected only to a
+local region in the input volume spatially, but to the full depth (i.e. all
+color channels). When dealing with high-dimensional inputs such as images, it is
+impractical to connect neurons to all neurons in the previous volume. Instead,
+each neuron will be connected to only a local region on the input volume. The
+spatial extent of this connectivity is a hyperparameter called
+\textbf{receptive field} of the neuron (equivalently this is the filter size).
+The extent of the connectivity along the depth axis is always equal to the
+depth of the input volume. The connections are local in space (along width
+and height) but always full along the entire depth of the input volume.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{depthcol}
+    \caption{An example input volume in red (e.g. a $[32\times32\times3]$
+    CIFAR-10 image), and an example volume of neurons in the first
+    convolutional layer.}
+    \label{fig:cnn_neuron}
+\end{figure}
+
+
+In terms of spatial arrangement, there are three hyperparameters control the
+size of the output volume:
+\begin{enumerate}
+    \item The \textbf{depth} of the output volume is a hyperparameter: it
+    corresponds to the number of filters would be used, each of them when being
+    trained will look at something different in the input. For example, if the
+    first convolutional layer takes the raw image as input, then different
+    neurons along the depth dimension may active in presence of various
+    oriented edges, or blobs of colour (Figure~\ref{fig:alex_net_blob}). A set
+    of neurons which are all looking the same region of the input will be
+    referred as a \textbf{depth column}.
+    \item The \textbf{stride} with which the filter is slid must be specified.
+    When the stride is 1 then the filters are moved one pixel at a time. When
+    the stride is 2 (or uncommonly 3 or more, though this is rare in practice)
+    then the filters jump 2 pixels at a time as they are slid around. This will
+    produce smaller output volumes spatially.
+    \item Sometimes it will be convenient to pad the input volume with zeros
+    around the border. The size of this \textbf{zero-padding} is a
+    hyperparameter. The nice feature of zero padding is that it will allow us
+    to control the spatial size of the output volumes (most commonly as it will
+    be used to exactly preserve the spatial size of the input volume so the
+    input and output width and height are the same).
+\end{enumerate}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{cnn2}
+    \caption{
+        Example filters learned by Krizhevsky et al
+        \cite{Krizhevsky:2017:ICD:3098997.3065386}. Each of the 96 filters
+        shown here is of size $[11\times11\times3]$, and each one is shared by
+        the $55\times55$ neurons in one depth slice.
+    }
+    \label{fig:alex_net_blob}
+\end{figure}
+
+
+To summarise, the convolutional layer:
+\begin{itemize}
+    \item Accepts a volume of size $\boldsymbol{W_{1} \times H_{1}
+    \times D_{1}}$
+    \item Requires four hyperparameters:
+    \begin{itemize}
+        \item Number of filters $\boldsymbol{K}$,
+        \item Their spatial extent $\boldsymbol{F}$,
+        \item The stride $\boldsymbol{S}$,
+        \item The amount of zero-padding $\boldsymbol{P}$.
+    \end{itemize}
+    \item Produces a volume of size
+    $\boldsymbol{W_{2} \times H_{2} \times D_{2}}$ where:
+    \begin{itemize}
+        \item $\boldsymbol{W_{2} = (W_{1} - F + 2 \times P) \div S + 1}$
+        \item $\boldsymbol{H_{2} = (H_{1} - F + 2 \times P) \div S + 1}$
+        (i.e. width and height are computed equally by symmetry)
+        \item $\boldsymbol{D_{2} = K}$
+    \end{itemize}
+    \item With parameter sharing, it introduces
+    $\boldsymbol{F \cdot F \cdot D_{1}}$ weights per filter, for a total of
+    $\boldsymbol{(F \cdot F \cdot D_{1}) \cdot K}$ weights and $\boldsymbol{K}$
+    biases.
+    \item In the output volume, the $\boldsymbol{d}$-th depth slice (of size
+    $\boldsymbol{W_{2} \times H_{2}}$) is the result of performing a valid
+    convolution of the $\boldsymbol{d}$-th filter over the input volume with a
+    stride of $\boldsymbol{S}$, and then offset by $\boldsymbol{d}$-th bias.
+\end{itemize}
+A common setting of the hyperparameters is $\boldsymbol{F = 3}$,
+$\boldsymbol{S = 1}$, $\boldsymbol{P = 1}$. However, there are common
+conventions and rules of thumb that motivate these hyperparameters.
+
+
+Below is a running demo of a convolutional layer. Since 3D volumes are hard to
+visualise, all the volumes (the input volume (in blue), the weight volumes (in
+red), the output volume (in green)) are visualised with each depth slice
+stacked in rows. The input volume is of size $\boldsymbol{W_1 = 5}$,
+$\boldsymbol{H_1 = 5}$, $\boldsymbol{D_1 = 3}$ and the convolutional layer
+parameters are $\boldsymbol{K = 2}$, $\boldsymbol{F = 3}$,
+$\boldsymbol{S = 2}$, $\boldsymbol{P = 1}$. That is, we have two filters of
+size $3 \times 3$, and they are applied with a stride of 2. Therefore, the
+output volume size has spatial size $(5 - 3 + 2) \div 2 + 1 = 3$. Moreover,
+notice that a padding of $\boldsymbol{P = 1}$ is applied to the input volume,
+making the outer border of the input volume zero. The visualisation below
+iterates over the output activations (green), and shows that each element
+is computed by elementwise multiplying the highlighted input (blue) with the
+filter (red), summing it up, and then offsetting the result by the bias
+(Figure~\ref{fig:conv_demo}).
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step1}
+        \caption{Convolutional step 1.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step2}
+        \caption{Convolutional step 2.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step3}
+        \caption{Convolutional step 3.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step4}
+        \caption{Convolutional step 4.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step5}
+        \caption{Convolutional step 5.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step6}
+        \caption{Convolutional step 6.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step7}
+        \caption{Convolutional step 7.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step8}
+        \caption{Convolutional step 8.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.325\linewidth}
+        \includegraphics[width=\linewidth]{conv_step9}
+        \caption{Convolutional step 9.}
+    \end{subfigure}
+    \caption{Convolution demo.}
+    \label{fig:conv_demo}
+\end{figure}
+
+\subsubsection{Pooling Layer}
+It is common to periodically insert a pooling layer in-between successive
+convolutional layers in a \acrshort{cnn} architecture. Its function is to
+progressively reduce the spatial size of the representation to reduce the
+amount of parameters and computation in the network, and hence to also control
+overfitting. The Pooling Layer operates independently on every depth slice of
+the input and resizes it spatially, using the MAX operation. The most common
+form is a pooling layer with filters of size $2\times2$ applied with a stride
+of 2 downsamples every depth slice in the input by 2 along both width and
+height, discarding 75\% of the activations. Every MAX operation would in this
+case be taking a max over 4 numbers (little $2\times2$ region in some depth
+slice). The depth dimension remains unchanged. More generally, the pooling
+layer:
+\begin{itemize}
+    \item Accepts a volume of size $\boldsymbol{W_1 \times H_1 \times D_1}$
+    \item Requires two hyperparameters:
+    \begin{itemize}
+    \item their spatial extent $F$,
+    \item the stride $S$,
+    \end{itemize}
+    \item Produces a volume of size
+    $\boldsymbol{W_2 \times H_2 \times D_2}$ where:
+    \begin{itemize}
+    \item $\boldsymbol{W_2 = (W_1 - F) \div S + 1}$
+    \item $\boldsymbol{H_2 = (H_1 - F) \div S + 1}$
+    \item $\boldsymbol{D_2 = D_1}$
+    \end{itemize}
+    \item Introduces zero parameters since it computes a fixed function of the
+    input
+    \item Note that it is not common to use zero-padding for pooling layers
+\end{itemize}
+It is worth noting that there are only two commonly seen variations of the max
+pooling layer found in practice: A pooling layer with $\boldsymbol{F=3}$,
+$\boldsymbol{S=2}$ (also called overlapping pooling), and more commonly
+$\boldsymbol{F=2}$, $\boldsymbol{S=2}$ (Figure~\ref{fig:max_pool_2_2}).
+Pooling sizes with larger receptive fields are too destructive.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.3911299\linewidth}
+        \includegraphics[width=\linewidth]{pool}
+        \caption{Pooling with filter size 2, stride 2.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5988701\linewidth}
+        \includegraphics[width=\linewidth]{maxpool}
+        \caption{Max pooling with filter size 2, stride 2.}
+    \end{subfigure}
+    \caption{Pooling and max pooling.}
+    \label{fig:max_pool_2_2}
+\end{figure}
+
+
+\subsubsection{Normalisation Layer}
+Many types of normalisation layers have been proposed for use in \acrshort{cnn}
+architectures, sometimes with the intentions of implementing inhibition schemes
+observed in the biological brain. However, these layers have since fallen out
+of favour because in practice their contribution has been shown to be minimal,
+if any.
+
+Nevertheless, training deep neural networks is complicated by the fact that the
+distribution of each layer's inputs changes during training, as the parameters
+of the previous layers change. This slows down the training by requiring lower
+learning rates and careful parameter initialisation, and makes it notoriously
+hard to train models with saturating nonlinearities. This phenomenon is
+referred as internal covariate shift, and address the problem by normalising
+layer inputs. This method draws its strength from making normalisation a part
+of the model architecture and performing the normalisation for each training
+mini-batch (Figure~\ref{fig:batchnorm}). \textbf{Batch Normalisation} allows
+us to use much higher learning rates and be less careful about initialisation.
+It also acts as a regulariser, in some cases eliminating the need for Dropout
+\cite{DBLP:journals/corr/IoffeS15}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{batchnorm}
+    \caption{
+        Batch Normalising Transform, applied to activation $x$ over a
+        mini-batch.
+    }
+    \label{fig:batchnorm}
+\end{figure}
+
+
+\subsubsection{Fully-Connected Layer}
+Neurons in a fully connected layer have full connections to all activations in
+the previous layer, as seen in regular neural networks. Their activations can
+hence be computed with a matrix multiplication followed by a bias offset.
+
+\subsubsection{Converting Fully-Connected Layers to Convolutional Layers}
+It is worth noting that the only difference between \acrshort{fc} and
+\acrshort{conv} layers is that the neurons in the \acrshort{conv} layer are
+connected only to a local region in the input, and that many of the neurons in
+a \acrshort{conv} volume share parameters. However, the neurons in both layers
+still compute dot products, so their functional form is identical. Therefore,
+it turns out that it is possible to convert between \acrshort{fc} and
+\acrshort{conv} layers:
+\begin{itemize}
+    \item For any \acrshort{conv} layer there is an \acrshort{fc} layer that
+    implements the same forward function. The weight matrix would be a large
+    matrix that is mostly zero except for at certain blocks (due to local
+    connectivity) where the weights in many of the blocks are equal (due to
+    parameter sharing).
+    \item Conversely, any \acrshort{fc} layer can be converted to a
+    \acrshort{conv} layer. For example, an \acrshort{fc} layer with
+    $\boldsymbol{K=4096}$ that is looking at some input volume of size
+    $\boldsymbol{7\times7\times512}$ can be equivalently expressed as a
+    \acrshort{conv} layer with $\boldsymbol{F=7}$, $\boldsymbol{P=0}$,
+    $\boldsymbol{S=1}$, $\boldsymbol{K=4096}$. In other words, filter size is
+    set to be exactly the size of the input volume, and hence the output will
+    simply be $\boldsymbol{1\times1\times4096}$ since only a single depth
+    column ``fits'' across the input volume, giving identical result as the
+    initial \acrshort{fc} layer.
+\end{itemize}
+
+
+
+Of these two conversions, the ability to convert an \acrshort{fc} layer to a
+\acrshort{conv} layer is particularly useful in practice. Consider a
+\acrshort{cnn} architecture that takes a $224\times224\times3$ image, and then
+uses a series of \acrshort{conv} layers and \acrshort{pool} layers to reduce
+the image to an activations volume of size $7\times7\times512$ (in AlexNet
+architecture \cite{Krizhevsky:2017:ICD:3098997.3065386}, this is done by use of
+5 pooling layers that downsample the input spatially by a factor of two each
+time, making the final spatial size $224 \div 2 \div 2 \div 2 \div 2 \div 2 =
+7$). From there, AlexNet uses two \acrshort{fc} layers of size 4096 and
+finally the last \acrshort{fc} layers with 1000 neurons that compute the class
+scores. Each of these three \acrshort{fc} layers can be converted to
+\acrshort{conv} layers as described above:
+\begin{itemize}
+    \item Replace the first \acrshort{fc} layer that looks at
+    $[7\times7\times512]$ volume with a \acrshort{conv} layer that uses filter
+    size $\boldsymbol{F=7}$, giving output volume $[1\times1\times4096]$.
+    \item Replace the second \acrshort{fc} layer with a \acrshort{conv} layer
+    that uses filter size $\boldsymbol{F=1}$, giving output volume
+    $[1\times1\times4096]$.
+    \item Replace the last \acrshort{fc} layer similarly, with
+    $\boldsymbol{F=1}$, giving final output $[1\times1\times1000]$.
+\end{itemize}
+
+
+Each of these conversions could in practice involve manipulating (e.g.
+reshaping) the weight matrix $\boldsymbol{W}$ in each \acrshort{fc} layer
+into \acrshort{conv} layer filters. It turns out that this conversion allows us
+to ``slide'' the original \acrshort{cnn} very efficiently across many spatial
+positions in a larger image, in a single forward pass.
+
+
+Naturally, forwarding the converted \acrshort{cnn} a single time is much more
+efficient than iterating the original \acrshort{cnn} over all those 36
+locations, since the 36 evaluations share computation. This trick is often
+used in practice to get better performance, where for example, it is common to
+resize an image to make it bigger, use a converted \acrshort{cnn} to evaluate
+the class scores at many spatial positions and then average the class scores.
+
+
+Lastly, what if we wanted to efficiently apply the original \acrshort{cnn} over
+the image but at a stride smaller than 32 pixels? This could be achieved with
+multiple forward passes. For example, note that if we wanted to use a stride of
+16 pixels we could do so by combining the volumes received by forwarding the
+converted \acrshort{cnn} twice: First over the original image and second over
+the image but with the image shifted spatially by 16 pixels along both width
+and height.
+
+\subsection{\acrshort{cnn} Architectures}
+\subsubsection{LeNet}
+LeNet-5, a pioneering 7-level convolutional network by LeCun et al in 1998
+\cite{Lecun98gradient-basedlearning}, that classifies digits, was applied by
+several banks to recognise hand-written numbers on checks (cheques) digitised
+in 32x32 pixel greyscale input images (Figure~\ref{fig:lenet5}). The ability
+to process higher resolution images requires larger and more convolutional
+layers, so this technique is constrained by the availability of computing
+resources.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{lenet5}
+    \caption{LeNet-5 architecture.}
+    \label{fig:lenet5}
+\end{figure}
+
+\subsubsection{AlexNet}
+In 2012, AlexNet \cite{Krizhevsky:2017:ICD:3098997.3065386}
+(Figure~\ref{fig:alexnet}) significantly outperformed all the prior competitors
+and won the \acrfull{ilsvrc} 2012 \cite{ILSVRC15} (Figure~\ref{fig:ilsvrcs}) by
+reducing the top-5 error from 26\% to 15.3\% \cite{ILSVRC12}. The second place
+top-5 error rate, which was not a \acrshort{cnn} variation, was around 26.2\%
+\cite{ILSVRC12}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{alexnet}
+    \caption{AlexNet architecture.}
+    \label{fig:alexnet}
+\end{figure}
+
+\subsubsection{VGGNet}
+The runner-up in \acrshort{ilsvrc} 2014 (Figure~\ref{fig:ilsvrcs}) was the
+network from Karen Simonyan and Andrew Zisserman that became known as 
+VGGNet \cite{DBLP:journals/corr/SimonyanZ14a}. Its main contribution was in
+showing that the depth of the network is a critical component for good
+performance. Their final best network contains 16 \acrshort{conv}/\acrshort{fc}
+layers and, appealingly, features an extremely homogeneous architecture that
+only performs $3\times3$ convolutions and $2\times2$ pooling from the beginning
+to the end (Figure~\ref{fig:vgg16}). Their pretrained model is available for
+plug and play use in \gls{caffe} \cite{jia2014caffe, caffe_model_zoo}. A
+downside of the VGGNet is that it is more expensive to evaluate and uses a lot
+more memory and parameters ($140M$). Most of these parameters are in the first
+\acrshort{fc} layer, and it was since found that these \acrshort{fc} layers can
+be removed with no performance downgrade, significantly reducing the number of
+unnecessary parameters.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{vgg16}
+    \caption{Macro-architecture of VGG16.}
+    \label{fig:vgg16}
+\end{figure}
+
+\subsubsection{ResNet}
+Residual Network developed by Kaiming He et al \cite{DBLP:journals/corr/HeZRS15}
+was the winner of \acrshort{ilsvrc} 2015 (Figure~\ref{fig:ilsvrcs}). It features
+special skip connections (Figure~\ref{fig:resnets}) and a heavy use of batch
+normalisation. The architecture is also missing \acrshort{fc} layers at the end
+of the network. The reader is also referred to Kaiming's presentation (video,
+slides) and some recent experiments reproduce these networks in Torch. ResNets
+are currently by far state-of-the-art \acrfull{cnn} models and are the default
+choice for using \acrshort{cnn}s in practice (as of May 10, 2016). In
+particular, also see more recent developments that tweak the 
+architecture from Kaiming He et al
+\cite{DBLP:journals/corr/HeZR016}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{resnets}
+    \caption{Residual Network architectures.}
+    \label{fig:resnets}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{ilsvrc}
+    \caption{Results of winners in the \acrfull{ilsvrc} from 2010 to 2015.}
+    \label{fig:ilsvrcs}
+\end{figure}

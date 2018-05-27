@@ -1,0 +1,9 @@
+resnet101, config
+v1, default
+v2.0, all l2-weight, all dropout: 15%
+v2.1, only 'W' l2-weight, all dropout: 0%
+v2.2, no l2-weight, all dropout: 25%
+v3.0, bn, last dropout 0%
+v3.1, bn, last dropout 25%
+v3.2, bn, last dropout 50%
+v3.3, bn, last dropout 50%, fcn-4s

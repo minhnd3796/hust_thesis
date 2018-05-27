@@ -1,0 +1,160 @@
+\section{Deep Learning Algorithms}
+\subsection{Introduction to Deep Feedforward Networks}
+\textbf{Deep feedforward networks}, also called \textbf{feedforward neural
+networks}, or \textbf{\glspl{mlp}}, are the quintessential
+deep learning models. The goal of a feedforward network is to approximate some
+function $f^*$. For instance, for a classifier, $y=f^*(\boldsymbol{x})$ maps an
+input $\boldsymbol{x}$ to a category $y$. A feedforward network defines a
+mapping $\boldsymbol{y} = f(\boldsymbol{x};\boldsymbol{\theta})$ learns the
+value of the parameters $\boldsymbol{\theta}$ that result in the best function
+approximation. These models are called \textbf{feedforward} because information
+flows through the function being evaluated from $\boldsymbol{x}$, through the
+intermediate computations used to define $\boldsymbol{f}$ and finally to the
+output $\boldsymbol{y}$. There are no \textbf{feedback} connections in which
+outputs of the model are fed back into itself.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{computational_graph}
+    \caption{An illustration of computational graph for a very simple
+    mathematical expression.}
+    \label{fig:computational_graph}
+\end{figure}
+Feedforward neural networks are called \textbf{networks} because they are
+typically represented by composing together many different functions. The model
+is associated with a directed acyclic graph how the functions are composed
+together (Figure~\ref{fig:computational_graph}). For example, we might have two
+functions $f^{(1)}$ and $f^{(2)}$ connected in a chain, to form
+$f(x) = f^{(2)}(f^{(1)}(\boldsymbol{x}))$. These chain structures are the most
+commonly used structures of neural networks. In this case, $f^{(1)}$ is called
+the \textbf{first layer} of the network, $f^{(2)}$ is called the \textbf{second
+layer} and so on. The overall length of the chain gives the \textbf{depth} of
+the model. The name ``deep learning'' arose from this terminology. The final
+layer of a feedforward network is called the \textbf{output layer}. During
+neural network training, $f(\boldsymbol{x})$ is driven to match
+$f^*(\boldsymbol{x})$. The training data provides us with noisy, approximate
+examples of $f^*(\boldsymbol{x})$ evaluated at different training points. Each
+example $\boldsymbol{x}$ is accompanied by a label $y \approx
+f^*(\boldsymbol{x})$. The training examples specify directly what the output
+layer must do at each point $\boldsymbol{x}$; it must produce a value that is
+close to $y$. The behaviour of the other layers is not directly specified by
+the training data. The learning algorithm must decide how to use each
+individual layers to produce the desired output, but the training data do not
+say what each individual layer should do. Instead, the learning algorithm must
+decide how to use these layers to best implement an approximation of $f^*$.
+Because the training data does not show the desired output for each of these
+layers, they are called \textbf{hidden layers} (Figure~\ref{fig:mlp-network}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{mlp-network}
+    \caption{A two hidden layer \acrshort{mlp}.}
+    \label{fig:mlp-network}
+\end{figure}
+
+
+Finally, these networks are called \emph{neural} because they are losely
+inspired by neuroscience (Figure~\ref{fig:neuron}a). Each hidden layer of the
+network is typically vector-valued. The dimensionality of these hidden layers
+determines the \textbf{width} of the model. Each element of the vector may be
+interpreted as playing a role analogous to a neuron. Rather than thinking of
+the layer as representing a single vector-to-vector function, we can also think
+of the layer as consisting of many \textbf{units} that act in parallel, each
+representing a vector-to-scalar function. Each unit resembles a neuron in the
+sense that it receives input from many of other units and computes its own
+activation value (Figure~\ref{fig:neuron}b). The idea of using many layers of
+vector-valued representations is drawn from neuroscience. The choice of the
+functions $f^{(i)}(\boldsymbol{x})$ used to compute these representations is
+also loosely guided by neuroscientific observations about the functions that
+biological neurons compute \cite{doi:10.1113/jphysiol.1959.sp006308}. Modern
+neural network reserach, however, is guided by many mathematical and
+engineering disciplines and the goal of neural networks is not to perfectly
+model the brain. It is best to think of feedforward networks as function
+approximation machines that are designed to achieve statistical generalisation,
+occasionally drawing some insights from what we know about the brain, rather
+than as models of brain function.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{biological_neuron}
+        \caption{Biological neuron model.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{neuron_model}
+        \caption{Mathematical neuron model.}
+    \end{subfigure}
+    \caption{Neuron models in neuroscience and computer science.}
+    \label{fig:neuron}
+\end{figure}
+
+
+One way to understand feedforward networks is to begin with linear models and
+consider how to overcome their limitations. Linear models, such as logistic
+regression and linear regression, are appealing because they can be fit
+efficiently and reliably, either in closed form or with convex optimisation.
+Linear models also have the obvious defect that the model capacity is limited
+to linear functions, so the model cannot understand the interaction between
+any two input variables.
+
+\subsection{Gradient-Based Learning}
+Designing and training a neural network is not much different from training any
+other machine learning model with gradient descent. The largest difference
+between the linear models we have seen so far and neural networks is that the
+nonlinearity of a neural network causes most interesting loss functions to
+become nonconvex (Figure~\ref{fig:convexity}b). This means that the neural
+networks are usually trained by using iterative, gradient-based optimisers
+that merely drive the cost function to a very low value, rather than the linear
+equation solvers used to train linear regression models or the convex
+optimisation algorithms with global convergence guarantees used to train
+logistic regression or \glspl{svm}. Convex optimisation converges starting from
+any initial parameters (Figure~\ref{fig:convexity}a). Stochastic gradient
+descent applied to nonconvex loss functions has no such convergence guarantee
+and is sensitive to the values of the initial parameters. For feedforward
+neural networks, it is important to initialise all weights to small random
+values. The biases may be initialised to zero or to small positive values.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{convex}
+        \caption{Convex function.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{nonconvex}
+        \caption{Non-convex function.}
+    \end{subfigure}
+    \caption{Convexity of different functions in 3-dimensional space.}
+    \label{fig:convexity}
+\end{figure}
+
+\subsection{Architecture Design}
+Another key design consideration for neural networks is determining the
+architecture. The word \textbf{architecture} refers to the overall structure
+of the network: how many units it should have and how these units should be
+connected to each other. Most neural networks are organised into groups of
+units called layers. Most neural network architectures arrange these layers in
+chain structure, with each layer being a function of the layer that preceded
+it. In this structure, the first layer is given by
+% \myequations{The first layer of a neural network}
+\begin{equation*}
+    \boldsymbol{h}^{(1)} =
+    \boldsymbol{g}^{(1)}(\boldsymbol{W}^{(1)\top}\boldsymbol{x} +
+    \boldsymbol{b}^{(1)});
+\end{equation*}
+and the second layer is given by
+% \myequations{The second layer of a neural network}
+\begin{equation*}
+    \boldsymbol{h}^{(2)} =
+    \boldsymbol{g}^{(2)}(\boldsymbol{W}^{(2)\top}\boldsymbol{h}^{(1)} +
+    \boldsymbol{b}^{(2)});
+\end{equation*}
+and so on.
+
+
+In these chain-based architectures, the main architectural considerations are
+choosing the depth of the network and the width of each layer. As will be
+obvious, a network with even one hidden layer is sufficient to fit the training
+set. Deeper networks are often able to use far fewer units per layer and far
+fewer parameters, as well as frequently generalising to the test set, but they
+also tend to be harder to optimise. The ideal network architecture for a task
+must be found via experimentation guided by monitoring the validation set
+error.

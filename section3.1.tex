@@ -1,0 +1,369 @@
+\section{Fully Convolutional Network}
+\subsection{Encoding Phase}
+In this phase, an arbitrarily-sized input image is passed through a typical
+\acrshort{cnn} which is trained and used for image classification task. During
+the forward pass, the input image is encoded through every layer of the network
+for the purposes of feature extraction and learning representation
+(Figure~\ref{fig:encoding}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{convnets_classification}
+    \caption{Learning representations of an input image.}
+    \label{fig:encoding}
+\end{figure}
+Some layers at the beginning of the phase
+supposedly could detect the appropriate low-level features of the image with
+regards to image blobs, oriented edges, etc and further layers could detect more
+abstract and high-level patterns such as the overall textures of those detected
+low-level features (Figure~\ref{fig:cnn_visualisation})
+\cite{DBLP:journals/corr/ZeilerF13}. Furthermore, some of these particular
+layers at which the spatial dimensions of the acivation maps are reduced by two
+will be used later in the decoding phase in the whole process of semantic
+segmentation (e.g. $112 \times 112$ to $56 \times 56$, $56 \times 56$ to $28
+\times 28$ and so on) \cite{Long_2015_CVPR}. However, this is not just the
+classification problem for each input image, so the last \acrshort{fc} layer
+which is used to classify extracted feature maps into discrete categories is
+omitted in order to directly apply these extracted feature maps to upsample and
+reconstruct the semantically segmented image with the same size as the input
+image. Fortunately, a lot of pretrained Deep \acrshort{cnn} models used for
+classification task can be made full use of, such as VGGNet or more notebly the
+very deep ResNet. This could save training time significantly and help the
+optimisation model to converge more easily.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{rob3_new6-1}
+    \caption{Visualisation of features in a fully trained model.}
+    \label{fig:cnn_visualisation}
+\end{figure}
+
+\subsubsection{VGG19}
+The very deep \acrshort{cnn}s by Simonyan and Zisserman (2014)
+\cite{DBLP:journals/corr/SimonyanZ14a} were the basis of their ImageNet
+\acrshort{ilsvrc}-2014 submissions, where their team (VGG) secured the first
+and the second places in the localisation and classification tasks respectively.
+After the competition, their models were further improved, which has lead to the
+following ImageNet classification results \cite{very_deep}
+(Table~\ref{tab:vgg_ilsvrc}):
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{0.825\textwidth}{ | c | *{2}{Y|} }
+        \hline
+        \multirow{2}{*}{Model} &
+        \multicolumn{2}{c|}{top-5 classification error on
+        \acrshort{ilsvrc}-2012 (\%)} \\
+        \cline{2-3}
+        & validation set & test set \\
+        \hline
+        16-layer & 7.5\% & 7.4\% \\
+        \hline
+        19-layer & 7.5\% & 7.3\% \\
+        \hline
+        model fusion & 7.1\% & 7.0\% \\
+        \hline
+    \end{tabularx}
+    \caption{ImageNet classification results of VGG Nets.}
+    \label{tab:vgg_ilsvrc}
+\end{table}
+\vspace{2.5cm}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{convolutionalisation}
+    \caption{Transforming fully connected layers into convolution layers
+    enables a classification net to output a heatmap.}
+    \label{fig:heatmap}
+\end{figure}
+\newpage
+\begin{wraptable}[29]{r}{0mm}
+    \arrayrulecolor[HTML]{DB5800}
+    \taburulecolor{black}
+    \begin{tabular}{ | c | }
+        \hline
+        \rowcolor{lightgray} INPUT \\
+        \hline
+        \acrshort{conv}3-64 \\
+        \acrshort{conv}3-64 \\
+        \hline
+        \rowcolor{lightgray} MAX \acrshort{pool} \\
+        \hline
+        \acrshort{conv}3-128 \\
+        \acrshort{conv}3-128 \\
+        \hline
+        \rowcolor{lightgray} MAX \acrshort{pool} \\
+        \hline
+        \acrshort{conv}3-256 \\
+        \acrshort{conv}3-256 \\
+        \acrshort{conv}3-256 \\
+        \acrshort{conv}3-256 \\
+        \hline
+        \rowcolor{lightgray} MAX \acrshort{pool} \\
+        \hline
+        \acrshort{conv}3-512 \\
+        \acrshort{conv}3-512 \\
+        \acrshort{conv}3-512 \\
+        \acrshort{conv}3-512 \\
+        \hline
+        \rowcolor{lightgray} MAX \acrshort{pool} \\
+        \hline
+        \acrshort{conv}3-512 \\
+        \acrshort{conv}3-512 \\
+        \acrshort{conv}3-512 \\
+        \acrshort{conv}3-512 \\
+        \hline
+        \rowcolor{lightgray} MAX \acrshort{pool} \\
+        \hline
+        \acrshort{fc}-4096 \\
+        \hline
+        \acrshort{fc}-4096 \\
+        \hline
+        \acrshort{fc}-1000 \\
+        \hline
+        \rowcolor{lightgray} soft-max \\
+        \hline
+    \end{tabular}
+    \caption{VGG19 configuration.}
+    \label{tab:vgg19}
+\end{wraptable}
+Conventionally, the architecture VGG19 receives an input image with the size of
+$224 \times 224$ spatially. The network takes full advantage of many
+\acrshort{conv} layers with very small receptive field of $3 \times 3$ spatially.
+Each \acrshort{conv} layer is followed by a \acrshort{relu} non-linearity layer.
+Five $2 \times 2$ MAX \acrshort{pool} layers with stride of 2 are periodically
+introduced throughout the \acrshort{cnn}, so at the very end of the encoding
+phase, the height and width of activation maps are halved five times in terms of
+value (i.e. $224 \div 2 \div 2 \div 2 \div 2 \div 2 = 7$). Therefore, the last
+spatial dimension of the last activation maps is $7 \times 7$. Typically, after
+every \acrshort{pool} layer, the number of $3 \times 3$ filters is doubled while
+the width and height of subsequent feature maps decrease by the same factor.
+However, more importantly, before the first two \acrshort{pool} layers, there are only
+one pair of \acrshort{conv}3-\acrshort{relu} but in front of the last 3 \acrshort{pool}
+layers, the number of \acrshort{conv}3-\acrshort{relu} pairs is otherwise two
+(Table~\ref{tab:vgg19}).
+
+
+After the last MAX \acrshort{pool} layer, the spatial dimension for this blob
+should be $7 \times 7$ and there should be two \acrshort{fc} layers with 4096
+neurons as traditional feedforward manner. However, to preserve spatial size of
+the last feature maps, these two \acrshort{fc} layers are
+\emph{``convolutionalised''} \cite{Long_2015_CVPR} to two \acrshort{conv}
+layers with the same spatial dimension and ``SAME'' zero-padding as the input
+feature maps and each of two \acrshort{conv} layers is also followed by a
+\acrshort{relu} non-linearity (Figure~\ref{fig:heatmap}). Thus the last output
+as also the first input of the decoding phase should have the width and height
+of $7 \times 7$. Totally, from input to output there are 16 $3 \times 3$
+\acrshort{conv} layers and 3 convolutionalised fully connected layers, so this
+phase contains 19 learnable weight layers. Just for the purpose of encoding
+images, the last \acrshort{fc}-1000 layer is ommited.
+
+
+% \clearpage
+\subsubsection{ResNet-101}
+Deep Residual Networks are foundations of submissions to \acrshort{ilsvrc} and
+\acrfull{coco} \cite{DBLP:journals/corr/LinMBHPRDZ14} 2015 competitions, where
+also \emph{won the first places on the tasks of ImageNet detection, ImageNet
+localisation, COCO detection, and COCO segmentation} \cite{ILSVRC15_results}.
+By introducing special skip connections (Figure~\ref{fig:skip_resnet}) and the
+heavy application of batch normalisation to the Deep Residual Networks, these
+networks can be stacked hundreds or even thousands of learnable weight layers
+(\acrshort{conv} layer in this case) without worrying about the optimisation
+difficulties of such a deep network \cite{DBLP:journals/corr/HeZRS15}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{skip_resnet}
+    \caption{Residual learning: a building block.}
+    \label{fig:skip_resnet}
+\end{figure}
+
+
+As the same input dimension as VGG19, ResNet-101 also takes an input image which
+has the width and height of 224 pixels. Overall the net contains basically 5
+\acrshort{conv} blocks named from \texttt{conv1} to \texttt{conv5\_x}
+(Table~\ref{tab:resnet_configs}), respectively. Right at the beginning, the
+input image is convolved with a $7 \times 7$ \acrshort{conv} layer with stride
+of 2 in the manner of [\acrshort{conv}-\acrshort{bn}-\acrshort{relu}] atomic
+block (i.e. the \acrshort{conv} layer in an atomic block is not only followed
+directly by a \acrshort{relu} non-linearity but with a \acrshort{bn} layer in
+between the two (Figure~\ref{fig:conv-bn-relu})) which is the supposedly most
+basic building block of the ResNet architectures. Subsequently, the spatial size
+of the activation maps is reduce by a half to $112 \time 112$.
+\begin{table}[h]
+    \centering
+    \includegraphics[width=\textwidth]{resnet_configs}
+    \caption{Architectures of Deep Residual Networks.}
+    \label{tab:resnet_configs}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{conv-bn-relu}
+    \caption{Two consecutive atomic blocks.}
+    \label{fig:conv-bn-relu}
+\end{figure}
+
+
+After the first MAX \acrshort{pool} layer which has kernel size of 3 and stride
+of 2, from from \texttt{conv2} to \texttt{conv5\_x}, one skip connection is
+applied to every three [\acrshort{conv}-\acrshort{bn}-\acrshort{relu}] atomic
+block with the kernel sizes are 1, 3, 1 respectively and stride of 1 (simply
+just performing addition operation) before introducing the last \acrshort{relu}
+non-linearity of the three-element set (Figure~\ref{fig:2skips}a). However, not
+all sets of three atomic blocks are the same, at the beginning of every block
+from \texttt{conv2} to \texttt{conv5\_x}, the first \acrshort{conv} layer of
+would have the stride of 2 so as to reduce the spatial dimension following
+feature maps by a half. Therefore, not many \acrshort{pool} layers appear in
+ResNet architectures to downsample inputs as VGGNet architectures. Specially,
+also at the beginning of every main block from 2 to 5, the data flow is devided
+into 2 different branches. The other branch in this case is just a atomic block
+with the receptive fields of $1 \times 1$ and it is fused simply by adding with
+the output of the main branch before applying the last \acrshort{relu}
+non-linearity of the main branch and the very of the additional branch
+(Figure~\ref{fig:2skips}b).
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{\linewidth}
+        \includegraphics[width=\linewidth]{normal_skip_resnet}
+        \caption{Normal skip connection.}
+    \end{subfigure}
+    \begin{subfigure}[b]{\linewidth}
+        \includegraphics[width=\linewidth]{special_skip_resnet}
+        \caption{Skip connection with $1 \times 1$ \acrshort{conv}.}
+    \end{subfigure}
+    \caption{Two types of skip connections used in ResNet.}
+    \label{fig:2skips}
+\end{figure}
+
+After all, the output blob dimension should be $7 \times 7 \times 2048$, to
+preserve the feature maps dimension later used as input for the upsampling
+phase, the last AVERAGE \acrshort{pool} which reduces the feature maps into a
+flattened vector and last \acrshort{fc}-1000 layer with feedforward manner for
+classification task is obviously left out.
+
+\subsection{Decoding and Upsampling}
+\subsubsection{In-Network Upsampling: Unpooling and Max-unpooling}
+In the field of traditional image processing, there are a number of ways to
+upsample an image from certain size to another. The hard ways to upsample from
+an arbitrary size based only on the given content of the input image are called
+\textbf{unpooling}. One of the widely applied methods is \emph{``Nearest
+Neighbour''} which separates every pixel of the input image into particular
+regions on the larger output image then copy and fill all blank entries with
+value of the pixel for only the region that separated pixel belongs to
+(Figure~\ref{fig:unpooling}a). Another method is also quite
+popularly used is \emph{``Bed of Nails''} method which is similar to Nearest
+Neighbour. However, regional input pixel values are not copied and filled in all
+blank entries of the region where that pixel belongs to, but only zeros are
+filled instead (Figure~\ref{fig:unpooling}b).
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{nearest_neighbour}
+        \caption{Nearest neighbour unpooling.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{bed_of_nails}
+        \caption{``Bed of nails'' unpooling.}
+    \end{subfigure}
+    \caption{In-network upsampling: ``Unpooling''.}
+    \label{fig:unpooling}
+\end{figure}
+
+
+During encoding phase, with typical recognition nets, including AlexNet, VGGNet
+MAX \acrshort{pool} is definitely used. Thus, positions of kept elements before
+being downsampled might be useful to remember during the downsampling phase.
+Over the period of decoding, \emph{Bed of Nails} method and \emph{max-unpooling}
+can be combined together as putting all kept elements during encoding phase to
+their prior positions. Therefore, corresponding pairs of downsampling and
+upsampling feature maps are symmetrically produced
+(Figure~\ref{fig:max-unpooling}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{max_unpooling}
+    \caption{In-network upsampling: ``Max-unpooling''.}
+    \label{fig:max-unpooling}
+\end{figure}
+
+\subsubsection{Learnable Upsampling: Transpose Convolution}
+\acrfull{fcn} \cite{Long_2015_CVPR} takes full advantage of \acrshort{conv}
+layers to solve semantic segmentation problem during decoding phase. However,
+commonly known convolution is not used here to upsample a feature map but the
+transpose convolution (fractionally strided convolution or backwards
+convolution). The transpose convolution operation just does the reverse of
+convolution, which is executed in usual CNN architecture. Each pixel or element
+of the input feature map is taken and multiplied with a filter used in normal
+convolution to get a weighted filter (Figure~\ref{fig:transpose_conv}a), then
+insert this into the output image. The outputs where overlap are summed up
+(Figure~\ref{fig:transpose_conv}b). These filters in transpose \acrshort{conv}
+layers can be trained and learnt so this can help learning meaningful features
+and patterns from data with gradient descent through backpropagation during
+upsampling phase.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.44\linewidth}
+        \includegraphics[width=\linewidth]{transpose_conv_1}
+        \caption{Transpose convolution step 1.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.55\linewidth}
+        \includegraphics[width=\linewidth]{transpose_conv_2}
+        \caption{Transpose convolution step 2.}
+    \end{subfigure}
+    \caption{$3 \times 3$ transpose convolution, stride 2, pad 1.}
+    \label{fig:transpose_conv}
+\end{figure}
+
+\subsection{\acrshort{fcn} Architectures}
+Different \acrshort{fcn} architectures are proposed based on number of strides
+when applying transpose convolution while decoding. If VGGNet or ResNet is used
+in encoding phase then the encoded feature maps should have spatial dimension of
+$7 \times 7$. Therefore, if that blob is applied transpose convolution with
+stride 32 to upsample directly to input size then we have \acrshort{fcn}-32s.
+In practice, applying such transpose convolution with such a large stride
+usually gives poorer result than fusing abstract by-product feature maps
+produced during downsampling phase with skip layers
+(Figure~\ref{fig:fcn_refinement}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{skiplayer_refinement}
+    \caption{Skip layer refinement.}
+    \label{fig:fcn_refinement}
+\end{figure}
+
+Instead of upsampling directly to the size as the input image, skip layer is
+introduced to help accuracy and performance of \acrshort{fcn} which is simply
+matrix addition operation. The encoded volume will be upsampled to a certain
+spatial size, usually just two times as current size, and simply added with
+encoded feature volumes output at the size when when executing encoding.
+Usually, the by-product feature volumes which added are immediate results after
+MAX \acrshort{pool} or strided \acrshort{conv} layers causing decreases in
+output volume spatial size. After fusing the 2 outputs, the final output can
+either be upsampled and fused with other by-product feature maps recursively or
+directly upsampled to the input image size. From that, many feasible
+\acrshort{fcn} architectures are proposed, such as \acrshort{fcn}-16s,
+\acrshort{fcn}-8s with far better performance than direct upsampling
+\acrshort{fcn}-32s (Figure~\ref{fig:fcn-32-16-8s}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{skip_layers}
+    \caption{Skip layers.}
+    \label{fig:fcn-32-16-8s}
+\end{figure}
+
+Practically, \acrshort{fcn}-8s performed best when learning end-to-end,
+pixels-to-pixels on a subset of PASCAL \acrfull{voc} 2011 \cite{pascal-voc-2011}
+segval (Table~\ref{tab:fcn_comparison}) \cite{Long_2015_CVPR}. Learning is
+end-to-end, except for \acrshort{fcn}-32s-fixed, where only the last layer is
+fine-tuned. Note that \acrshort{fcn}-32s is \acrshort{fcn}-VGG16, renamed to
+highlight stride.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ r | c c c c }
+        & pixel acc. & mean acc. & mean IU & f.w IU \\
+        \hline
+        \acrshort{fcn}-32s-fixed & 83.0 & 59.7 & 45.4 & 72.0 \\
+        \acrshort{fcn}-32s & 89.1 & 73.3 & 59.4 & 81.4 \\
+        \acrshort{fcn}-16s & 90.0 & 75.7 & 62.4 & 83.0 \\
+        \acrshort{fcn}-8s & \textbf{90.3} & \textbf{75.9} & \textbf{62.7} &
+        \textbf{83.2}
+    \end{tabular}
+    \caption{Comparison of skip \acrshort{fcn}s on a subset 7 of
+    PASCAL \acrshort{voc} 2011 segval.}
+    \label{tab:fcn_comparison}
+\end{table}

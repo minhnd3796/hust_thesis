@@ -1,0 +1,146 @@
+\section{Datasets}
+\subsection{Vaihingen Dataset}
+The data set contains 33 patches (of different sizes), each consisting of a
+\acrfull{top_acr} extracted from a larger \acrshort{top_acr} mosaic
+(Figure~\ref{fig:vaihingen_tiles}). Numbers refer to the individual patch
+numbers as written at the filename endings \cite{vaihingen_isprs}.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{vaihingen_tiles}
+    \caption{Outlines of all patches given in Table~\ref{tab:vaihingen_2d_table}
+    overlaid with the \acrshort{top_acr} mosaic.}
+    \label{fig:vaihingen_tiles}
+\end{figure}
+
+
+The ground sampling distance of both, the \acrshort{top_acr} and the
+\acrshort{dsm_acr}, is \textbf{9 centimetres}. The \acrshort{dsm_acr} was
+generated via dense image matching with Trimble INPHO 5.3 software and Trimble
+INPHO OrthoVista was used to generate the \acrshort{top_acr} mosaic. In order to
+avoid areas without data (``holes'') in the \acrshort{top_acr} and the
+\acrshort{dsm_acr}, the patches were selected from the central part of the
+\acrshort{top_acr} mosaic and none at the boundaries. Remaining (very small)
+holes in the \acrshort{top_acr} and the \acrshort{dsm_acr} were interpolated.
+
+
+The \acrshort{top_acr}s are 8-bit \acrfull{tiff} files with three bands; the
+three \acrshort{rgb} bands of the \acrshort{tiff} files correspond to the
+\emph{near infrared}, \emph{red and green bands} delivered by the camera. The
+\acrshort{dsm_acr}s are \acrshort{tiff} files with one band; the grey levels
+(corresponding to the \acrshort{dsm_acr} heights) are encoded as 32-bit float
+values. The \acrshort{top_acr} and the \acrshort{dsm_acr} are defined on the
+same grid, so that it is not necessary to consider the geocoding information in
+the processing.
+
+
+\emph{Labelled \acrfull{gt_acr}} is provided for only one part of the data
+(Figure~\ref{fig:examples_top_dsm_gts}). The \acrshort{gt_acr} of the remaining
+scenes will remain unreleased and stays with the benchmark test organisers to be
+used for evaluation of submitted results. Participants shall use all data with
+\acrshort{gt_acr} for training or internal evaluation of their method.
+\acrshort{top_acr}: Filename of \gls{top}. \acrshort{dsm_acr}: Filename
+of \acrshort{dsm_acr}. $N_{col}$, $N_{row}$: number of columns and rows.
+\acrshort{gt_acr}: Filename containing the \gls{gt} (empty if not made
+available to participants and used by the benchmark organisers for evaluation
+of the results) (Table~\ref{tab:vaihingen_2d_table}).
+
+\begin{table}[h]
+    \centering
+    \includegraphics[width=\textwidth]{vaihingen_2d_table}
+    \caption{Overview of the individual patches (with .tif extensions).}
+    \label{tab:vaihingen_2d_table}
+\end{table}
+
+
+Participants are requested to submit labelled images in exactly the same format
+as the provided \acrshort{gt_acr} (8bit \acrshort{rgb} tif-files with exactly the
+same colours per category) for the part without \acrshort{gt_acr} (patches without
+filenames in column GT in the Table). These results will be used for checking
+against \acrshort{gt_acr} by the benchmark organisers.
+
+\subsection{Potsdam Dataset}
+The data set contains 38 patches (of the same size), each consisting of a
+\emph{\acrfull{top_acr}} extracted from a larger \acrshort{top_acr} mosaic
+(Figure~\ref{fig:potsdam_tiles}). Numbers refer to the individual patch
+numbers as written at the filename endings \cite{potsdam_isprs}.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{potsdam_tiles}
+    \caption{Outlines of all patches given in Table~\ref{tab:potsdam_2d_table}
+    overlaid with the \acrshort{top_acr} mosaic.}
+    \label{fig:potsdam_tiles}
+\end{figure}
+
+
+The ground sampling distance of both, the \acrshort{top_acr} and the
+\acrshort{dsm_acr}, is \textbf{5 centimetres}. The \acrshort{dsm_acr} was
+generated via dense image matching with Trimble INPHO 5.6 software and Trimble
+INPHO OrthoVista was used to generate the \acrshort{top_acr} mosaic. In order to
+avoid areas without data (``holes'') in the \acrshort{top_acr} and the
+\acrshort{dsm_acr}, the patches were selected from the central part of the
+\acrshort{top_acr} mosaic and none at the boundaries. Remaining (very small)
+holes in the \acrshort{top_acr} and the \acrshort{dsm_acr} were interpolated.
+The \acrshort{top_acr} come as \acrshort{tiff} files in different channel
+composistions, where each channel has a spectral resolution of 8bit:
+\begin{itemize}
+    \item IRRG: 3 channels (IR-R-G)
+    \item \acrshort{rgb}: 3 channels (R-G-B)
+    \item \acrshort{rgb}IR: 4 channels (R-G-B-IR)
+\end{itemize}
+In this way participants can pick the data needed conveniently.
+
+
+The \acrshort{dsm_acr}s are \acrshort{tiff} files with one band; the grey levels
+(corresponding to the \acrshort{dsm_acr} heights) are encoded as 32-bit float
+values. The \acrshort{top_acr} and the \acrshort{dsm_acr} are defined on the
+same grid (UTM WGS84) (Figure~\ref{fig:potsdam_top_dsm_label}). Each tile comes
+with an affine transformation file (tiff world file) in order to enable a
+re-composition of images to larger mosaics if desired.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{potsdam_top_dsm_label}
+    \caption{Example patches of the semantic object classification contest with
+    (a) \gls{top}, (b) \acrshort{dsm_acr}, and (c) ground truth from Potsdam
+    dataset \cite{potsdam_isprs}.}
+    \label{fig:potsdam_top_dsm_label}
+\end{figure}
+
+
+In addition to the \acrshort{dsm_acr}s so-called \emph{normalised
+\acrshort{dsm_acr}s} are provided, that is, after ground filtering the ground
+height is removed for each pixel, leading to an representation of heights above
+the terrain. This data was produced using some fully automatic filtering
+workflow, without manual quality control. Hence, error free data here is not
+guaranteed, this is just for researchers to help using height data, other than
+the absolute \acrshort{dsm_acr}. In the download folder the corresponding
+zip-file will be found. Once unpacked a readme.txt should be read before using
+the data. The scripts based on lastools are also contained, so 
+might want to tune them. However, support is not available.
+
+
+\begin{table}[h]
+    \centering
+    \includegraphics[width=\textwidth]{potsdam_2d_table}
+    \caption{Overview of the individual patches (with .tif extensions,
+    all images have dimension $6000 \times 6000$ pixels).}
+    \label{tab:potsdam_2d_table}
+\end{table}
+
+\emph{Labelled \acrfull{gt_acr}} is provided for only one part of the data. The
+\acrshort{gt_acr} of the remaining scenes will remain unreleased and stays with
+the benchmark test organisers to be used for evaluation of submitted results.
+Participants shall use all data with \acrshort{gt_acr} for training or internal
+evaluation of their method. Filenames of \acrshort{top_acr} \acrshort{rgb}IR:
+\gls{top} with four channels red, green, blue, infrared;
+\acrshort{top_acr} IRRG: \gls{top} with three channels infrared, red,
+green; \acrshort{top_acr} \acrshort{rgb}: \gls{top} with three channels
+red, green, blue; \acrshort{dsm_acr}: \acrfull{dsm_acr}; \acrshort{gt_acr}:
+\gls{gt} labels (empty if not made available to participants and used by the
+benchmark organisers for evaluation of the results). Note that no gaps exist
+between neighbouring image tiles to enable models with context, 
+computation of normalised \acrshort{dsm_acr}s etc. The first number always
+indicates the row (top to bottom, i.e. north to south) and the second number
+the column (left to right, i.e. west to east). For example, direct neighbours
+of 5\_12 are 4\_12 (above), 6\_12 (below), 5\_11 (left), and 5\_13 (right). All
+images come with corresponding .tfw-files that provide geo-reference in UTM
+WGS84 coordinates Table~\ref{tab:potsdam_2d_table}.

@@ -1,0 +1,143 @@
+\section{Proposed Models}
+\subsection{Pretrained Models}
+Pretrained weights of VGG19 and ResNet101 models on ImageNet dataset are
+acquired from MatConvNet by VLFeat \cite{matconvnet_vgg19,
+matconvnet_resnet101}. These weights are *.mat files which are normally used to
+store variables in \gls{matlab} but fortunately could also be used in \Gls{py}
+with appropriate libraries. Pretrained models here are only the initialised
+weights for new models being fine-tuned not to solve image classification any
+more but semantic segmentation. These *.mat files provide not only numerical
+weight values and matrices but also mean value for each input image colour
+channel which I kept subtract the fine-tuning inputs every batch.
+
+\subsection{\acrshort{fcn}-8s using VGG19}
+Most of the VGG19 architecture was preserved, only 3 last \acrshort{fc} layers
+with convolution-like filters are replace by "convolutionalised" \acrshort{fc}
+layers to keep spatial dimension of encoded feature maps. At the end of the
+encoding phase, last feature maps with spatial dimension are applied transpose
+convolution to be upsampled to exactly size of \texttt{pool4} and fused (added)
+with \texttt{pool4} content. Now the result is done exactly the same as
+\texttt{pool3} to get the blob with spatial dimension of $28 \times 28$.
+This blob later is applied transpose convolution with stride 8
+(\acrshort{fcn}-8s) to upsample directly the spatial size of $244 \times 244$
+but with the depth dimension of the number of categories (in this case is 6)
+(Figure~\ref{fig:fcn-8s-vgg}). Afterwards, every pixel of actual output image
+was classified into one of these six categories and the softmax cross-entropy
+loss function. Moreover, during the training process, dropout was set at 2
+\acrshort{fc} layers the with the rate of 25\%.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{fcn-8s-vgg}
+    \caption{\acrshort{fcn}-8s using VGG19 foundation.}
+    \label{fig:fcn-8s-vgg}
+\end{figure}
+
+\subsection{\acrshort{fcn}-8s and \acrshort{fcn}-4s using ResNet101}
+Despite the fact that ResNet101 has enormously more layers and is much deeper
+than VGG19 but its architecture also has the same downsampling effect as VGG19
+in term of encoding phase. That means upsampling and introducing skip layers to
+fuse upsampled maps and downsampled maps are easily applied. Now with ResNet101,
+to build an \acrshort{fcn}-4, not only \acrshort{fcn}-8s was applied as the
+same as VGG19 but I experimentally tried introducing one more skip layer to fuse
+upsampled and downsampled maps together before directly go to the actual input
+size at the beginning (Figure~\ref{fig:fcn-4s-resnet101}) and it has produced
+promisingly better results, both in benchmark test and validation.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{fcn-4s-resnet101}
+    \caption{\acrshort{fcn}-8s and \acrshort{fcn}-4s using ResNet101
+    foundation.}
+    \label{fig:fcn-4s-resnet101}
+\end{figure}
+
+\subsection{Generalisation Difficulties and Overfitting}
+In terms of preventing overfitting, I later fine-tuned all \acrshort{bn} layers
+of ResNet101 encoder and it gives much better validation accuracies when trying
+to curb overfitting of the model. L2-regularisation was introduced but the
+results were not very promising I also tried setting dropout at the last
+\acrshort{conv} layer of the encoding phase and that gave slightly but
+better model capacity in some cases.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{dropout}
+    \caption{Dropout in a \acrshort{fc} layer.}
+    \label{fig:dropout}
+\end{figure}
+
+
+\subsection{Hyperparameters and Environment Settings}
+\subsubsection{Hyperparameters}
+One of the most sensitive hyperparameters in gradient-based learning methods is
+the learning rate, I set it relatively small at $10^{-4}$ and applied this
+universally for all proposed models. The models were trained for 25 epochs.
+Model checkpoints were saved and accuracy on actual patches are inferred and
+calculated after every epoch. Batch size has 2 values depends on \acrshort{gpu}
+memory, usually from 32 to 64 (at maximum).
+
+
+Every proposed model has a name with the following format
+\acrshort{fcn}-$\ll$stride$\gg$-$\ll$foundation$\gg$-$\ll$input
+channels$\gg$-$\ll$version (optional)$\gg$. Below is the detailed configuration
+for each one:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ | c | c | c | c | c | c | }
+        \hline
+        Dataset & Model names & Batch & Dropout\footnote{Location and Rate}
+        & $\lambda$ for L2 & \acrshort{bn}\footnote{Fine-tuning or not} \\
+        \hline
+        \multirow{15}{4em}{Vaihingen}
+        & \acrshort{fcn}-8s-VGG19-3c & 33 & \acrshort{fc}, 25\% & \acrshort{na}
+        & \acrshort{na} \\
+        & \acrshort{fcn}-8s-VGG19-5c & 33 & \acrshort{fc}, 25\% & \acrshort{na}
+        & \acrshort{na} \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-3c-v1 & 33 & 0\% & \acrshort{na}
+        & \acrshort{na} \\
+        & \acrshort{fcn}-8s-ResNet101-5c-v1 & 33 & 0\% & \acrshort{na}
+        & \acrshort{na} \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-3c-v2.0 & 11 & all, 15\% & all, $10^{-8}$
+        & \acrshort{na} \\
+        & \acrshort{fcn}-8s-ResNet101-5c-v2.0 & 11 & all, 15\% & all, $10^{-8}$
+        & \acrshort{na} \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-3c-v2.1 & 33 & 0\%
+        & ``W''\footnote{only \acrshort{conv} layers}, $10^{-3}$ & \acrshort{na} \\
+        & \acrshort{fcn}-8s-ResNet101-5c-v2.1 & 33 & 0\%
+        & ``W'', $10^{-3}$ & \acrshort{na} \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-3c-v2.2 & 33 & all, 25\%
+        & ``W'', $10^{-3}$ & \acrshort{na} \\
+        & \acrshort{fcn}-8s-ResNet101-5c-v2.2 & 33 & all, 25\%
+        & ``W'', $10^{-3}$ & \acrshort{na} \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-3c-v3.0 & 32 & 0\%
+        & \acrshort{na} & all \\
+        & \acrshort{fcn}-8s-ResNet101-5c-v3.0 & 32 & 0\%
+        & \acrshort{na} & all \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-5c-v3.1 & 32
+        & last\footnote{\texttt{res5c\_relu} layer}, 25\% & \acrshort{na}
+        & all \\
+        \cline{2-6}
+        & \acrshort{fcn}-8s-ResNet101-5c-v3.2 & 32 & last, 50\% & \acrshort{na}
+        & all \\
+        \cline{2-6}
+        & \acrshort{fcn}-4s-ResNet101-5c-v3.3 & 32 & last, 50\% & \acrshort{na}
+        & all \\
+        \hline
+        Potsdam & \acrshort{fcn}-4s-ResNet101-6c-v3.3 & 64 & last, 50\% &
+        \acrshort{na} & all \\
+        \hline
+    \end{tabular}
+    \caption{Detailed configurations of proposed models.}
+    \label{tab:proposed_models}
+\end{table}
+
+\subsubsection{Environment Settings}
+Models were implemented and trained on a \acrshort{gpu} server at \gls{dc} of
+\gls{fpt} Technology Research Institute with one \acrshort{gpu} \gls{geforce}
+GTX1080Ti which has 11GB of \acrshort{gpu} memory, compute capability index of
+6.1, 756GB of system memory, 88 \acrshort{cpu} threads, runs on Ubuntu Server
+16.04 and \gls{tf} 1.4 and executed by \Gls{py} 3 interpreter.

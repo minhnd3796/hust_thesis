@@ -1,0 +1,147 @@
+\section{Semantic Labelling Problem of Aerial Photography in Remote Sensing}
+\subsection{Urban Object Classification in Aerial Photography}
+\emph{Urban Object Classification Problem} in Aerial Photography Problem is a
+\emph{Semantic Segmentation Problem} involves segmenting the input image
+accquired in urban area into different regions where each region belongs to
+each urban entity appears in the input image. The semantic perspective of
+output image is determined based of the apperance of each urban object (e.g.
+building, tree, low vegetation, road, water surface, etc.). In
+Figure~\ref{fig:examples_top_dsm_gts}, the true orthophoto input image is
+segmented into different regions, which the number of object entities is
+limited.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{examples_top_dsm_gts}
+    \caption{
+    Example patches of the semantic object classification contest with (a)
+    \gls{top}, (b) \acrshort{dsm_acr}, and (c) ground truth from Vaihingen
+    dataset \cite{vaihingen_isprs}.}
+    \label{fig:examples_top_dsm_gts}
+\end{figure}
+
+
+\emph{Urban Object Classification Problem} is also treated as a
+\emph{Classification Problem} in terms of approaching methods. Many machine
+learning algorithms, such as random forest, support vector machine, logistic
+regression, k-nearest neighbour and the like produce the output image as an
+annotation map with the exactly same size as the input image, where every pixel
+(picture element) will be classified into a certain class as the predicted
+urban class. Since this is solved as a classification problem by a supervised
+learning algorithm, nearly all general expertise in the field of machine
+learning can be transferred and applied in solving this \emph{Urban Object
+Classification Problem}, such as optimisation, regularisation, hyperparameters
+tuning, transfer learning, etc. In conclusion, this can be definitely reduced
+to the pixel-wise image classification in the field of not only remote sensing
+and aerial photography but also computer vision.
+
+\subsection{2D Semantic Labelling Contest by \acrfull{isprs}
+\cite{isprs_semantic}}
+One of the major topics in photogrammetry is the automated extraction of urban
+objects from data acquired by airborne sensors. What makes this task
+challenging is the very heterogeneous appearance of objects like buildings,
+streets, trees and cars in very high-resolution data, which leads to high
+intra-class variance while the inter-class variance is low. Focus is on
+detailed 2D semantic segmentation that assigns labels to multiple object
+categories. Further research drivers are very high-resolution data from new
+sensors and advanced processing techniques that rely on increasingly mature
+machine learning techniques. Despite the enormous efforts spent, these tasks
+cannot be considered solved, yet. To \acrshort{isprs} experts' knowledge,
+no fully automated method for 2D object recognition is applied in practice today
+although at least two decades of research have tried solving this task. One
+major problem that is hampering scientific progress is a lack of standard data
+sets for evaluating object extraction, so that the outcomes of different
+approaches can hardly be compared experimentally. This ``semantic labelling
+contest'' of \acrshort{isprs} \acrfull{wg} III/4 is meant to resolve this issue.
+
+
+To this end, two state-of-the-art airborne image datasets are provided,
+consisting of very high resolution \gls{top} (\acrshort{top_acr}) tiles and
+corresponding \gls{dsm} (\acrshort{dsm_acr}) data files derived from dense
+image matching techniques \cite{rottensteiner2014results}. Both areas cover
+urban scenes. While Vaihingen is a relatively small village with many detached
+buildings and small multistorey buildings, Potsdam shows a typical historic
+city with large building blocks, narrow streets and dense settlement.
+Each dataset has been classified manually into six most common land cover
+classes. The classification data (label images) is provided for approximately
+half of the images, while the ground truth of the remaining scenes will
+remain unreleased and stays with the benchmark test organisers to be used for
+evaluation of submitted results. Participants shall use all data with ground
+truth for training or internal evaluation of their method.
+
+
+Six categories/classes have been defined:
+\begin{enumerate}
+    \item Impervious surfaces (\acrshort{rgb}: 255, 255, 255)
+    \item Building (\acrshort{rgb}: 0, 0, 255)
+    \item Low vegetation (\acrshort{rgb}: 0, 255, 255)
+    \item Tree (\acrshort{rgb}: 0, 255, 0)
+    \item Car (\acrshort{rgb}: 255, 255, 0)
+    \item Clutter/background (\acrshort{rgb}: 255, 0, 0)
+\end{enumerate}
+The clutter/background class includes water bodies (present in two images with
+part of a river) and other objects that look very different from everything
+else (e.g., containers, tennis courts, swimming pools) and that are usually
+not of interest in semantic object classification in urban scenes, however note
+that participants must submit labels for all classes (including the
+clutter/background class). For instance, it is not possible to submit only
+classification results for the category building.
+
+
+Per tile, a reference classification is used which was produced in the same
+manner as the reference tiles provided for training. Besides the full
+reference, references were prepared where the boundaries of objects are
+eroded by a circular disc of 3 pixel radius. Those eroded areas are then
+ignored during evaluation. The motivation is to reduce the impact of uncertain
+border definitions on the evaluation (Figure
+\ref{fig:gts_full_vs_eroded_example}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{gts_full_vs_eroded_example}
+    \caption{
+    Ground truth used for the assessment: \emph{``full\_reference''} (left),
+    \emph{``no\_boundary''} (right). Black areas in the right hand reference
+    will be ignored \cite{isprs_semantic}.
+    }
+    \label{fig:gts_full_vs_eroded_example}
+\end{figure}
+The evaluation is based on the computation of pixel-based confusion matrices
+per tile, and an accumulated confusion matrix. From those matrices different
+measures are derived: per class, compute \emph{completeness} \emph{(recall)},
+\emph{correctness} \emph{(precision)} and \emph{F1 score} (see below for
+details) are computed, and through the normalisation of the trace from the
+confusion matrix we derive an \emph{overall accuracy}. Those measures are
+computed twice (for \emph{full\_reference} and \emph{no\_boundaries}).
+The confusion matrices are defined in a way that in row direction the reference
+is given, while in column direction the prediction. The cells are then
+\emph{normalised with respect to the reference}. This means that rows add up to
+100\% (round-off errors might occur). The \emph{\acrfull{tp}},
+pixels are derived from the main diagonal elements, while the
+\emph{\acrfull{fp}},
+is computed from the sum per column, excluding the main
+diagonal element. Likewise, the \emph{\acrfull{fn}}, is the sum
+along the row, excluding the main diagonal element. From those
+\emph{\acrshort{tp}}, \emph{\acrshort{fp}}, \emph{\acrshort{fn}}
+per object the usual measures are derived:
+% \myequations{Precision (correctness) and recall (completeness) derived from
+% \acrshort{tp}, \acrshort{fp}, \acrshort{fn}.}
+\begin{align*}
+    Precision = \frac{\acrshort{tp}}{\acrshort{tp} + \acrshort{fp}} \\
+    Recall = \frac{\acrshort{tp}}{\acrshort{tp} + \acrshort{fn}}
+\end{align*}
+The F1-score is defined as the harmonic mean of precision and recall:
+% \myequations{F1-score.}
+\begin{equation*}
+    F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall}
+\end{equation*}
+The accumulated confusion matrix is simply the sum of all individual confusion
+matrices, where the absolute cell values are added up. The front page of the
+result table contains per participant the F1 scores for the relevant classes
+(without clutter) and the overall accuracy, as derived from the
+\emph{no\_boundary} reference and the accumulated confusion matrix. In
+addition an indication is given whether the algorithm used by the participant
+is supervised, unsupervised, or a mixture (hybrid). The ``P''-link opens a
+documentation/paper provided by the participant describing the used appraoch.
+The ``D''-link (details) opens another webpage where all individual confusion
+matrices and derived measures (per tile, per reference set) are shown. In
+addition per tile a ``red green'' image is shown indicating areas of wrong
+classification.

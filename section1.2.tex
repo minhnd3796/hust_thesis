@@ -1,0 +1,141 @@
+\section{Introduction to Semantic Image Segmentation Problem}
+\subsection{Image Segmentation}
+The term \emph{image segmentation} refers to the partition of an image into a
+set of regions that cover it (Figure~\ref{fig:football_segmentation}). The goal
+in many tasks is for the regions to represent meaningful areas of the image,
+such as crops, urban areas and forests of a satellite image. In other analysis
+tasks, the regions might be sets of border pixels grouped into such structures
+as line segments (Figure~\ref{fig:line_segments}) and circular arc segments
+in images of 3D industrial objects. Regions may also be defined as groups of
+pixels having both a border and a particular shape such as a circle or ellipse
+or polygon. When the interesting regions do not cover the whole image, we can
+still talk about segmentation, into foreground regions of interest and
+background regions to be ignored \cite{book:28867}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{football_segmentation}
+    \caption{
+    Football image (left) and segmentation into regions.
+    Each region is a set of connected pixels that are similar in colour
+    \cite{book:28867}.
+    }
+    \label{fig:football_segmentation}
+\end{figure}
+
+
+Segmentation has two objectives. The first objective is to decompose the image
+into parts for further analysis. In simple cases, the environment might be well
+controlled enough so that the segmentation process reliably extracts only the
+parts that need to be analysed further. For example, in figure
+\ref{fig:face_extraction}, an algorithm was presented for segmenting a human
+face from a colour video image. The segmentation is reliable, provided that the
+person's clothing or room background does not have the same colour components
+as a human face. In complex cases, such as extracting a complete road network
+from a grey scale aerial image, the segmentation problem can be very difficult
+and might require application of a great deal of domain building knowledge.
+The second objective of segmentation is to perform a change of representation.
+The pixels of the image must be organised into high-level units that are either
+more meaningful or more efficient for further analysis (or both). A critical
+issue is whether or not segmentation can be performed for many different
+domains using general bottom-up methods that do not use any special domain
+knowledge \cite{book:28867}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{line_segments}
+    \caption{Blocks image (left) and extracted set of straight line segments
+    (right). The line segments were extracted by the ORT (Object Recognition
+    Toolkit) package \cite{book:28867}.}
+    \label{fig:line_segments}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{face_extraction}
+    \caption{
+        Face extraction examples: (left) input image, (middle) labelled image,
+        (right) boundaries of the extracted face region. (Images from V.
+        Bakic \cite{book:28867}.)
+    }
+    \label{fig:face_extraction}
+\end{figure}
+
+
+\subsection{Semantic Segmentation}
+\emph{Semantic Segmentation} is a type of \emph{Image Segmentation} which
+describes the process of associating each pixel of an image with a class label,
+(such as \textbf{ocean}, \textbf{boat}, \textbf{sky}, or \textbf{land} in
+Figure~\ref{fig:four_class_segmentation}) \cite{matlab_segmentation}. More
+precisely, \emph{Image Segmentation} is the process of assigning a label to
+every pixel in an image such that pixels with the same label share certain
+characteristics \cite{tum_segmentation}.
+
+
+Some of the practical applications of semantic segmentation are:
+\begin{itemize}
+    \item Object detection \cite{delmerico2011building}
+    \begin{itemize}
+    \item Face detection
+    \item Pedestrian detection
+    \item Object location in aerial photography (roads, buildings, vegetation,
+    etc.)
+    \end{itemize}
+    \item Medical imaging \cite{pham2000current}
+    \cite{forouzanfar2010parameter}
+    \begin{itemize}
+    \item Tumour and other pathology location \cite{wu2014brain}
+    \cite{george2012mr}
+    \item Tissue volume measuring
+    \item Diagnosis, study of anatomical structure
+        \cite{kamalakannan2010double}
+    \item Surgery planning
+    \item Virtual surgery simulation
+    \end{itemize}
+    \item Machine vision
+    \item{Traffic control system}
+\end{itemize}
+Semantic segmentation is a widely used application in many fields, such as Artificial Intelligence and
+modern machines.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{semanticsegmentation_transferlearning}
+    \caption{
+    Semantic segmentation of four classes by assigning every picture element
+    that belongs to which class \cite{matlab_segmentation}.
+    }
+    \label{fig:four_class_segmentation}
+\end{figure}
+
+
+An \emph{autonomous car} (Figure~\ref{fig:autonomous_car}) is a vehicle which
+is capable of sensing its environment and navigating without human input.
+\cite{gehrig1999dead} Autonomous can detect surroundings using a variety of
+techniques such as radar, lidar, GPS, odometry and \emph{computer vision}.
+Advanced control systems interpret sensory information to identify appropriate
+navigation paths, as well as obstacles and relevant signage. Autonomous car
+have control systems which are capable of analysing sensory data to distinguish
+between different cars on the road, which is critically useful in planning a
+path to the desired destination. Semantic segmentation is one of the key
+technologies in autonomous car, it provides the fundamental information for
+semantic understanding of the video footages. These information are sent to the
+advanced control systems which helps the controller to make right decisions
+during the trip.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{sms}
+    \caption{Image segmentation during an autonomous car driving.}
+    \label{fig:autonomous_car}
+\end{figure}
+
+
+\emph{Medical imaging} (Figure~\ref{fig:medical_segmentation}) is the technique
+and process of creating visual representations of the interior of a body for
+clinical analysis and medical intervention, as well as visual representation of
+the function of some organs or tissues. Semantic segmentation can extract
+clinically useful information from medical images using the power of
+\glspl{cnn}. It can be applied to complex medical imaging problems, such as
+quantifying damage after traumatic brain injury or organ injury.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{medical}
+    \caption{Image segmentation for medical imaging.}
+    \label{fig:medical_segmentation}
+\end{figure}

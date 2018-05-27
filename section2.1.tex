@@ -1,0 +1,457 @@
+\section{Machine Learning Basics}
+\subsection{Learning Algorithms}
+A machine learning algorithm is an algorithm that is able to learn from data.
+``A computer is said to learn from experience $E$ with respect to some class of
+tasks $T$ as measured by $P$, improves with experience $E$''
+\cite{mitchell1997machine}.
+\subsubsection{The Task, $T$}
+Machine learning enables us to tackle tasks that are too difficult to solve
+with fixed programs written and designed by human beings. From a scientific
+and philosophical point of view, machine learning is interesting because
+developing our understanding of it entails developing our understanding of
+the principles that underlie intelligence \cite{Goodfellow-et-al-2016}.
+
+
+In this relatively forrmal definition of the word ``task'', the process of
+learning itself is not the task. Learning is our means of attaining the ability
+to perform the task. For example, if we want a robot to be able to walk, then
+walking is the task. The robot could be programmed to learn how to walk, or we
+could attempt to directly write a program that specifies how to walk manually.
+
+
+Machine learning tasks are usually described in terms of how the machine
+learning system should process an \textbf{example}. An example is a
+collection of \textbf{features} that have been quantitatively measured from
+some object or event that we want the machine learning system to process.
+Typically, an example is represented as a vector $\boldsymbol{x}\in\mathbb{R}^n$
+where each entry $x_i$ of the vector is another feature. For example, the
+features of an image are usually the pixels in the image.
+
+
+Many types of tasks can be solved with machine learning. Some of the most
+common machine learning tasks include the following:
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{cifar10}
+    \caption{
+        CIFAR-10 dataset \cite{Krizhevsky2009LearningML}
+        with 10 classes correspond with 10 numeric codes from 0 to 9
+        \cite{cifar10_thumbnails}.
+    }
+    \label{fig:cifar10}
+\end{figure}
+\begin{itemize}
+    \item Classification: In this type of task, the computer program is asked
+    to specify which of $k$ categories some inputs belong to. To solve this
+    task, the learning algorithm is usually asked to produce a function
+    $f:\mathbb{R}^n\mapsto\{1,\dots,k\}$. When $y=f(\boldsymbol{x})$, the model
+    assigns an input described by vector $\boldsymbol{x}$ to a category by
+    numeric code $y$ (Figure~\ref{fig:cifar10}).
+    There are other variants of the classification task, for
+    example, where $f$ outputs a probability distribution over classes. An
+    example of a classification task is object recognition, where the input is
+    an image (usually described as a set of pixel brightness values), and the
+    output is a numeric code identifying the object in the image. For example,
+    the Willow Garage PR2 robot is able to act as a waiter that can recognise
+    different kinds of drinks and deliver them to people on command
+    \cite{5453203}. Modern object recognition is best accomplished with deep
+    learning \cite{Krizhevsky:2017:ICD:3098997.3065386,
+    DBLP:journals/corr/IoffeS15}.
+    Object recognition is the same basic technology that enables computers to
+    recognise faces (Figure~\ref{fig:deepface}) \cite{6909616}, which can be
+    used to automatically tag people in photo collections and for computers
+    to interact more naturally with their users.
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{deepface}
+        \caption{
+            Outline of the \emph{DeepFace} architecture \cite{6909616}.
+        }
+        \label{fig:deepface}
+    \end{figure}
+    \item Regression: In this type of task, the computer
+    program is asked to predict a numerical value given some input. To solve
+    this task, the learning algorithm is asked to output a function
+    $f:\mathbb{R}^n\mapsto\mathbb{R}$. This type of task is similar to
+    classification, except that the format of output is different. An example
+    of a regression task is the prediction of the expected claim price that a
+    house will cost based on its properties
+    (Figure~\ref{fig:linear_regression}), or the prediction of future pieces
+    of securities. These kinds of predictions are also used for algorithmic
+    trading.
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{linear_regression}
+    \caption{A simple example of house price prediction using linear regression.}
+    \label{fig:linear_regression}
+\end{figure}
+
+\subsubsection{The Performance Measure, $P$}
+To evaluate the abilities of a machine learning algorithm, a quantitative
+measure of its performance must be designed. Usually this performance measure
+$P$ is specific to the task $T$ being carried out by the system.
+
+
+For the tasks such as classification, the \textbf{accuracy} of the model is
+often measured. Accuracy is just the proportion of examples for which the model
+produces the correct output. We can also obtain equivalent information by
+measuring the \textbf{error rate}, the proportion of examples for which the
+model produces the incorrect output. The error rate is often referred as the
+expected 0-1 loss. The 0-1 loss on a particular example is 0 if it is correctly
+classified and 1 if it is not. The most common approach is to report the
+average log-probability the model assigns to some examples.
+
+
+Usually how well the machine learning algorithm performs on data that it has
+not seen before is specially interested, since this determines how well it
+will work when deployed in the real world. Therefore these performance
+measures is evaluated using a \textbf{test set} of data that is separate from
+the data used for training the machine learning system.
+The choice of performance measure may seem straightforward and objective, but
+it is often difficult to choose a performance measure that corresponds well to
+the desired behaviour of the system.
+In some cases, this is because it is difficult to decide what should be
+measured. For example, when performing a regression task, should the system be
+penalised more if it frequently makes medium-sized mistakes or if it rarely
+makes very large mistakes? These kinds of design choices depend on the
+application.
+
+\subsubsection{The Experience, $E$}
+Machine learning algorithms can be broadly categorised as \textbf{unsupervised}
+or \textbf{supervised} by what kind of experience they are allowed to have
+during the learning process. Most of the learning algorithms can be understood
+as being allowed to experience an entire \textbf{dataset}. A dataset is a
+collection of many examples, sometimes called \textbf{data points}.
+
+
+One of the oldest datasets studied by statisticians and machine learning
+researchers is the Iris dataset \cite{fisher1936use}. It is the collection of
+measurements of different parts of 150 iris plants. Each individual plant
+corresponds to one example. The features within each example are the
+measurements of each part of the plant: the sepal length, sepal width, petal
+length and petal width. The dataset also records which species each plant
+belong to. Three different spicies are presented in the dataset
+(Table~\ref{tab:iris_dataset}).
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ |c|c|c|c|c| }
+        \hline
+        Sepal length & Sepal width & Pepal length & Petal width & Class \\
+        \hline
+        5.1 & 3.5 & 1.4 & 0.2 & setosa \\
+        7.0 & 3.2 & 4.7 & 1.4 & versicolor \\
+        6.3 & 3.3 & 6.0 & 2.5 & virginica \\
+        \hline
+    \end{tabular}
+    \caption{Three examples from Iris dataset.}
+    \label{tab:iris_dataset}
+\end{table}
+
+
+\textbf{Unsupervised learning algorithms} experience a dataset containing many
+features, then learn useful properties of the structure of this dataset. In the
+context of deep learning, we usually want to learn the entire probability
+distribution that generated a dataset, whether explicitly, as in density
+estimation, or implicitly, for tasks like synthesis or denoising. Some other
+unsupervised learning algorithms perform other roles, like clustering
+(Figure~\ref{fig:kmeans}), which consists of dividing the dataset into clusters
+of similar examples.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{kmeans}
+    \caption{Unsupervised K-Means clustering.}
+    \label{fig:kmeans}
+\end{figure}
+
+
+\textbf{Supervised learning algorithms} experience a dataset containing
+features, but each example is also associated with a \textbf{label} or
+\textbf{target}. For example, the Iris dataset is annotated with the species of
+each iris plant. A supervised learning algorithm can study the Iris dataset and
+learn to classify iris plants into three different speices based on their
+measurements.
+
+
+Roughly speaking, unsupervised learning involves observing several examples of
+a random vector $\mathbf{x}$ and attempting to implicitly or explicitly learn
+the probability distribution $p(\mathbf{x})$, or some interesting properties of
+that distribution; while supervised learning involves observing several
+examples of a random vector $\mathbf{x}$ and an associated value or vector
+$\mathbf{y}$, then learning to predict $\mathbf{y}$ from $\mathbf{x}$, usually
+by estimating $p(\mathbf{y}\mid\mathbf{x})$. The term \textbf{supervised
+learning} originates from the view of target $\mathbf{y}$ being provided by an
+instructor or teacher who shows the machine learning systems what to do. In
+unsupervised learning, there is no instructor or teacher and the algorithm must
+learn to make sense of the data without this guide.
+
+
+Unsupervised learning and supervised learning are not formally defined terms.
+The lines between them are often blurred. Many machine learning technologies
+can be used to perform both tasks. For example, the chain rule of probability
+states that for a vector $\mathbf{x} \in \mathbb{R}^n$, the joint distribution
+can be decomposed as:
+% \myequations{Chain rule of probability}
+\begin{equation*}
+    p(\mathbf{x}) = \prod_{i=1}^{n}
+        p(\mathrm{x}_i \mid \mathrm{x}_1, \dots, \mathrm{x}_{i - 1})
+\end{equation*}
+
+The decomposition means that we can solve the ostensibly unsupervised problem
+of modelling $p(\mathbf{x})$ by splitting it into $n$ supervised learning
+problems. Alternatively, we can solve the supervised learning problem if
+learning $p(y \mid \mathbf{x})$ by using traditional unsupervised machine
+learning technologies to learn the joint distribution
+$p(\mathbf{x} \mid y)$, then inferring
+% \myequations{Supervised learning problem inferred from unsupervised methods}
+\begin{equation*}
+    p(y \mid \mathbf{x}) = \frac{p(\mathbf{x} \mid y)}{\sum_{y^{\prime}}
+        p(\mathbf{x} \mid y^{\prime})}
+\end{equation*}
+
+
+Though unsupervised learning and supervised learning are not completely formal
+or distinct concepts, they do help roughly categorise some of the things
+machine learning algorithms are done with. Traditionally, regression,
+classification and structured output problems are referred as supervised
+learning. Density estimation in support of other tasks is usually considered
+unsupervised learning. Other variants of the learning paradigm are possible.
+For example, in semi-supervised learning, some examples include a supervision
+target but other do not. In multi-instance learning, an entire collection of
+examples are lablled as containing or not containing an example of a class,
+but the individual members of the collection are not labelled
+\cite{Kotzias:2015:GIL:2783258.2783380}. Some machine learning algorithms do
+not just experience a fixed dataset. For example, \textbf{reinforcement
+learning} algorithms interact with an environment, so there is a feedback
+loop between the learning system and its experiences
+\cite{sutton1998reinforcement, bertsekas1996neuro-dynamic}.
+
+
+Most machine learning algorithms simply experience a dataset, a dataset can be
+described in many ways. In all cases, a dataset is a collection of examples,
+which are in turn collections of features. One common way of describing a
+dataset is with a \textbf{design matrix}. A design matrix is a matrix
+containing a different example in each row. Each column of the matrix
+corresponds to a different feature. For instance, the Iris dataset
+contains 150 examples with four features for each example. This means we can
+represent the dataset with a design matrix $\boldsymbol{X} \in \mathbb{R}^{150
+\times 4}$, where $X_{i,1}$ is the sepal length of plant $i$, $X_{i,2}$ is the
+sepal width of plant $i$, etc (Equation below represents design matrix for data
+in Table~\ref{tab:iris_dataset}). Typically, most of the learning algorithms
+are described in terms of how they operate on design matrix datasets.
+% \myequations{Design matrix for data in Table~\ref{tab:iris_dataset}}
+\begin{equation*}
+    \label{eq:iris_matrix}
+    \boldsymbol{X} = \left[
+        \begin{matrix}
+        5.1 & 3.5 & 1.4 & 0.2 \\
+        7.0 & 3.2 & 4.7 & 1.4 \\
+        6.3 & 3.3 & 6.0 & 2.5 \\
+        \end{matrix}
+        \right]
+\end{equation*}
+
+
+Naturally, to describe a dataset as a design matrix, it must be possible to
+describe each example as a vector and each of these vectors must be the same
+size. This is not always possible, For example, if a collection of photographs
+has different widths and heights, then different photographs will contain
+different number of pixels, so not all the photographs may be described with
+the same length of vectors. In cases like these, rather than describing the
+dataset as a matrix with $m$ rows, it is described as a set containing $m$
+elements: $\{ \boldsymbol{x}^{(1)}, \boldsymbol{x}^{(2)}, \dots,
+\boldsymbol{x}^{(m)} \}$.
+This notation does not imply that any two example vectors
+$\boldsymbol{x}^{(i)}$ and $\boldsymbol{x}^{(j)}$ have the same size.
+
+
+In the case of supervised learning, the example contains a label or target as
+well as a collection of features. For example, if we want to use a learning
+algorithm to perform object recognition from photographs, we need to specify
+each object appears in each of the photos. This might be done with a numeric
+code, with 0 signifying an airplane, 3 signifying a cat and so forth
+(Figure~\ref{fig:cifar10}). Often when working with a dataset containing a
+design matrix of feature observations $\boldsymbol{X}$, we also provide a
+vector of labels $\boldsymbol{y}$, with $y_i$ providing the label for
+example $i$. Obviously, sometimes the label may be more than just a single
+number. For example, if we want to train a speech recognition system to
+transcribe entire sentences, then the label for each example sentence is a
+sequence of words (Figure~\ref{fig:end2end_speech}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{End-to-end-speech-recognition}
+    \caption{Labels for a Speech Recognition model \cite{end2end_intel_ai}.}
+    \label{fig:end2end_speech}
+\end{figure}
+
+
+Just as there is no formal definition of supervised and unsupervised learning,
+there is no rigid taxonomy of datasets or experiences. The structures most
+described here cover most cases, but it is always possible to design new ones
+for new applications.
+
+\subsection{Capacity, Overfitting and Underfitting}
+The central challenge in machine learning is that our algorithm must perform
+well on \emph{new, previously unseen} inputs --- not just those on which our
+model was trained. The ability to perform well on previously unobserved inputs
+is called \textbf{generalisation}. Typically, when training a machine learning
+model, a training set is definitely accessible; some error measure on the
+training set is computed, called the \textbf{training error} and this training
+error is reduced. So far, what have been described is simply an optimisation
+problem. What separates machine learning from optimisation is that we want the
+\textbf{generalisation error}, also called the \textbf{test error}, to be low
+as well. The generalisation error is defined as the expected value of the error
+on a new input. Here the expectation is taken across different possible inputs,
+drawn from the distribution of inputs we expect the system to encounter in
+practice.
+
+
+In most cases, the generalisation error of a machine learning model is
+estimated by measuring its performance on a \textbf{test set} of examples
+that were collected separately from the training set. In a trivial linear
+regression example, the model is trained by minimising the training error,
+% \myequations{Training error}
+\begin{equation*}
+    \frac{1}{m^{(train)}}{\lVert\boldsymbol{X}^{(train)}\boldsymbol{w} -
+    \boldsymbol{y}^{(train)}}\rVert_2^2,
+\end{equation*}
+but we actually care about the test error,
+% \myequations{Test error}
+\begin{equation*}
+    \frac{1}{m^{(test)}}{\lVert\boldsymbol{X}^{(test)}\boldsymbol{w} -
+    \boldsymbol{y}^{(test)}}\rVert_2^2.
+\end{equation*}
+
+How can performance be affected on the test set when only the training set can
+be observed? The field of \textbf{statistical learning theory} provides some
+answers. If the training set and the test set are collected arbitrarily, there
+is indeed little we can do. If we are allowed to make some assumptions about
+how the training set and test set are collected, then some progress can be
+made. The training and test data are generated by a probability distribution
+over datasets called \textbf{data-generating process}. We typically make a set
+of assumptions known collectively as the \textbf{i.i.d. assumptions}. The
+assumptions are that the examples in each dataset are \textbf{independent} from
+each other and that the training set and test set are \textbf{identically
+distributed}, drawn from the same probability distribution as each other. This
+assumption enables us to describe the data-generating process with a
+probability distribution over a single example. The same distribution is then
+used to generate every train example and every test example. That shared
+underlying distribution is called the \textbf{data-generating distribution},
+denoted $p_{data}$. This probabilistic framework and the i.i.d. assumptions
+enables us to mathematically study the relationship between training error and
+test error. One immediate connection can be observed between training error and
+test error is that the expected training error of a randomly selected model is
+equal to the expected test error of that model. Suppose given a probability
+distribution $p(\boldsymbol{x}, y)$ and it is repeatedly sampled from to
+generate the training set and the test set. For some fixed value
+$\boldsymbol{w}$, the expected training set error is exactly the same as the
+expected test set error, because both expectation are formed using the same
+dataset sampling process. The only difference between the two conditions is the
+name we assign to the sampled dataset.
+
+
+Obviously, when applying a machine learning algorithm, the parameters are not
+fixed ahead of time, then sample both datasets. We sample the training set,
+then use it to choose the parameters to reduce training set error, then sample
+the test set. Under this process, the expected test error is greater than or
+equal to the expected value of training error. The factors determining how well
+a machine learning algorithm will perform are its ability to
+\begin{enumerate}
+    \item Make the training error small.
+    \item Make the gap between training and test error small.
+\end{enumerate}
+
+
+These two factors correspond to the two central challenges in machine learning:
+\textbf{underfitting} and \textbf{overfitting}. Underfitting occurs when the
+model is not able to obtain a sufficiently low error value on the training set.
+Overfitting occurs when the gap between the gap between the training error and
+the test error is too large. Whether a model is more likely to overfit or
+underfit by altering its capacity. Informally, a model's capacity is its
+ability to fit a wide variety of functions. Models with low capacity may
+struggle to fit the training set. Models with high capacity can overfit by
+memorising properties of the training set that do not serve them well on the
+test set.
+
+
+One way to control the capacity of a learning algorithm is by choosing its
+\textbf{hypothesis space}, the set of functions that the learning algorithm is
+allowed to select as being the solution. For instance, the linear regression
+algorithm has the set of all linear functions of its input as its hypothesis
+space. We can generalise linear regression to include polynomials, rather than
+just linear functions, in its hypothesis space. Doing so increases the model's
+capacity.
+
+\subsection{Hyperparameters and Validation Sets}
+Most machine learning algorithms have hyperparameters, settings that we can use
+to control the algorithm's behaviour. The values of hyperparameters are not
+adapted by the algorithm itself (though a nested learning procedure can be
+designed in which one learning algorithm learns the best hyperparameters for
+another learning algorithm). Sometimes, a setting is chosen to be a
+hyperparameter that the learning algorithm does not learn because the setting
+is difficult to optimise. More frequently, the setting must be a hyperparameter
+it is not appropriate to learn that hyperparameter on the training set. This
+applies to all hyperparameters that control model capacity. If learnt on the
+training set, such hyperparameters would always choose the maximum possible
+model capacity, resulting in overfiting. Training and test error behave
+differently (Figure~\ref{fig:capacity}). At the left end of the graph, training
+error and generalization error are both high. This is the
+\textbf{underfitting regime}. As capacity is increased, training error
+decreases, but the gap between training and generalization error increases.
+Eventually, the size of this gap outweighs the decrease in training error,
+and we enter the \textbf{overfitting regime}, where capacity is too large,
+above the \textbf{optimal capacity}. For example, the training set can always
+be fit better with a higher degree polynomial and a weight decay of $\lambda =
+0$ than we could with a lower degree polynomial and a positive weight decay
+setting.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{capacity}
+    \caption{Typical relationship between capacity and error.}
+    \label{fig:capacity}
+\end{figure}
+
+
+To solve this problem, we need a \textbf{validation set} of examples that the
+training algorithm does not observe. It is important that the test examples are
+not used in any way to make choices about the model, including its
+hyperparameters. For this reason, no example from the test set can be used in
+validation set. Therefore, the validation set is always constructed from the
+\emph{training} data. Specially, the training data is split into two disjoint
+subsets. One of these subsets is used to learn the parameters. The other is our
+validation set, used to estimate the generalisation error during or after
+training, allowing for the hyperparameters to by updated accordingly. The
+subset of data used to learn the parameters is typically called the training
+set, even though this may be confused with the larger pool of data used for the
+entire training process. The subset of data used to guide the selection if
+hyperparameters is called the validation set. Typically, one uses about 80 per
+cent of the training data for training and 20 per cent for validation. Since
+the validation is used to ``train'' the hyperparameters, the validation set error
+will underestimate the generalisation error, though typically by a smaller
+amount than the training error does. After all hyperparameters optimisation is
+complete, the generalisation error may be estimated using the test set.
+
+
+In practice, when the same test set has been used repeatedly to evaluate
+performance of different algorithms over many years and especially if all the
+attempts from the scientific community at beating the state-of-the-art
+performance on that test set are considered like the well-known MNIST
+dataset (Figure~\ref{fig:mnist_imagenet}a) \cite{mnist_dataset}, we end up
+having optimistic evaluations with the test set as well. Benchmarks can thus
+become stale and then do not reflect the true field performance of a trained
+system. Thankfully, the community tends to move on to new (and usually more
+ambitious and larger) benchmark datasets. For instance the ImageNet dataset
+(Figure~\ref{fig:mnist_imagenet}b) \cite{imagenet_cvpr09}.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{mnist}
+        \caption{MNIST dataset.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \includegraphics[width=\linewidth]{imagenet}
+        \caption{ImageNet dataset.}
+    \end{subfigure}
+    \caption{Benchmarks for image classification.}
+    \label{fig:mnist_imagenet}
+\end{figure}

@@ -1,0 +1,139 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {vietnamese}{}
+\babel@toc {english}{}
+\babel@toc {vietnamese}{}
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Death Valley as seen from the Space Shuttle's synthetic aperture radar instrument \cite {deathvalley}.\relax }}{10}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Overview of the \gls {remote-sensing} process.\relax }}{10}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Expanded view of the process outlined in Figure~\ref {fig:overview}.\relax }}{11}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Aerial photograph of Westerheversand Lighthouse.\relax }}{12}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Three Arch Bay Photo Taken by pilot D Ramey Logan with Mike Jarvis.\relax }}{13}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Football image (left) and segmentation into regions. Each region is a set of connected pixels that are similar in colour \cite {book:28867}. \relax }}{14}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Blocks image (left) and extracted set of straight line segments (right). The line segments were extracted by the ORT (Object Recognition Toolkit) package \cite {book:28867}.\relax }}{14}{figure.caption.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Face extraction examples: (left) input image, (middle) labelled image, (right) boundaries of the extracted face region. (Images from V. Bakic \cite {book:28867}.) \relax }}{15}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Semantic segmentation of four classes by assigning every picture element that belongs to which class \cite {matlab_segmentation}. \relax }}{16}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Image segmentation during an autonomous car driving.\relax }}{16}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Image segmentation for medical imaging.\relax }}{17}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Example patches of the semantic object classification contest with (a) \gls {top}, (b) \acrshort {dsm_acr}, and (c) ground truth from Vaihingen dataset \cite {vaihingen_isprs}.\relax }}{18}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Ground truth used for the assessment: \emph {``full\_reference''} (left), \emph {``no\_boundary''} (right). Black areas in the right hand reference will be ignored \cite {isprs_semantic}. \relax }}{20}{figure.caption.29}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces CIFAR-10 dataset \cite {Krizhevsky2009LearningML} with 10 classes correspond with 10 numeric codes from 0 to 9 \cite {cifar10_thumbnails}. \relax }}{22}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Outline of the \emph {DeepFace} architecture \cite {6909616}. \relax }}{23}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A simple example of house price prediction using linear regression.\relax }}{23}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Unsupervised K-Means clustering.\relax }}{25}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Labels for a Speech Recognition model \cite {end2end_intel_ai}.\relax }}{27}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Typical relationship between capacity and error.\relax }}{30}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Benchmarks for image classification.\relax }}{31}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces An illustration of computational graph for a very simple mathematical expression.\relax }}{32}{figure.caption.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces A two hidden layer \acrshort {mlp}.\relax }}{33}{figure.caption.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Neuron models in neuroscience and computer science.\relax }}{33}{figure.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Convexity of different functions in 3-dimensional space.\relax }}{34}{figure.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Regular neural network versus \acrlong {cnn}.\relax }}{36}{figure.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces An example \acrshort {cnn} architecture.\relax }}{38}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces An example input volume in red (e.g. a $[32\times 32\times 3]$ CIFAR-10 image), and an example volume of neurons in the first convolutional layer.\relax }}{39}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Example filters learned by Krizhevsky et al \cite {Krizhevsky:2017:ICD:3098997.3065386}. Each of the 96 filters shown here is of size $[11\times 11\times 3]$, and each one is shared by the $55\times 55$ neurons in one depth slice. \relax }}{40}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Convolution demo.\relax }}{41}{figure.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Pooling and max pooling.\relax }}{42}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Batch Normalising Transform, applied to activation $x$ over a mini-batch. \relax }}{43}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.19}{\ignorespaces LeNet-5 architecture.\relax }}{45}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.20}{\ignorespaces AlexNet architecture.\relax }}{46}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Macro-architecture of VGG16.\relax }}{46}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Residual Network architectures.\relax }}{47}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Results of winners in the \acrfull {ilsvrc} from 2010 to 2015.\relax }}{47}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Learning representations of an input image.\relax }}{48}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualisation of features in a fully trained model.\relax }}{49}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Transforming fully connected layers into convolution layers enables a classification net to output a heatmap.\relax }}{50}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Residual learning: a building block.\relax }}{52}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Two consecutive atomic blocks.\relax }}{52}{figure.caption.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Two types of skip connections used in ResNet.\relax }}{53}{figure.caption.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces In-network upsampling: ``Unpooling''.\relax }}{54}{figure.caption.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces In-network upsampling: ``Max-unpooling''.\relax }}{54}{figure.caption.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces $3 \times 3$ transpose convolution, stride 2, pad 1.\relax }}{55}{figure.caption.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Skip layer refinement.\relax }}{55}{figure.caption.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Skip layers.\relax }}{56}{figure.caption.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces \acrshort {fcn}-8s using VGG19 foundation.\relax }}{57}{figure.caption.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.13}{\ignorespaces \acrshort {fcn}-8s and \acrshort {fcn}-4s using ResNet101 foundation.\relax }}{58}{figure.caption.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Dropout in a \acrshort {fc} layer.\relax }}{59}{figure.caption.83}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Outlines of all patches given in Table~\ref {tab:vaihingen_2d_table} overlaid with the \acrshort {top_acr} mosaic.\relax }}{63}{figure.caption.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Outlines of all patches given in Table~\ref {tab:potsdam_2d_table} overlaid with the \acrshort {top_acr} mosaic.\relax }}{65}{figure.caption.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example patches of the semantic object classification contest with (a) \gls {top}, (b) \acrshort {dsm_acr}, and (c) ground truth from Potsdam dataset \cite {potsdam_isprs}.\relax }}{66}{figure.caption.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Random crop and image flipping augmentation for Vaihingen dataset.\relax }}{69}{figure.caption.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Accuracies in 25 epochs for \acrshort {fcn}-8s-VGG19-5c and other models.\relax }}{71}{figure.caption.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \acrshort {fcn}-8s-ResNet101-5c-v3.0 performs slightly better than \acrshort {fcn}-8s-VGG19-5c since the 10th epoch.\relax }}{72}{figure.caption.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Promising results from \acrshort {fcn}-8s-ResNet101-5c-v3.1 compared to \acrshort {fcn}-8s-ResNet101-5c-v3.0 and totally better results from \acrshort {fcn}-8s-ResNet101-5c-v3.2.\relax }}{72}{figure.caption.95}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Obvious better validation accuracies of \acrshort {fcn}-4s-ResNet101-5c-v3.3 than \acrshort {fcn}-8s-ResNet101-5c-v3.0 but vaguely the same as \acrshort {fcn}-8s-ResNet101-5c-v3.2.\relax }}{73}{figure.caption.96}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Training loss and Validation loss values on Potsdam dataset.\relax }}{73}{figure.caption.97}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Accuracies on Potsdam dataset.\relax }}{74}{figure.caption.98}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Demonstration for \acrshort {fcn}-8s-ResNet101-5c-v3.2.\relax }}{78}{figure.caption.99}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Demonstration for \acrshort {fcn}-4s-ResNet101-5c-v3.3.\relax }}{78}{figure.caption.100}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Demonstration for \acrshort {fcn}-4s-ResNet101-6c-v3.3.\relax }}{79}{figure.caption.101}

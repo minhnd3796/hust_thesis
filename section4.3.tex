@@ -1,0 +1,216 @@
+\section{Experimental Results}
+Before choosing the best models and hyperparameters to train with two full
+datasets in order to submit to \acrshort{isprs}, experimental models were built
+with many different possible options. Practically, all proposed models performed
+very well on the training set but differently poor on the validation set due to
+overfitting. More seriously, we care about the accuracies when inferring large
+patches but not cropped images, so there were much difference between epochs
+due the the unknown capacity of the model. Furthermore, the validation
+accuracies were not steadly increasing but wildly varying along training time.
+So we need to monitor the this metric every epoch to decide the best models.
+
+\subsection{The superiority of \acrshort{fcn}8s-VGG19-5c and 5-channel data for
+Vaihingen}
+Pictorially, \acrshort{fcn}8s-VGG19-5c performed far much better than any
+other models (Figure~\ref{fig:vgg_5c_vs_all}) except for \acrshort{fcn} using
+ResNet101 with 5-channel data from version 3
+(Figure~\ref{fig:vgg_5c_vs_resnet_5c_v3}).
+
+
+Since \acrshort{fcn}8s-ResNet101 v3,
+all \acrshort{bn} layers weights (scale, offset) were fine-tuned with
+\acrfull{ema} using default decay coefficient 0.9 and $\epsilon = 10^{-5}$.
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-VGG19-3c}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v1}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v1}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v20}
+    \end{subfigure}
+\end{figure}
+\begin{figure}[h!]\ContinuedFloat
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v20}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v21}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v21}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v22}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v22}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v30}
+    \end{subfigure}
+    \caption{Accuracies in 25 epochs for \acrshort{fcn}-8s-VGG19-5c and other
+    models.}
+    \label{fig:vgg_5c_vs_all}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]
+    {plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v30}
+    \caption{\acrshort{fcn}-8s-ResNet101-5c-v3.0 performs slightly better than
+    \acrshort{fcn}-8s-VGG19-5c since the 10th epoch.}
+    \label{fig:vgg_5c_vs_resnet_5c_v3}
+\end{figure}
+
+\subsection{Potential improvements of \acrshort{fcn}-8s-ResNet101-5c-v3.0 and
+the two best model configurations}
+From that, I decided to curb overfitting even more for
+\acrshort{fcn}-8s-ResNet101-5c-v3.0 by applying dropout with different rate
+(25\% for v3.1 and 50\% for v3.2) at the last \acrshort{conv}
+(\texttt{res5c\_relu}) layer. Subsequently, v3.1 model produced promisingly
+better results. More importantly, v3.2 has totally beaten v3.0 model in terms
+of validation accuracies
+(Figure~\ref{fig:resnet_5c_v3.1_v3.2_vs_v3.0}).
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-ResNet101-5c-v30}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-ResNet101-5c-v30}
+    \end{subfigure}
+    \caption{Promising results from \acrshort{fcn}-8s-ResNet101-5c-v3.1 compared to
+    \acrshort{fcn}-8s-ResNet101-5c-v3.0 and totally better results from
+    \acrshort{fcn}-8s-ResNet101-5c-v3.2.}
+    \label{fig:resnet_5c_v3.1_v3.2_vs_v3.0}
+\end{figure}
+
+I also experimented building \acrshort{fcn}-4s-ResNet101-5c-v3.3 model, which
+is the v3.3 of the series but with \acrshort{fcn}-4s. This model also performed
+obviously better than \acrshort{fcn}-8s-ResNet101-5c-v3.0 but not worse than
+\acrshort{fcn}-8s-ResNet101-5c-v3.2.
+(Figure~\ref{fig:resnet_5c_v3.3_vs_v3.2_vs_v3.0}).
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v30}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]
+        {plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v32}
+    \end{subfigure}
+    \caption{Obvious better validation accuracies of
+    \acrshort{fcn}-4s-ResNet101-5c-v3.3 than
+    \acrshort{fcn}-8s-ResNet101-5c-v3.0 but vaguely the same as
+    \acrshort{fcn}-8s-ResNet101-5c-v3.2.}
+    \label{fig:resnet_5c_v3.3_vs_v3.2_vs_v3.0}
+\end{figure}
+
+
+With those statistics, I chose the two best model configurations which are
+\acrshort{fcn}-8s-ResNet101-5c-v3.2 and \acrshort{fcn}-4s-ResNet101-5c-v3.3
+to apply ensemble learning on training with Vaihingen dataset.
+5 lastest models were used to ensemble \acrshort{fcn}-8s-ResNet101-5c-v3.2
+and 15 lastest models were used to ensemble \acrshort{fcn}-4s-ResNet101-5c-v3.3.
+Both of them gave far much better validation results than Duy et at
+\cite{duytv-2017} on the same training : validation split on Vaihingen dataset.
+(Table~\ref{tab:minhnd_vs_duytv_vaihingen}).
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c | }
+        \hline
+        Models & Validation accuracies \\
+        \hline
+        \acrshort{fcn}-8s Ensemble & 87.73\% \\
+        \acrshort{fcn}-8s-ResNet101-5c-v3.2 Ensemble & \textbf{88.096\%} \\
+        \acrshort{fcn}-4s-ResNet101-5c-v3.3 Ensemble & \textbf{88.28\%} \\
+        \hline
+    \end{tabular}
+    \caption{Ensemble learning validation results on Vaihingen.}
+    \label{tab:minhnd_vs_duytv_vaihingen}
+\end{table}
+
+\subsection{\acrshort{fcn}-4s-ResNet101-5c-v3.3 model on Potsdam validation}
+\acrshort{fcn}-4s-ResNet101-5c-v3.3 was fully adopted to train with Potsdam
+dataset. No changes were made except for some additional filters
+(using 6-channel). The model fit the training very well but quickly fell into
+overfitting regime (Figure~\ref{fig:potsdam_iter_losses}).
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{plots/potsdam_iter_losses}
+    \caption{Training loss and Validation loss values on Potsdam dataset.}
+    \label{fig:potsdam_iter_losses}
+\end{figure}
+
+Overfitting has been clearly shown in the quite significant gap between
+training accuracy and validation accuracy
+(Figure~\ref{fig:potsdam_accs}).
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{plots/potsdam_iter_acc}
+        \caption{Accuracies over iterations on Potsdam.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{plots/potsdam_epoch_acc}
+        \caption{Accuracies over epochs on Potsdam.}
+    \end{subfigure}
+    \caption{Accuracies on Potsdam dataset.}
+    \label{fig:potsdam_accs}
+\end{figure}
+
+
+Despite the fact that the model has been trapped into slight overfitting, it
+still performed better than Duy et at \cite{duytv-2017} on the same training :
+validation split on Potsdam dataset.
+(Table~\ref{tab:minhnd_vs_duytv_postdam}). \acrshort{fcn}-4s-ResNet101-6c-v3.3
+results were also ensembled from 15 latest models which each model was saved
+after every one epoch.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | c | c | }
+        \hline
+        Models & Validation accuracies \\
+        \hline
+        \acrshort{fcn}-8s Ensemble & 87.935\% \\
+        \acrshort{fcn}-4s-ResNet101-6c-v3.3 Ensemble & \textbf{88.875\%} \\
+        \hline
+    \end{tabular}
+    \caption{Ensemble learning validation results on Potsdam.}
+    \label{tab:minhnd_vs_duytv_postdam}
+\end{table}
