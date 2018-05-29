@@ -1,26 +1,25 @@
-[0] Config.pm:302> INFO - This is Biber 2.9
-[0] Config.pm:305> INFO - Logfile is 'main.blg'
-[272] biber:313> INFO - === Mon May 28, 2018, 10:20:55
-[370] Biber.pm:371> INFO - Reading 'main.bcf'
-[430] Biber.pm:857> INFO - Found 61 citekeys in bib section 0
-[641] Biber.pm:3981> INFO - Processing section 0
-[931] Biber.pm:4154> INFO - Looking for bibtex format file '../bibliography.bib' for section 0
-[935] bibtex.pm:1468> INFO - LaTeX decoding ...
-[1002] bibtex.pm:1294> INFO - Found BibTeX data source '../bibliography.bib'
-[1303] Utils.pm:169> WARN - ISBN '160918176X, 9781609181765' in entry 'book:731838' is invalid - run biber with '--validate_datamodel' for details.
-[1323] Utils.pm:169> WARN - ISBN '0470879386, 9780470879382' in entry 'book:834597' is invalid - run biber with '--validate_datamodel' for details.
-[1327] Utils.pm:169> WARN - ISBN '9780130307965, 0130307963' in entry 'book:28867' is invalid - run biber with '--validate_datamodel' for details.
-[1387] Utils.pm:169> WARN - ISBN '978-0071154673, 0071154671' in entry 'mitchell1997machine' is invalid - run biber with '--validate_datamodel' for details.
-[1409] Utils.pm:169> WARN - month field 'March' in entry '5453203' is not an integer - this will probably not sort properly.
-[1416] Utils.pm:169> WARN - month field 'May' in entry 'Krizhevsky:2017:ICD:3098997.3065386' is not an integer - this will probably not sort properly.
-[1430] Utils.pm:169> WARN - month field 'June' in entry '6909616' is not an integer - this will probably not sort properly.
-[1449] Utils.pm:169> WARN - ISBN '978-0262193986, 0262193981' in entry 'sutton1998reinforcement' is invalid - run biber with '--validate_datamodel' for details.
-[1453] Utils.pm:169> WARN - ISBN '978-1886529106, 1886529108' in entry 'bertsekas1996neuro-dynamic' is invalid - run biber with '--validate_datamodel' for details.
-[1806] Utils.pm:169> WARN - month field 'June' in entry 'Long_2015_CVPR' is not an integer - this will probably not sort properly.
-[1849] Utils.pm:169> WARN - month field 'December' in entry 'duytv-2017' is not an integer - this will probably not sort properly.
-[1891] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1891] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1891] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'vi-VN'
-[2204] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[2233] bbl.pm:720> INFO - Output to main.bbl
-[2234] Biber.pm:110> INFO - WARNINGS: 11
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'main.blg'
+[34] biber:287> INFO - === Tue May 29, 2018, 11:36:34
+[120] Biber.pm:348> INFO - Reading 'main.bcf'
+[248] Biber.pm:742> INFO - Found 61 citekeys in bib section 0
+[254] Biber.pm:3151> INFO - Processing section 0
+[280] Biber.pm:3308> INFO - Looking for bibtex format file '../bibliography.bib' for section 0
+[387] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[476] bibtex.pm:974> INFO - Found BibTeX data source '../bibliography.bib'
+[498] Utils.pm:147> WARN - ISBN '160918176X, 9781609181765' in entry 'book:731838' is invalid - run biber with '--validate_datamodel' for details.
+[532] Utils.pm:147> WARN - ISBN '0470879386, 9780470879382' in entry 'book:834597' is invalid - run biber with '--validate_datamodel' for details.
+[589] Utils.pm:147> WARN - ISBN '9780130307965, 0130307963' in entry 'book:28867' is invalid - run biber with '--validate_datamodel' for details.
+[679] Utils.pm:147> WARN - ISBN '978-0071154673, 0071154671' in entry 'mitchell1997machine' is invalid - run biber with '--validate_datamodel' for details.
+[748] Utils.pm:147> WARN - ISBN '978-0262193986, 0262193981' in entry 'sutton1998reinforcement' is invalid - run biber with '--validate_datamodel' for details.
+[755] Utils.pm:147> WARN - ISBN '978-1886529106, 1886529108' in entry 'bertsekas1996neuro-dynamic' is invalid - run biber with '--validate_datamodel' for details.
+[977] Utils.pm:147> WARN - The field 'number' in entry '5453203' cannot be null, deleting it
+[977] Utils.pm:147> WARN - The field 'volume' in entry '5453203' cannot be null, deleting it
+[977] Utils.pm:147> WARN - The field 'number' in entry '6909616' cannot be null, deleting it
+[977] Utils.pm:147> WARN - The field 'volume' in entry '6909616' cannot be null, deleting it
+[1293] UCollate.pm:65> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1293] UCollate.pm:65> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1293] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'vi-VN'
+[1334] bbl.pm:519> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1517] bbl.pm:615> INFO - Output to main.bbl
+[1517] Biber.pm:109> INFO - WARNINGS: 10

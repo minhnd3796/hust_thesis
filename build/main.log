@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.4.28)  28 MAY 2018 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.3)  29 MAY 2018 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -32,10 +32,11 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -60,14 +61,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -279,17 +280,11 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -301,14 +296,12 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -349,7 +342,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -373,21 +366,15 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/02/14 3.18 The Babel package
+Package: babel 2016/02/24 3.9q The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
-)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/02/14 3.18 Babel common definitions
+File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count91
 \U@D=\dimen111
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count92
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -568,7 +555,7 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
 Package babel Info: Making " an active character on input line 147.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2017/11/14 v4.35 (NLCT)
+Package: glossaries 2016/01/24 v4.21 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -581,15 +568,15 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks18
 \XKV@tempa@toks=\toks19
 )
-\XKV@depth=\count93
+\XKV@depth=\count92
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
-Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+Package: mfirstuc 2015/12/17 v2.02 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count94
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count93
 )
 \@glsmfirst=\toks20
 \@glsmrest=\toks21
@@ -601,10 +588,10 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2017/11/12 v2.29 (NLCT)
+Package: datatool-base 2016/01/18 v2.25 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -621,32 +608,32 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen113
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count96
-\leftroot@=\count97
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count98
-\DOTSCASE@=\count99
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen114
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
 \tag@help=\toks23
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
 \andhelp@=\toks24
 \eqnshift@=\dimen115
 \alignsep@=\dimen116
@@ -658,15 +645,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks26
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count107
+\c@su@anzahl=\count106
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
-Package: datatool-fp 2017/11/12 v2.29 (NLCT)
+Package: datatool-fp 2016/01/18 v2.25 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
@@ -674,19 +661,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count108
+\actioncount=\count107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count109
-\FP@xia=\count110
-\FP@xib=\count111
-\FP@xfa=\count112
-\FP@xfb=\count113
-\FP@rega=\count114
-\FP@regb=\count115
-\FP@regs=\count116
-\FP@times=\count117
+\FP@xs=\count108
+\FP@xia=\count109
+\FP@xib=\count110
+\FP@xfa=\count111
+\FP@xfb=\count112
+\FP@rega=\count113
+\FP@regb=\count114
+\FP@regs=\count115
+\FP@times=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -705,7 +692,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count118
+\FPseed=\count117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -717,25 +704,27 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks27
-\@dtl@tmpcount=\count119
+\@dtl@tmpcount=\count118
 \dtl@tmplength=\skip46
-\dtl@sortresult=\count120
-\@dtl@numgrpsepcount=\count121
-\@dtl@datatype=\count122
-\dtl@codeA=\count123
-\dtl@codeB=\count124
-\@dtl@foreach@level=\count125
+\dtl@sortresult=\count119
+\@dtl@numgrpsepcount=\count120
+\@dtl@datatype=\count121
+\dtl@codeA=\count122
+\dtl@codeB=\count123
+\@dtl@foreach@level=\count124
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
 307.sty
-Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
+Package: glossaries-compatible-307 2016/01/24 v4.21 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2018/02/21 v1.3.5 (NLCT) Track Languages
+Package: tracklang 2015/03/23 v1.2 (NLCT) Track Languages
 
 (/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
-)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex))
 
 Package glossaries Warning: No language module detected for `vietnamese'.
 (glossaries)                Language modules need to be installed separately.
@@ -747,7 +736,7 @@ Package glossaries Warning: No language module detected for `vietnamese'.
 ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count126
+\gls@level=\count125
 \@gls@tmpb=\toks28
 \gls@tmplen=\skip47
 \glskeylisttok=\toks29
@@ -757,12 +746,12 @@ File: glossaries-english.ldf 2014/11/23 v1.0
 
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
 y
-Package: glossary-hypernav 2017/11/14 v4.35 (NLCT)
+Package: glossary-hypernav 2016/01/24 v4.21 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2017/11/14 v4.35 (NLCT)
+Package: glossary-list 2016/01/24 v4.21 (NLCT)
 \glslistdottedwidth=\skip48
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2017/11/14 v4.35 (NLCT)
+Package: glossary-long 2016/01/24 v4.21 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
@@ -770,27 +759,27 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip50
 \LTpre=\skip51
 \LTpost=\skip52
-\LTchunksize=\count127
+\LTchunksize=\count126
 \LTcapwidth=\dimen121
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count128
-\LT@rows=\count129
-\c@LT@tables=\count130
-\c@LT@chunks=\count131
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
 \LT@p@ftn=\toks33
 )
 \glsdescwidth=\skip53
 \glspagelistwidth=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2017/11/14 v4.35 (NLCT)
+Package: glossary-super 2016/01/24 v4.21 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count132
+\c@tracingst=\count131
 \ST@wd=\dimen122
 \ST@rightskip=\skip55
 \ST@leftskip=\skip56
@@ -808,7 +797,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@pbox=\box32
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2017/11/14 v4.35 (NLCT)
+Package: glossary-tree 2016/01/24 v4.21 (NLCT)
 \glstreeindent=\skip58
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
@@ -838,7 +827,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen134
 \captionmargin@=\dimen135
@@ -848,7 +837,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen139
 \caption@hangindent=\dimen140
 )
-\c@ContinuedFloat=\count133
+\c@ContinuedFloat=\count132
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -857,35 +846,43 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: supertabular package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count134
-\c@subtable=\count135
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count133
+\c@subtable=\count134
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count135
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
@@ -893,7 +890,7 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen143
 \extrarowheight=\dimen144
 \NC@list=\toks38
@@ -904,18 +901,18 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \minrowclearance=\skip61
 )
 \rownum=\count136
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count137
 \mult@box=\box35
 \multicol@leftmargin=\dimen145
@@ -979,62 +976,62 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@width=\dimen154
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen155
 \Hy@linkcounter=\count146
 \Hy@pagecounter=\count147
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -1043,46 +1040,47 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
+Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count149
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5115.
+LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen156
 \Fld@menulength=\count150
 \Field@Width=\dimen157
 \Fld@charsize=\dimen158
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
 \Hy@abspage=\count151
 \c@Item=\count152
 \c@Hfootnote=\count153
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+
+Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count154
 \c@bookmark@seq@number=\count155
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
@@ -1091,7 +1089,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.sty
+Package: biblatex_ 2016/03/03 v3.3 programmable bibliographies (biber) (PK/JW/A
+B)
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
@@ -1100,52 +1102,44 @@ Package: logreq 2010/08/04 v1.0 xml request logger
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write4
-\integerpart=\count157
-\decimalpart=\count158
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-\c@tabx@nest=\count159
-\c@listtotal=\count160
-\c@listcount=\count161
-\c@liststart=\count162
-\c@liststop=\count163
-\c@citecount=\count164
-\c@citetotal=\count165
-\c@multicitecount=\count166
-\c@multicitetotal=\count167
-\c@instcount=\count168
-\c@maxnames=\count169
-\c@minnames=\count170
-\c@maxitems=\count171
-\c@minitems=\count172
-\c@citecounter=\count173
-\c@savedcitecounter=\count174
-\c@uniquelist=\count175
-\c@uniquename=\count176
-\c@refsection=\count177
-\c@refsegment=\count178
-\c@maxextratitle=\count179
-\c@maxextratitleyear=\count180
-\c@maxextradate=\count181
-\c@maxextraalpha=\count182
-\c@abbrvpenalty=\count183
-\c@highnamepenalty=\count184
-\c@lownamepenalty=\count185
-\c@maxparens=\count186
-\c@parenlevel=\count187
-\blx@tempcnta=\count188
-\blx@tempcntb=\count189
-\blx@tempcntc=\count190
-\blx@maxsection=\count191
-\blx@maxsegment@0=\count192
-\blx@notetype=\count193
-\blx@parenlevel@text=\count194
-\blx@parenlevel@foot=\count195
-\blx@sectionciteorder@0=\count196
+\c@tabx@nest=\count157
+\c@listtotal=\count158
+\c@listcount=\count159
+\c@liststart=\count160
+\c@liststop=\count161
+\c@citecount=\count162
+\c@citetotal=\count163
+\c@multicitecount=\count164
+\c@multicitetotal=\count165
+\c@instcount=\count166
+\c@maxnames=\count167
+\c@minnames=\count168
+\c@maxitems=\count169
+\c@minitems=\count170
+\c@citecounter=\count171
+\c@savedcitecounter=\count172
+\c@uniquelist=\count173
+\c@uniquename=\count174
+\c@refsection=\count175
+\c@refsegment=\count176
+\c@maxextratitle=\count177
+\c@maxextratitleyear=\count178
+\c@maxextrayear=\count179
+\c@maxextraalpha=\count180
+\c@abbrvpenalty=\count181
+\c@highnamepenalty=\count182
+\c@lownamepenalty=\count183
+\c@maxparens=\count184
+\c@parenlevel=\count185
+\blx@tempcnta=\count186
+\blx@tempcntb=\count187
+\blx@tempcntc=\count188
+\blx@maxsection=\count189
+\blx@maxsegment@0=\count190
+\blx@notetype=\count191
+\blx@parenlevel@text=\count192
+\blx@parenlevel@foot=\count193
+\blx@sectionciteorder@0=\count194
 \labelnumberwidth=\skip65
 \labelalphawidth=\skip66
 \biblabelsep=\skip67
@@ -1155,84 +1149,82 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibparsep=\skip71
 \bibhang=\skip72
 \blx@bcfin=\read2
-\blx@bcfout=\write5
-\c@mincomprange=\count197
-\c@maxcomprange=\count198
-\c@mincompwidth=\count199
+\blx@bcfout=\write4
+\c@mincomprange=\count195
+\c@maxcomprange=\count196
+\c@mincompwidth=\count197
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count266
-\c@savedafterword=\count267
-\c@annotator=\count268
-\c@savedannotator=\count269
-\c@author=\count270
-\c@savedauthor=\count271
-\c@bookauthor=\count272
-\c@savedbookauthor=\count273
-\c@commentator=\count274
-\c@savedcommentator=\count275
-\c@editor=\count276
-\c@savededitor=\count277
-\c@editora=\count278
-\c@savededitora=\count279
-\c@editorb=\count280
-\c@savededitorb=\count281
-\c@editorc=\count282
-\c@savededitorc=\count283
-\c@foreword=\count284
-\c@savedforeword=\count285
-\c@holder=\count286
-\c@savedholder=\count287
-\c@introduction=\count288
-\c@savedintroduction=\count289
-\c@namea=\count290
-\c@savednamea=\count291
-\c@nameb=\count292
-\c@savednameb=\count293
-\c@namec=\count294
-\c@savednamec=\count295
-\c@translator=\count296
-\c@savedtranslator=\count297
-\c@shortauthor=\count298
-\c@savedshortauthor=\count299
-\c@shorteditor=\count300
-\c@savedshorteditor=\count301
-\c@labelname=\count302
-\c@savedlabelname=\count303
-\c@institution=\count304
-\c@savedinstitution=\count305
-\c@lista=\count306
-\c@savedlista=\count307
-\c@listb=\count308
-\c@savedlistb=\count309
-\c@listc=\count310
-\c@savedlistc=\count311
-\c@listd=\count312
-\c@savedlistd=\count313
-\c@liste=\count314
-\c@savedliste=\count315
-\c@listf=\count316
-\c@savedlistf=\count317
-\c@location=\count318
-\c@savedlocation=\count319
-\c@organization=\count320
-\c@savedorganization=\count321
-\c@origlocation=\count322
-\c@savedoriglocation=\count323
-\c@origpublisher=\count324
-\c@savedorigpublisher=\count325
-\c@publisher=\count326
-\c@savedpublisher=\count327
-\c@language=\count328
-\c@savedlanguage=\count329
-\c@origlanguage=\count330
-\c@savedoriglanguage=\count331
-\c@pageref=\count332
-\c@savedpageref=\count333
+\c@afterword=\count198
+\c@savedafterword=\count199
+\c@annotator=\count266
+\c@savedannotator=\count267
+\c@author=\count268
+\c@savedauthor=\count269
+\c@bookauthor=\count270
+\c@savedbookauthor=\count271
+\c@commentator=\count272
+\c@savedcommentator=\count273
+\c@editor=\count274
+\c@savededitor=\count275
+\c@editora=\count276
+\c@savededitora=\count277
+\c@editorb=\count278
+\c@savededitorb=\count279
+\c@editorc=\count280
+\c@savededitorc=\count281
+\c@foreword=\count282
+\c@savedforeword=\count283
+\c@holder=\count284
+\c@savedholder=\count285
+\c@introduction=\count286
+\c@savedintroduction=\count287
+\c@namea=\count288
+\c@savednamea=\count289
+\c@nameb=\count290
+\c@savednameb=\count291
+\c@namec=\count292
+\c@savednamec=\count293
+\c@translator=\count294
+\c@savedtranslator=\count295
+\c@shortauthor=\count296
+\c@savedshortauthor=\count297
+\c@shorteditor=\count298
+\c@savedshorteditor=\count299
+\c@labelname=\count300
+\c@savedlabelname=\count301
+\c@institution=\count302
+\c@savedinstitution=\count303
+\c@lista=\count304
+\c@savedlista=\count305
+\c@listb=\count306
+\c@savedlistb=\count307
+\c@listc=\count308
+\c@savedlistc=\count309
+\c@listd=\count310
+\c@savedlistd=\count311
+\c@liste=\count312
+\c@savedliste=\count313
+\c@listf=\count314
+\c@savedlistf=\count315
+\c@location=\count316
+\c@savedlocation=\count317
+\c@organization=\count318
+\c@savedorganization=\count319
+\c@origlocation=\count320
+\c@savedoriglocation=\count321
+\c@origpublisher=\count322
+\c@savedorigpublisher=\count323
+\c@publisher=\count324
+\c@savedpublisher=\count325
+\c@language=\count326
+\c@savedlanguage=\count327
+\c@pageref=\count328
+\c@savedpageref=\count329
 \shorthandwidth=\skip73
 \shortjournalwidth=\skip74
 \shortserieswidth=\skip75
@@ -1243,39 +1235,39 @@ Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+File: blx-compat.def 2016/03/03 v3.3 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
+Package biblatex Info: ... file 'biblatex_.def' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count334
-\c@textcitetotal=\count335
-\c@textcitemaxnames=\count336
-\c@biburlnumpenalty=\count337
-\c@biburlucpenalty=\count338
-\c@biburllcpenalty=\count339
-\c@smartand=\count340
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
+File: biblatex_.def 
+\c@textcitecount=\count330
+\c@textcitetotal=\count331
+\c@textcitemaxnames=\count332
+\c@biburlnumpenalty=\count333
+\c@biburlucpenalty=\count334
+\c@biburllcpenalty=\count335
+\c@smartand=\count336
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+File: numeric.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count341
-\c@bbx:relatedtotal=\count342
+File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count337
+\c@bbx:relatedtotal=\count338
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
+File: numeric.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1293,42 +1285,42 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-))
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count343
+\c@float@type=\count339
 \float@exts=\toks40
 \float@box=\box62
 \@float@everytoks=\toks41
 \@floatcapt=\box63
 )
 \@float@every@table=\toks42
-\glswrite=\write6
-\glo@main@file=\write7
-\openout7 = `main.glo'.
+\glswrite=\write5
+\glo@main@file=\write6
+\openout6 = `main.glo'.
 
 Package glossaries Info: Writing glossary file main.glo on input line 44.
-\glo@acronym@file=\write8
-\openout8 = `main.acn'.
+\glo@acronym@file=\write7
+\openout7 = `main.acn'.
 
 Package glossaries Info: Writing glossary file main.acn on input line 44.
  (./acronyms.tex)
 (./glossary.tex) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen159
 \WF@size=\dimen160
-\c@WF@wrappedlines=\count344
+\c@WF@wrappedlines=\count340
 \WF@box=\box64
 \WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@col@width=\dimen161
 \TX@old@table=\dimen162
 \TX@old@col=\dimen163
 \TX@target=\dimen164
 \TX@delta=\dimen165
-\TX@cols=\count345
+\TX@cols=\count341
 \TX@ftn=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
@@ -1337,16 +1329,16 @@ Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box65
-\sift@deathcycles=\count346
+\sift@deathcycles=\count342
 \@vwid@loff=\dimen166
 \@vwid@roff=\dimen167
 )
-\c@taburow=\count347
-\tabu@nbcols=\count348
-\tabu@cnt=\count349
-\tabu@Xcol=\count350
-\tabu@alloc=\count351
-\tabu@nested=\count352
+\c@taburow=\count343
+\tabu@nbcols=\count344
+\tabu@cnt=\count345
+\tabu@Xcol=\count346
+\tabu@alloc=\count347
+\tabu@nested=\count348
 \tabu@target=\dimen168
 \tabu@spreadtarget=\dimen169
 \tabu@naturalX=\dimen170
@@ -1365,152 +1357,110 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@cellskip=\skip79
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip80
-\multirow@cntb=\count353
-\multirow@dima=\skip81
 \bigstrutjot=\dimen177
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2018/02/21 L3 programming layer (loader) 
+Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2018/02/21 L3 programming layer (code)
-\c_max_int=\count354
-\l_tmpa_int=\count355
-\l_tmpb_int=\count356
-\g_tmpa_int=\count357
-\g_tmpb_int=\count358
-\g__intarray_font_int=\count359
-\g__prg_map_int=\count360
-\c_log_iow=\count361
-\l_iow_line_count_int=\count362
-\l__iow_line_target_int=\count363
-\l__iow_one_indent_int=\count364
-\l__iow_indent_int=\count365
+Package: expl3 2016/01/19 v6377 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
+L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/01/05 v6366 L3 Integers
+\c_max_int=\count349
+\l_tmpa_int=\count350
+\l_tmpb_int=\count351
+\g_tmpa_int=\count352
+\g_tmpb_int=\count353
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count354
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2015/09/28 v6113 L3 Messages
+L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+\l_iow_line_count_int=\count355
+\l__iow_target_count_int=\count356
+\l__iow_current_line_int=\count357
+\l__iow_current_word_int=\count358
+\l__iow_current_indentation_int=\count359
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen178
 \c_max_dim=\dimen179
 \l_tmpa_dim=\dimen180
 \l_tmpb_dim=\dimen181
 \g_tmpa_dim=\dimen182
 \g_tmpb_dim=\dimen183
-\c_zero_skip=\skip82
-\c_max_skip=\skip83
-\l_tmpa_skip=\skip84
-\l_tmpb_skip=\skip85
-\g_tmpa_skip=\skip86
-\g_tmpb_skip=\skip87
+\c_zero_skip=\skip80
+\c_max_skip=\skip81
+\l_tmpa_skip=\skip82
+\l_tmpb_skip=\skip83
+\g_tmpa_skip=\skip84
+\g_tmpb_skip=\skip85
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count366
-\c__fp_leading_shift_int=\count367
-\c__fp_middle_shift_int=\count368
-\c__fp_trailing_shift_int=\count369
-\c__fp_big_leading_shift_int=\count370
-\c__fp_big_middle_shift_int=\count371
-\c__fp_big_trailing_shift_int=\count372
-\c__fp_Bigg_leading_shift_int=\count373
-\c__fp_Bigg_middle_shift_int=\count374
-\c__fp_Bigg_trailing_shift_int=\count375
-\c__fp_rand_size_int=\count376
-\c__fp_rand_four_int=\count377
-\c__fp_rand_eight_int=\count378
-\l__sort_length_int=\count379
-\l__sort_min_int=\count380
-\l__sort_top_int=\count381
-\l__sort_max_int=\count382
-\l__sort_true_max_int=\count383
-\l__sort_block_int=\count384
-\l__sort_begin_int=\count385
-\l__sort_end_int=\count386
-\l__sort_A_int=\count387
-\l__sort_B_int=\count388
-\l__sort_C_int=\count389
-\l__tl_build_start_index_int=\count390
-\l__tl_build_index_int=\count391
-\l__tl_analysis_normal_int=\count392
-\l__tl_analysis_index_int=\count393
-\l__tl_analysis_nesting_int=\count394
-\l__tl_analysis_type_int=\count395
-\l__regex_internal_a_int=\count396
-\l__regex_internal_b_int=\count397
-\l__regex_internal_c_int=\count398
-\l__regex_balance_int=\count399
-\l__regex_group_level_int=\count400
-\l__regex_mode_int=\count401
-\c__regex_cs_in_class_mode_int=\count402
-\c__regex_cs_mode_int=\count403
-\l__regex_catcodes_int=\count404
-\l__regex_default_catcodes_int=\count405
-\c__regex_catcode_D_int=\count406
-\c__regex_catcode_S_int=\count407
-\c__regex_catcode_L_int=\count408
-\c__regex_catcode_O_int=\count409
-\c__regex_catcode_A_int=\count410
-\c__regex_all_catcodes_int=\count411
-\l__regex_show_lines_int=\count412
-\l__regex_min_state_int=\count413
-\l__regex_max_state_int=\count414
-\l__regex_left_state_int=\count415
-\l__regex_right_state_int=\count416
-\l__regex_capturing_group_int=\count417
-\l__regex_min_pos_int=\count418
-\l__regex_max_pos_int=\count419
-\l__regex_curr_pos_int=\count420
-\l__regex_start_pos_int=\count421
-\l__regex_success_pos_int=\count422
-\l__regex_curr_char_int=\count423
-\l__regex_curr_catcode_int=\count424
-\l__regex_last_char_int=\count425
-\l__regex_case_changed_char_int=\count426
-\l__regex_curr_state_int=\count427
-\l__regex_step_int=\count428
-\l__regex_min_active_int=\count429
-\l__regex_max_active_int=\count430
-\l__regex_replacement_csnames_int=\count431
-\l__regex_match_count_int=\count432
-\l__regex_min_submatch_int=\count433
-\l__regex_submatch_int=\count434
-\l__regex_zeroth_submatch_int=\count435
-\g__regex_trace_regex_int=\count436
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count360
+\l_keys_choice_int=\count361
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count362
+\c__fp_middle_shift_int=\count363
+\c__fp_trailing_shift_int=\count364
+\c__fp_big_leading_shift_int=\count365
+\c__fp_big_middle_shift_int=\count366
+\c__fp_big_trailing_shift_int=\count367
+\c__fp_Bigg_leading_shift_int=\count368
+\c__fp_Bigg_middle_shift_int=\count369
+\c__fp_Bigg_trailing_shift_int=\count370
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box70
 \l_tmpa_box=\box71
 \l_tmpb_box=\box72
 \g_tmpa_box=\box73
 \g_tmpb_box=\box74
-\l__box_top_dim=\dimen184
-\l__box_bottom_dim=\dimen185
-\l__box_left_dim=\dimen186
-\l__box_right_dim=\dimen187
-\l__box_top_new_dim=\dimen188
-\l__box_bottom_new_dim=\dimen189
-\l__box_left_new_dim=\dimen190
-\l__box_right_new_dim=\dimen191
-\l__box_internal_box=\box75
-\l__coffin_internal_box=\box76
-\l__coffin_internal_dim=\dimen192
-\l__coffin_offset_x_dim=\dimen193
-\l__coffin_offset_y_dim=\dimen194
-\l__coffin_x_dim=\dimen195
-\l__coffin_y_dim=\dimen196
-\l__coffin_x_prime_dim=\dimen197
-\l__coffin_y_prime_dim=\dimen198
-\c_empty_coffin=\box77
-\l__coffin_aligned_coffin=\box78
-\l__coffin_aligned_internal_coffin=\box79
-\l_tmpa_coffin=\box80
-\l_tmpb_coffin=\box81
-\l__coffin_display_coffin=\box82
-\l__coffin_display_coord_coffin=\box83
-\l__coffin_display_pole_coffin=\box84
-\l__coffin_display_offset_dim=\dimen199
-\l__coffin_display_x_dim=\dimen256
-\l__coffin_display_y_dim=\dimen257
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box75
+\l__coffin_internal_dim=\dimen184
+\l__coffin_offset_x_dim=\dimen185
+\l__coffin_offset_y_dim=\dimen186
+\l__coffin_x_dim=\dimen187
+\l__coffin_y_dim=\dimen188
+\l__coffin_x_prime_dim=\dimen189
+\l__coffin_y_prime_dim=\dimen190
+\c_empty_coffin=\box76
+\l__coffin_aligned_coffin=\box77
+\l__coffin_aligned_internal_coffin=\box78
+\l_tmpa_coffin=\box79
+\l_tmpb_coffin=\box80
+\l__coffin_display_coffin=\box81
+\l__coffin_display_coord_coffin=\box82
+\l__coffin_display_pole_coffin=\box83
+\l__coffin_display_offset_dim=\dimen191
+\l__coffin_display_x_dim=\dimen192
+\l__coffin_display_y_dim=\dimen193
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen194
+\l__box_bottom_dim=\dimen195
+\l__box_left_dim=\dimen196
+\l__box_right_dim=\dimen197
+\l__box_top_new_dim=\dimen198
+\l__box_bottom_new_dim=\dimen199
+\l__box_left_new_dim=\dimen256
+\l__box_right_new_dim=\dimen257
+\l__box_internal_box=\box84
 \l__coffin_bounding_shift_dim=\dimen258
 \l__coffin_left_corner_dim=\dimen259
 \l__coffin_right_corner_dim=\dimen260
@@ -1518,21 +1468,21 @@ Package: expl3 2018/02/21 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen262
 \l__coffin_scaled_total_height_dim=\dimen263
 \l__coffin_scaled_width_dim=\dimen264
+L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count437
-\l__driver_tmp_box=\box85
+File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count371
 ))
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count438
-\g__xparse_grabber_int=\count439
-\l__xparse_m_args_int=\count440
-\l__xparse_mandatory_args_int=\count441
-\l__xparse_v_nesting_int=\count442
+Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count372
+\l__xparse_m_args_int=\count373
+\l__xparse_mandatory_args_int=\count374
+\l__xparse_processor_int=\count375
+\l__xparse_v_nesting_int=\count376
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1716,57 +1666,55 @@ Package: xparse 2018/02/21 L3 Experimental document command parser
 .................................................
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip88
-\cftbeforetoctitleskip=\skip89
-\cftaftertoctitleskip=\skip90
-\cftbeforepartskip=\skip91
-\cftpartnumwidth=\skip92
-\cftpartindent=\skip93
-\cftbeforechapskip=\skip94
-\cftchapindent=\skip95
-\cftchapnumwidth=\skip96
-\cftbeforesecskip=\skip97
-\cftsecindent=\skip98
-\cftsecnumwidth=\skip99
-\cftbeforesubsecskip=\skip100
-\cftsubsecindent=\skip101
-\cftsubsecnumwidth=\skip102
-\cftbeforesubsubsecskip=\skip103
-\cftsubsubsecindent=\skip104
-\cftsubsubsecnumwidth=\skip105
-\cftbeforeparaskip=\skip106
-\cftparaindent=\skip107
-\cftparanumwidth=\skip108
-\cftbeforesubparaskip=\skip109
-\cftsubparaindent=\skip110
-\cftsubparanumwidth=\skip111
-\cftbeforeloftitleskip=\skip112
-\cftafterloftitleskip=\skip113
-\cftbeforefigskip=\skip114
-\cftfigindent=\skip115
-\cftfignumwidth=\skip116
-\c@lofdepth=\count443
-\c@lotdepth=\count444
-\cftbeforelottitleskip=\skip117
-\cftafterlottitleskip=\skip118
-\cftbeforetabskip=\skip119
-\cfttabindent=\skip120
-\cfttabnumwidth=\skip121
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip86
+\cftbeforetoctitleskip=\skip87
+\cftaftertoctitleskip=\skip88
+\cftbeforepartskip=\skip89
+\cftpartnumwidth=\skip90
+\cftpartindent=\skip91
+\cftbeforechapskip=\skip92
+\cftchapindent=\skip93
+\cftchapnumwidth=\skip94
+\cftbeforesecskip=\skip95
+\cftsecindent=\skip96
+\cftsecnumwidth=\skip97
+\cftbeforesubsecskip=\skip98
+\cftsubsecindent=\skip99
+\cftsubsecnumwidth=\skip100
+\cftbeforesubsubsecskip=\skip101
+\cftsubsubsecindent=\skip102
+\cftsubsubsecnumwidth=\skip103
+\cftbeforeparaskip=\skip104
+\cftparaindent=\skip105
+\cftparanumwidth=\skip106
+\cftbeforesubparaskip=\skip107
+\cftsubparaindent=\skip108
+\cftsubparanumwidth=\skip109
+\cftbeforeloftitleskip=\skip110
+\cftafterloftitleskip=\skip111
+\cftbeforefigskip=\skip112
+\cftfigindent=\skip113
+\cftfignumwidth=\skip114
+\c@lofdepth=\count377
+\c@lotdepth=\count378
+\cftbeforelottitleskip=\skip115
+\cftafterlottitleskip=\skip116
+\cftbeforetabskip=\skip117
+\cfttabindent=\skip118
+\cfttabnumwidth=\skip119
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip122
-\f@nch@O@elh=\skip123
-\f@nch@O@erh=\skip124
-\f@nch@O@olh=\skip125
-\f@nch@O@orh=\skip126
-\f@nch@O@elf=\skip127
-\f@nch@O@erf=\skip128
-\f@nch@O@olf=\skip129
-\f@nch@O@orf=\skip130
+\fancy@headwidth=\skip120
+\f@ncyO@elh=\skip121
+\f@ncyO@erh=\skip122
+\f@ncyO@olh=\skip123
+\f@ncyO@orh=\skip124
+\f@ncyO@elf=\skip125
+\f@ncyO@erf=\skip126
+\f@ncyO@olf=\skip127
+\f@ncyO@orf=\skip128
 )
 Package biblatex Info: Trying to load language 'vietnamese'...
 Package biblatex Info: ... file 'vietnamese.lbx' not found.
@@ -1778,16 +1726,16 @@ Package biblatex Warning: Language 'vietnamese' not supported.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count445
-\@quotereset=\count446
+\@quotelevel=\count379
+\@quotereset=\count380
 (build//main.aux (build//titlepage.aux)
-LaTeX Font Info:    Try loading font information for T5+cmr on input line 32.
+LaTeX Font Info:    Try loading font information for T5+cmr on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -1854,59 +1802,57 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count447
+\scratchcounter=\count381
 \scratchdimen=\dimen265
-\scratchbox=\box86
-\nofMPsegments=\count448
-\nofMParguments=\count449
+\scratchbox=\box85
+\nofMPsegments=\count382
+\nofMParguments=\count383
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count450
+\MPscratchCnt=\count384
 \MPscratchDim=\dimen266
-\MPnumerator=\count451
-\makeMPintoPDFobject=\count452
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+(grfext)             \AppendGraphicsExtensions on input line 452.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box87
+\AtBeginShipoutBox=\box86
 Package hyperref Info: Link coloring ON on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count453
+\c@section@level=\count387
 )
 LaTeX Info: Redefining \ref on input line 77.
 LaTeX Info: Redefining \pageref on input line 77.
 LaTeX Info: Redefining \nameref on input line 77.
 
 (build//main.out) (build//main.out)
-\@outlinefile=\write9
-\openout9 = `main.out'.
+\@outlinefile=\write8
+\openout8 = `main.out'.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `main.bcf'.
+\openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
@@ -1922,9 +1868,11 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
 
 <../figures/hust-soict-logo.png, id=100, 572.89032pt x 436.63126pt>
 File: ../figures/hust-soict-logo.png Graphic file (type png)
+
 <use ../figures/hust-soict-logo.png>
-Package pdftex.def Info: ../figures/hust-soict-logo.png  used on input line 9.
+Package pdftex.def Info: ../figures/hust-soict-logo.png used on input line 9.
 (pdftex.def)             Requested size: 200.5146pt x 152.82323pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <22> not available
 (Font)              size <20.74> substituted on input line 15.
@@ -1947,7 +1895,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [1
 
-\openout6 = `main.ist'.
+\openout5 = `main.ist'.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../figures/hust-soict-logo
@@ -2037,8 +1985,8 @@ Overfull \hbox (38.17702pt too wide) in paragraph at lines 31--82
 
 
 ] (build//main.toc)
-\tf@toc=\write10
-\openout10 = `main.toc'.
+\tf@toc=\write9
+\openout9 = `main.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -2048,7 +1996,7 @@ l.88 \clearpage
                 [1
 
 ] (build//main.lof
-Overfull \hbox (17.89252pt too wide) in paragraph at lines 33--33
+Overfull \hbox (17.89252pt too wide) in paragraph at lines 37--37
  [][] [][][]\OT1/cmr/m/n/12 Ground truth used for the as-sess-ment: \OT1/cmr/m/
 it/12 ``full[]reference'' \OT1/cmr/m/n/12 (left), \OT1/cmr/m/it/12 ``no[]bounda
 ry'' 
@@ -2057,36 +2005,36 @@ ry''
 [2
 
 ]
-Overfull \hbox (6.95412pt too wide) in paragraph at lines 125--125
+Overfull \hbox (6.95412pt too wide) in paragraph at lines 129--129
  [][] [][][][]\OT1/cmr/m/n/12 FCN-8s-ResNet101-5c-v3.0 per-forms slightly bet-t
 er than []FCN-8s-VGG19- 
  []
 
 [3])
-\tf@lof=\write11
-\openout11 = `main.lof'.
+\tf@lof=\write10
+\openout10 = `main.lof'.
 
  [4] (build//main.lot
-Overfull \hbox (6.23547pt too wide) in paragraph at lines 41--41
+Overfull \hbox (6.23547pt too wide) in paragraph at lines 45--45
  [][] [][][][]\OT1/cmr/m/n/12 FCN-8s-ResNet101-5c-v3.2 con-fu-sion ma-trix on n
 o[]boundary []ground truths.[][] []  
  []
 
 
-Overfull \hbox (6.23547pt too wide) in paragraph at lines 45--45
+Overfull \hbox (6.23547pt too wide) in paragraph at lines 49--49
  [][] [][][][]\OT1/cmr/m/n/12 FCN-4s-ResNet101-5c-v3.3 con-fu-sion ma-trix on n
 o[]boundary []ground truths.[][] []  
  []
 
 
-Overfull \hbox (6.23547pt too wide) in paragraph at lines 53--53
+Overfull \hbox (6.23547pt too wide) in paragraph at lines 57--57
  [][] [][][][]\OT1/cmr/m/n/12 FCN-4s-ResNet101-6c-v3.3 con-fu-sion ma-trix on n
 o[]boundary []ground truths.[][] []  
  []
 
 )
-\tf@lot=\write12
-\openout12 = `main.lot'.
+\tf@lot=\write11
+\openout11 = `main.lot'.
 
  [5
 
@@ -2117,68 +2065,76 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 <../figures/deathvalley.jpg, id=462, 1204.5pt x 2510.37875pt>
 File: ../figures/deathvalley.jpg Graphic file (type jpg)
+
 <use ../figures/deathvalley.jpg>
-Package pdftex.def Info: ../figures/deathvalley.jpg  used on input line 16.
+Package pdftex.def Info: ../figures/deathvalley.jpg used on input line 16.
 (pdftex.def)             Requested size: 110.25443pt x 229.75487pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/overview.png, id=466, 474.77374pt x 797.98125pt>
 File: ../figures/overview.png Graphic file (type png)
+
 <use ../figures/overview.png>
-Package pdftex.def Info: ../figures/overview.png  used on input line 38.
+Package pdftex.def Info: ../figures/overview.png used on input line 38.
 (pdftex.def)             Requested size: 132.30666pt x 222.37389pt.
-[9
+ [9
 
 
 
-] [10 <../figures/deathvalley.jpg> <../figures/overview.png>]
-<../figures/expanded.png, id=480, 1399.2275pt x 988.69376pt>
+] [10 <../figures/deathvalley.jpg> <../figures/overview.png>] <../figures/expan
+ded.png, id=480, 1399.2275pt x 988.69376pt>
 File: ../figures/expanded.png Graphic file (type png)
+
 <use ../figures/expanded.png>
-Package pdftex.def Info: ../figures/expanded.png  used on input line 79.
+Package pdftex.def Info: ../figures/expanded.png used on input line 79.
 (pdftex.def)             Requested size: 441.01773pt x 311.62122pt.
-<../figures/Leuchtturm_in_Westerheversand_crop.jpg, id=485, 1085.85675pt x 871.
-45575pt>
+
+<../figures/Leuchtturm_in_Westerheversand_crop.jpg, id=485, 1809.76125pt x 1452
+.42625pt>
 File: ../figures/Leuchtturm_in_Westerheversand_crop.jpg Graphic file (type jpg)
 
-<use ../figures/Leuchtturm_in_Westerheversand_crop.jpg>
-Package pdftex.def Info: ../figures/Leuchtturm_in_Westerheversand_crop.jpg  use
-d on input line 98.
-(pdftex.def)             Requested size: 330.76329pt x 265.45453pt.
+ <use ../figures/Leuchtturm_in_Westerheversand_crop.jpg>
+Package pdftex.def Info: ../figures/Leuchtturm_in_Westerheversand_crop.jpg used
+ on input line 98.
+(pdftex.def)             Requested size: 330.76329pt x 265.4368pt.
  [11 <../figures/expanded.png>]
-<../figures/three_arch_bay.jpg, id=495, 1464.672pt x 1098.504pt>
+<../figures/three_arch_bay.jpg, id=495, 1830.84pt x 1373.13pt>
 File: ../figures/three_arch_bay.jpg Graphic file (type jpg)
-<use ../figures/three_arch_bay.jpg>
-Package pdftex.def Info: ../figures/three_arch_bay.jpg  used on input line 116.
 
-(pdftex.def)             Requested size: 330.76329pt x 248.05788pt.
+<use ../figures/three_arch_bay.jpg>
+Package pdftex.def Info: ../figures/three_arch_bay.jpg used on input line 116.
+(pdftex.def)             Requested size: 330.76329pt x 248.07463pt.
 ) (./section1.2.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/football_segmentation.png, id=499, 1488.56125pt x 527.9725pt>
 File: ../figures/football_segmentation.png Graphic file (type png)
+
 <use ../figures/football_segmentation.png>
-Package pdftex.def Info: ../figures/football_segmentation.png  used on input li
-ne 16.
+Package pdftex.def Info: ../figures/football_segmentation.png used on input lin
+e 16.
 (pdftex.def)             Requested size: 441.01773pt x 156.41919pt.
-[12 <../figures/Leuchtturm_in_Westerheversand_crop.jpg>]
+ [12 <../figures/Leuchtturm_in_Westerheversand_crop.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/line_segments.png, id=513, 1489.565pt x 705.63625pt>
 File: ../figures/line_segments.png Graphic file (type png)
+
 <use ../figures/line_segments.png>
-Package pdftex.def Info: ../figures/line_segments.png  used on input line 44.
+Package pdftex.def Info: ../figures/line_segments.png used on input line 44.
 (pdftex.def)             Requested size: 441.01773pt x 208.91458pt.
+
 <../figures/face_extraction.png, id=516, 1905.1175pt x 849.1725pt>
 File: ../figures/face_extraction.png Graphic file (type png)
-<use ../figures/face_extraction.png>
-Package pdftex.def Info: ../figures/face_extraction.png  used on input line 52.
 
+<use ../figures/face_extraction.png>
+Package pdftex.def Info: ../figures/face_extraction.png used on input line 52.
 (pdftex.def)             Requested size: 441.01773pt x 196.57538pt.
-[13 <../figures/three_arch_bay.jpg>]
+ [13 <../figures/three_arch_bay.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2187,9 +2143,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 .93375pt>
 File: ../figures/semanticsegmentation_transferlearning.png Graphic file (type p
 ng)
-<use ../figures/semanticsegmentation_transferlearning.png>
-Package pdftex.def Info: ../figures/semanticsegmentation_transferlearning.png  
-used on input line 99.
+ <use ../figures/semanticsegmentation_transferlearning.png>
+Package pdftex.def Info: ../figures/semanticsegmentation_transferlearning.png u
+sed on input line 99.
 (pdftex.def)             Requested size: 441.01773pt x 199.66887pt.
 
 
@@ -2197,22 +2153,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/sms.png, id=546, 1257.69875pt x 751.80875pt>
 File: ../figures/sms.png Graphic file (type png)
+
 <use ../figures/sms.png>
-Package pdftex.def Info: ../figures/sms.png  used on input line 123.
+Package pdftex.def Info: ../figures/sms.png used on input line 123.
 (pdftex.def)             Requested size: 441.01773pt x 263.6188pt.
-[15 <../figures/face_extraction.png>]
+ [15 <../figures/face_extraction.png>]
 <../figures/medical.png, id=560, 508.90125pt x 1027.84pt>
 File: ../figures/medical.png Graphic file (type png)
+
 <use ../figures/medical.png>
-Package pdftex.def Info: ../figures/medical.png  used on input line 138.
+Package pdftex.def Info: ../figures/medical.png used on input line 138.
 (pdftex.def)             Requested size: 110.25443pt x 222.67511pt.
 ) (./section1.3.tex [16 <../figures/semanticsegmentation_transferlearning.png> 
 <../figures/sms.png>]
 <../figures/examples_top_dsm_gts.PNG, id=567, 1032.85875pt x 406.51875pt>
 File: ../figures/examples_top_dsm_gts.PNG Graphic file (type png)
+
 <use ../figures/examples_top_dsm_gts.PNG>
-Package pdftex.def Info: ../figures/examples_top_dsm_gts.PNG  used on input lin
-e 14.
+Package pdftex.def Info: ../figures/examples_top_dsm_gts.PNG used on input line
+ 14.
 (pdftex.def)             Requested size: 441.01773pt x 173.57767pt.
 
 
@@ -2221,9 +2180,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [17 <../figures/medical.png>] [18 <../figures/examples_top_dsm_gts.PNG>]
 <../figures/gts_full_vs_eroded_example.jpg, id=587, 832.61063pt x 564.60938pt>
 File: ../figures/gts_full_vs_eroded_example.jpg Graphic file (type jpg)
+
 <use ../figures/gts_full_vs_eroded_example.jpg>
-Package pdftex.def Info: ../figures/gts_full_vs_eroded_example.jpg  used on inp
-ut line 99.
+Package pdftex.def Info: ../figures/gts_full_vs_eroded_example.jpg used on inpu
+t line 99.
 (pdftex.def)             Requested size: 396.91325pt x 269.15714pt.
 
 Underfull \hbox (badness 2150) in paragraph at lines 104--104
@@ -2239,11 +2199,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./chapter2.tex
 Chapter 2.
-(./section2.1.tex
-<../figures/cifar10.png, id=607, 1427.3325pt x 1088.065pt>
+(./section2.1.tex <../figures/cifar10.png, id=607, 1427.3325pt x 1088.065pt>
 File: ../figures/cifar10.png Graphic file (type png)
+
 <use ../figures/cifar10.png>
-Package pdftex.def Info: ../figures/cifar10.png  used on input line 35.
+Package pdftex.def Info: ../figures/cifar10.png used on input line 35.
 (pdftex.def)             Requested size: 441.01773pt x 336.1843pt.
  [21
 
@@ -2252,53 +2212,61 @@ Package pdftex.def Info: ../figures/cifar10.png  used on input line 35.
 ]
 <../figures/deepface.jpg, id=629, 2902.845pt x 607.26875pt>
 File: ../figures/deepface.jpg Graphic file (type jpg)
+
 <use ../figures/deepface.jpg>
-Package pdftex.def Info: ../figures/deepface.jpg  used on input line 66.
+Package pdftex.def Info: ../figures/deepface.jpg used on input line 66.
 (pdftex.def)             Requested size: 441.01773pt x 92.2539pt.
  [22 <../figures/cifar10.png (PNG copy)>]
 <../figures/linear_regression.png, id=640, 678.28406pt x 503.63156pt>
 File: ../figures/linear_regression.png Graphic file (type png)
+
 <use ../figures/linear_regression.png>
-Package pdftex.def Info: ../figures/linear_regression.png  used on input line 8
-5.
+Package pdftex.def Info: ../figures/linear_regression.png used on input line 85
+.
 (pdftex.def)             Requested size: 441.01773pt x 327.45653pt.
  [23 <../figures/deepface.jpg> <../figures/linear_regression.png>]
 <../figures/kmeans.png, id=650, 702.625pt x 451.6875pt>
 File: ../figures/kmeans.png Graphic file (type png)
+
 <use ../figures/kmeans.png>
-Package pdftex.def Info: ../figures/kmeans.png  used on input line 162.
+Package pdftex.def Info: ../figures/kmeans.png used on input line 162.
 (pdftex.def)             Requested size: 441.01773pt x 283.51701pt.
  [24] [25 <../figures/kmeans.png>] [26]
 <../figures/End-to-end-speech-recognition.png, id=678, 541.02126pt x 843.15pt>
 File: ../figures/End-to-end-speech-recognition.png Graphic file (type png)
+
 <use ../figures/End-to-end-speech-recognition.png>
-Package pdftex.def Info: ../figures/End-to-end-speech-recognition.png  used on 
-input line 282.
+Package pdftex.def Info: ../figures/End-to-end-speech-recognition.png used on i
+nput line 282.
 (pdftex.def)             Requested size: 220.50887pt x 343.64813pt.
  [27 <../figures/End-to-end-speech-recognition.png>] [28]
 <../figures/capacity.png, id=692, 959.83594pt x 475.02469pt>
 File: ../figures/capacity.png Graphic file (type png)
+
 <use ../figures/capacity.png>
-Package pdftex.def Info: ../figures/capacity.png  used on input line 409.
+Package pdftex.def Info: ../figures/capacity.png used on input line 409.
 (pdftex.def)             Requested size: 441.01773pt x 218.26031pt.
- [29]
-[30 <../figures/capacity.png>]
+ [29] [30 <../figures/capacity.png>]
 <../figures/mnist.png, id=710, 899.36pt x 442.65375pt>
 File: ../figures/mnist.png Graphic file (type png)
+
 <use ../figures/mnist.png>
-Package pdftex.def Info: ../figures/mnist.png  used on input line 448.
+Package pdftex.def Info: ../figures/mnist.png used on input line 448.
 (pdftex.def)             Requested size: 218.30162pt x 107.44133pt.
+
 <../figures/imagenet.png, id=711, 611.28375pt x 360.34625pt>
 File: ../figures/imagenet.png Graphic file (type png)
+
 <use ../figures/imagenet.png>
-Package pdftex.def Info: ../figures/imagenet.png  used on input line 452.
+Package pdftex.def Info: ../figures/imagenet.png used on input line 452.
 (pdftex.def)             Requested size: 218.30162pt x 128.68533pt.
 ) (./section2.2.tex
 <../figures/computational_graph.png, id=712, 1177.39874pt x 549.05125pt>
 File: ../figures/computational_graph.png Graphic file (type png)
+
 <use ../figures/computational_graph.png>
-Package pdftex.def Info: ../figures/computational_graph.png  used on input line
- 19.
+Package pdftex.def Info: ../figures/computational_graph.png used on input line 
+19.
 (pdftex.def)             Requested size: 330.76329pt x 154.24434pt.
 
 
@@ -2306,34 +2274,41 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/mlp-network.png, id=715, 599.23875pt x 325.215pt>
 File: ../figures/mlp-network.png Graphic file (type png)
+
 <use ../figures/mlp-network.png>
-Package pdftex.def Info: ../figures/mlp-network.png  used on input line 50.
+Package pdftex.def Info: ../figures/mlp-network.png used on input line 50.
 (pdftex.def)             Requested size: 441.01773pt x 239.35022pt.
-[31 <../figures/mnist.png> <../figures/imagenet.png>]
+ [31 <../figures/mnist.png> <../figures/imagenet.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/biological_neuron.png, id=728, 760.8425pt x 325.215pt>
 File: ../figures/biological_neuron.png Graphic file (type png)
+
 <use ../figures/biological_neuron.png>
-Package pdftex.def Info: ../figures/biological_neuron.png  used on input line 7
-9.
+Package pdftex.def Info: ../figures/biological_neuron.png used on input line 79
+.
 (pdftex.def)             Requested size: 218.30162pt x 93.31248pt.
+
 <../figures/neuron_model.jpeg, id=729, 661.47125pt x 377.41pt>
 File: ../figures/neuron_model.jpeg Graphic file (type jpg)
+
 <use ../figures/neuron_model.jpeg>
-Package pdftex.def Info: ../figures/neuron_model.jpeg  used on input line 83.
+Package pdftex.def Info: ../figures/neuron_model.jpeg used on input line 83.
 (pdftex.def)             Requested size: 218.30162pt x 124.55144pt.
-[32 <../figures/computational_graph.png>]
+ [32 <../figures/computational_graph.png>]
 <../figures/convex.png, id=738, 437.635pt x 275.0275pt>
 File: ../figures/convex.png Graphic file (type png)
+
 <use ../figures/convex.png>
-Package pdftex.def Info: ../figures/convex.png  used on input line 118.
+Package pdftex.def Info: ../figures/convex.png used on input line 118.
 (pdftex.def)             Requested size: 218.30162pt x 137.19026pt.
+
 <../figures/nonconvex.jpg, id=739, 500.46976pt x 383.031pt>
 File: ../figures/nonconvex.jpg Graphic file (type jpg)
+
 <use ../figures/nonconvex.jpg>
-Package pdftex.def Info: ../figures/nonconvex.jpg  used on input line 122.
+Package pdftex.def Info: ../figures/nonconvex.jpg used on input line 122.
 (pdftex.def)             Requested size: 218.30162pt x 167.07886pt.
  [33 <../figures/mlp-network.png> <../figures/biological_neuron.png> <../figure
 s/neuron_model.jpeg>] [34 <../figures/convex.png (PNG copy)> <../figures/noncon
@@ -2342,16 +2317,18 @@ vex.jpg>]) (./section2.3.tex
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\acrlong' on input line 1.
 
-[35]
-<../figures/neural_net2.jpeg, id=761, 793.96625pt x 389.455pt>
+[35] <../figures/neural_net2.jpeg, id=761, 793.96625pt x 389.455pt>
 File: ../figures/neural_net2.jpeg Graphic file (type jpg)
+
 <use ../figures/neural_net2.jpeg>
-Package pdftex.def Info: ../figures/neural_net2.jpeg  used on input line 55.
+Package pdftex.def Info: ../figures/neural_net2.jpeg used on input line 55.
 (pdftex.def)             Requested size: 218.30162pt x 107.07965pt.
+
 <../figures/cnn.jpeg, id=762, 571.13374pt x 202.7575pt>
 File: ../figures/cnn.jpeg Graphic file (type jpg)
+
 <use ../figures/cnn.jpeg>
-Package pdftex.def Info: ../figures/cnn.jpeg  used on input line 59.
+Package pdftex.def Info: ../figures/cnn.jpeg used on input line 59.
 (pdftex.def)             Requested size: 218.30162pt x 77.49725pt.
  [36 <../figures/neural_net2.jpeg> <../figures/cnn.jpeg>]
 Overfull \hbox (16.1882pt too wide) in paragraph at lines 130--133
@@ -2361,23 +2338,26 @@ ers (e.g. []CONV/[]FC/[]POOL
 
 <../figures/convnet.jpeg, id=770, 1259.70625pt x 603.25375pt>
 File: ../figures/convnet.jpeg Graphic file (type jpg)
+
 <use ../figures/convnet.jpeg>
-Package pdftex.def Info: ../figures/convnet.jpeg  used on input line 136.
+Package pdftex.def Info: ../figures/convnet.jpeg used on input line 136.
 (pdftex.def)             Requested size: 441.01773pt x 211.1972pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37]
-<../figures/depthcol.jpeg, id=777, 465.74pt x 327.2225pt>
+[37] <../figures/depthcol.jpeg, id=777, 465.74pt x 327.2225pt>
 File: ../figures/depthcol.jpeg Graphic file (type jpg)
+
 <use ../figures/depthcol.jpeg>
-Package pdftex.def Info: ../figures/depthcol.jpeg  used on input line 179.
+Package pdftex.def Info: ../figures/depthcol.jpeg used on input line 179.
 (pdftex.def)             Requested size: 220.50887pt x 154.923pt.
  [38 <../figures/convnet.jpeg>]
 <../figures/cnn2.jpeg, id=784, 629.35126pt x 248.93pt>
 File: ../figures/cnn2.jpeg Graphic file (type jpg)
+
 <use ../figures/cnn2.jpeg>
-Package pdftex.def Info: ../figures/cnn2.jpeg  used on input line 212.
+Package pdftex.def Info: ../figures/cnn2.jpeg used on input line 212.
 (pdftex.def)             Requested size: 441.01773pt x 174.43591pt.
 
 
@@ -2386,80 +2366,104 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [39 <../figures/depthcol.jpeg>]
 <../figures/conv_step1.png, id=796, 825.0825pt x 734.745pt>
 File: ../figures/conv_step1.png Graphic file (type png)
+
 <use ../figures/conv_step1.png>
-Package pdftex.def Info: ../figures/conv_step1.png  used on input line 274.
+Package pdftex.def Info: ../figures/conv_step1.png used on input line 274.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step2.png, id=797, 825.0825pt x 734.745pt>
 File: ../figures/conv_step2.png Graphic file (type png)
+
 <use ../figures/conv_step2.png>
-Package pdftex.def Info: ../figures/conv_step2.png  used on input line 278.
+Package pdftex.def Info: ../figures/conv_step2.png used on input line 278.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step3.png, id=798, 825.0825pt x 734.745pt>
 File: ../figures/conv_step3.png Graphic file (type png)
+
 <use ../figures/conv_step3.png>
-Package pdftex.def Info: ../figures/conv_step3.png  used on input line 282.
+Package pdftex.def Info: ../figures/conv_step3.png used on input line 282.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step4.png, id=799, 825.0825pt x 734.745pt>
 File: ../figures/conv_step4.png Graphic file (type png)
+
 <use ../figures/conv_step4.png>
-Package pdftex.def Info: ../figures/conv_step4.png  used on input line 286.
+Package pdftex.def Info: ../figures/conv_step4.png used on input line 286.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step5.png, id=800, 825.0825pt x 734.745pt>
 File: ../figures/conv_step5.png Graphic file (type png)
+
 <use ../figures/conv_step5.png>
-Package pdftex.def Info: ../figures/conv_step5.png  used on input line 290.
+Package pdftex.def Info: ../figures/conv_step5.png used on input line 290.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step6.png, id=801, 825.0825pt x 734.745pt>
 File: ../figures/conv_step6.png Graphic file (type png)
+
 <use ../figures/conv_step6.png>
-Package pdftex.def Info: ../figures/conv_step6.png  used on input line 294.
+Package pdftex.def Info: ../figures/conv_step6.png used on input line 294.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step7.png, id=802, 825.0825pt x 734.745pt>
 File: ../figures/conv_step7.png Graphic file (type png)
+
 <use ../figures/conv_step7.png>
-Package pdftex.def Info: ../figures/conv_step7.png  used on input line 298.
+Package pdftex.def Info: ../figures/conv_step7.png used on input line 298.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step8.png, id=803, 825.0825pt x 734.745pt>
 File: ../figures/conv_step8.png Graphic file (type png)
+
 <use ../figures/conv_step8.png>
-Package pdftex.def Info: ../figures/conv_step8.png  used on input line 302.
+Package pdftex.def Info: ../figures/conv_step8.png used on input line 302.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
+
 <../figures/conv_step9.png, id=804, 825.0825pt x 734.745pt>
 File: ../figures/conv_step9.png Graphic file (type png)
+
 <use ../figures/conv_step9.png>
-Package pdftex.def Info: ../figures/conv_step9.png  used on input line 306.
+Package pdftex.def Info: ../figures/conv_step9.png used on input line 306.
 (pdftex.def)             Requested size: 143.3294pt x 127.62933pt.
  [40 <../figures/cnn2.jpeg>] [41 <../figures/conv_step1.png> <../figures/conv_s
 tep2.png (PNG copy)> <../figures/conv_step3.png (PNG copy)> <../figures/conv_st
 ep4.png (PNG copy)> <../figures/conv_step5.png (PNG copy)> <../figures/conv_ste
 p6.png (PNG copy)> <../figures/conv_step7.png (PNG copy)> <../figures/conv_step
-8.png (PNG copy)> <../figures/conv_step9.png (PNG copy)>]
-<../figures/pool.jpeg, id=816, 515.9275pt x 407.5225pt>
+8.png (PNG copy)> <../figures/conv_step9.png (PNG copy)>] <../figures/pool.jpeg
+, id=816, 515.9275pt x 407.5225pt>
 File: ../figures/pool.jpeg Graphic file (type jpg)
+
 <use ../figures/pool.jpeg>
-Package pdftex.def Info: ../figures/pool.jpeg  used on input line 352.
+Package pdftex.def Info: ../figures/pool.jpeg used on input line 352.
 (pdftex.def)             Requested size: 172.49461pt x 136.24883pt.
+
 <../figures/maxpool.jpeg, id=817, 789.95125pt x 369.38pt>
 File: ../figures/maxpool.jpeg Graphic file (type jpg)
+
 <use ../figures/maxpool.jpeg>
-Package pdftex.def Info: ../figures/maxpool.jpeg  used on input line 356.
+Package pdftex.def Info: ../figures/maxpool.jpeg used on input line 356.
 (pdftex.def)             Requested size: 264.11534pt x 123.49648pt.
- [42 <../figures/pool.jpeg> <../figures/maxpool.jpeg>]
-<../figures/batchnorm.png, id=824, 982.67125pt x 692.5875pt>
+ [42 <../figures/pool.jpeg> <../figures/maxpool.jpeg>] <../figures/batchnorm.pn
+g, id=824, 982.67125pt x 692.5875pt>
 File: ../figures/batchnorm.png Graphic file (type png)
+
 <use ../figures/batchnorm.png>
-Package pdftex.def Info: ../figures/batchnorm.png  used on input line 385.
+Package pdftex.def Info: ../figures/batchnorm.png used on input line 385.
 (pdftex.def)             Requested size: 330.76329pt x 233.11996pt.
  [43 <../figures/batchnorm.png>] [44]
 <../figures/lenet5.png, id=840, 761.84625pt x 209.78375pt>
 File: ../figures/lenet5.png Graphic file (type png)
+
 <use ../figures/lenet5.png>
-Package pdftex.def Info: ../figures/lenet5.png  used on input line 485.
+Package pdftex.def Info: ../figures/lenet5.png used on input line 485.
 (pdftex.def)             Requested size: 441.01773pt x 121.43776pt.
+
 <../figures/alexnet.png, id=847, 688.5725pt x 221.82875pt>
 File: ../figures/alexnet.png Graphic file (type png)
+
 <use ../figures/alexnet.png>
-Package pdftex.def Info: ../figures/alexnet.png  used on input line 499.
+Package pdftex.def Info: ../figures/alexnet.png used on input line 499.
 (pdftex.def)             Requested size: 441.01773pt x 142.07822pt.
 
 
@@ -2467,19 +2471,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/vgg16.png, id=853, 471.7625pt x 277.035pt>
 File: ../figures/vgg16.png Graphic file (type png)
+
 <use ../figures/vgg16.png>
-Package pdftex.def Info: ../figures/vgg16.png  used on input line 521.
+Package pdftex.def Info: ../figures/vgg16.png used on input line 521.
 (pdftex.def)             Requested size: 330.76329pt x 194.23598pt.
-[45 <../figures/lenet5.png>]
+ [45 <../figures/lenet5.png>]
 <../figures/resnets.png, id=868, 1204.5pt x 340.27126pt>
 File: ../figures/resnets.png Graphic file (type png)
+
 <use ../figures/resnets.png>
-Package pdftex.def Info: ../figures/resnets.png  used on input line 540.
+Package pdftex.def Info: ../figures/resnets.png used on input line 540.
 (pdftex.def)             Requested size: 441.01773pt x 124.58997pt.
+
 <../figures/ilsvrc.png, id=869, 723.70375pt x 396.48125pt>
 File: ../figures/ilsvrc.png Graphic file (type png)
+
 <use ../figures/ilsvrc.png>
-Package pdftex.def Info: ../figures/ilsvrc.png  used on input line 546.
+Package pdftex.def Info: ../figures/ilsvrc.png used on input line 546.
 (pdftex.def)             Requested size: 441.01773pt x 241.6112pt.
 )) [46 <../figures/alexnet.png (PNG copy)> <../figures/vgg16.png (PNG copy)>] [
 47 <../figures/resnets.png> <../figures/ilsvrc.png (PNG copy)>]
@@ -2490,14 +2498,17 @@ Chapter 3.
 (./section3.1.tex
 <../figures/convnets_classification.png, id=888, 898.35625pt x 258.9675pt>
 File: ../figures/convnets_classification.png Graphic file (type png)
+
 <use ../figures/convnets_classification.png>
-Package pdftex.def Info: ../figures/convnets_classification.png  used on input 
-line 10.
+Package pdftex.def Info: ../figures/convnets_classification.png used on input l
+ine 10.
 (pdftex.def)             Requested size: 441.01773pt x 127.13226pt.
+
 <../figures/rob3_new6-1.jpg, id=892, 2021.5525pt x 2797.45125pt>
 File: ../figures/rob3_new6-1.jpg Graphic file (type jpg)
+
 <use ../figures/rob3_new6-1.jpg>
-Package pdftex.def Info: ../figures/rob3_new6-1.jpg  used on input line 34.
+Package pdftex.def Info: ../figures/rob3_new6-1.jpg used on input line 34.
 (pdftex.def)             Requested size: 330.76329pt x 457.71783pt.
  [48
 
@@ -2506,11 +2517,13 @@ Package pdftex.def Info: ../figures/rob3_new6-1.jpg  used on input line 34.
  <../figures/convnets_classification.png>]
 <../figures/convolutionalisation.png, id=903, 1170.3725pt x 665.48625pt>
 File: ../figures/convolutionalisation.png Graphic file (type png)
+
 <use ../figures/convolutionalisation.png>
-Package pdftex.def Info: ../figures/convolutionalisation.png  used on input lin
-e 70.
+Package pdftex.def Info: ../figures/convolutionalisation.png used on input line
+ 70.
 (pdftex.def)             Requested size: 441.01773pt x 250.7651pt.
- [49 <../figures/rob3_new6-1.jpg>] [50 <../figures/convolutionalisation.png>]
+ [49 <../figures/rob3_new6-1.jpg>]
+[50 <../figures/convolutionalisation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 123--123
 []\OT1/cmr/m/n/12 Table 3.2:
  []
@@ -2522,99 +2535,121 @@ Underfull \hbox (badness 3009) in paragraph at lines 123--123
 
 <../figures/skip_resnet.png, id=923, 655.44875pt x 366.36874pt>
 File: ../figures/skip_resnet.png Graphic file (type png)
+
 <use ../figures/skip_resnet.png>
-Package pdftex.def Info: ../figures/skip_resnet.png  used on input line 171.
+Package pdftex.def Info: ../figures/skip_resnet.png used on input line 171.
 (pdftex.def)             Requested size: 220.50887pt x 123.25558pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../figures/resnet_configs.png, id=926, 1672.2475pt x 719.68875pt>
 File: ../figures/resnet_configs.png Graphic file (type png)
-<use ../figures/resnet_configs.png>
-Package pdftex.def Info: ../figures/resnet_configs.png  used on input line 190.
 
+<use ../figures/resnet_configs.png>
+Package pdftex.def Info: ../figures/resnet_configs.png used on input line 190.
 (pdftex.def)             Requested size: 441.01773pt x 189.79416pt.
-[51]
+ [51]
 <../figures/conv-bn-relu.png, id=934, 677.53125pt x 69.25874pt>
 File: ../figures/conv-bn-relu.png Graphic file (type png)
+
 <use ../figures/conv-bn-relu.png>
-Package pdftex.def Info: ../figures/conv-bn-relu.png  used on input line 197.
+Package pdftex.def Info: ../figures/conv-bn-relu.png used on input line 197.
 (pdftex.def)             Requested size: 330.76329pt x 33.81236pt.
+
 <../figures/normal_skip_resnet.png, id=937, 731.73375pt x 156.585pt>
 File: ../figures/normal_skip_resnet.png Graphic file (type png)
+
 <use ../figures/normal_skip_resnet.png>
-Package pdftex.def Info: ../figures/normal_skip_resnet.png  used on input line 
-223.
+Package pdftex.def Info: ../figures/normal_skip_resnet.png used on input line 2
+23.
 (pdftex.def)             Requested size: 441.01773pt x 94.37462pt.
+
 <../figures/special_skip_resnet.png, id=938, 649.42625pt x 191.71625pt>
 File: ../figures/special_skip_resnet.png Graphic file (type png)
+
 <use ../figures/special_skip_resnet.png>
-Package pdftex.def Info: ../figures/special_skip_resnet.png  used on input line
- 227.
+Package pdftex.def Info: ../figures/special_skip_resnet.png used on input line 
+227.
 (pdftex.def)             Requested size: 441.01773pt x 130.19565pt.
  [52 <../figures/skip_resnet.png> <../figures/resnet_configs.png> <../figures/c
 onv-bn-relu.png>]
 <../figures/nearest_neighbour.png, id=949, 1281.78876pt x 715.67375pt>
 File: ../figures/nearest_neighbour.png Graphic file (type png)
+
 <use ../figures/nearest_neighbour.png>
-Package pdftex.def Info: ../figures/nearest_neighbour.png  used on input line 2
-57.
+Package pdftex.def Info: ../figures/nearest_neighbour.png used on input line 25
+7.
 (pdftex.def)             Requested size: 218.30162pt x 121.88133pt.
+
 <../figures/bed_of_nails.png, id=950, 1276.77pt x 710.655pt>
 File: ../figures/bed_of_nails.png Graphic file (type png)
+
 <use ../figures/bed_of_nails.png>
-Package pdftex.def Info: ../figures/bed_of_nails.png  used on input line 261.
+Package pdftex.def Info: ../figures/bed_of_nails.png used on input line 261.
 (pdftex.def)             Requested size: 218.30162pt x 121.50374pt.
  [53 <../figures/normal_skip_resnet.png> <../figures/special_skip_resnet.png>]
 <../figures/max_unpooling.png, id=961, 1249.66875pt x 546.04pt>
 File: ../figures/max_unpooling.png Graphic file (type png)
+
 <use ../figures/max_unpooling.png>
-Package pdftex.def Info: ../figures/max_unpooling.png  used on input line 279.
+Package pdftex.def Info: ../figures/max_unpooling.png used on input line 279.
 (pdftex.def)             Requested size: 441.01773pt x 192.69992pt.
+
 <../figures/transpose_conv_1.png, id=965, 1091.07625pt x 690.58pt>
 File: ../figures/transpose_conv_1.png Graphic file (type png)
+
 <use ../figures/transpose_conv_1.png>
-Package pdftex.def Info: ../figures/transpose_conv_1.png  used on input line 30
-1.
+Package pdftex.def Info: ../figures/transpose_conv_1.png used on input line 301
+.
 (pdftex.def)             Requested size: 194.04887pt x 122.81326pt.
+
 <../figures/transpose_conv_2.png, id=966, 1150.2975pt x 498.86375pt>
 File: ../figures/transpose_conv_2.png Graphic file (type png)
+
 <use ../figures/transpose_conv_2.png>
-Package pdftex.def Info: ../figures/transpose_conv_2.png  used on input line 30
-5.
+Package pdftex.def Info: ../figures/transpose_conv_2.png used on input line 305
+.
 (pdftex.def)             Requested size: 242.5611pt x 105.19075pt.
  [54 <../figures/nearest_neighbour.png> <../figures/bed_of_nails.png> <../figur
 es/max_unpooling.png>]
 <../figures/skiplayer_refinement.png, id=976, 946.53625pt x 346.29375pt>
 File: ../figures/skiplayer_refinement.png Graphic file (type png)
+
 <use ../figures/skiplayer_refinement.png>
-Package pdftex.def Info: ../figures/skiplayer_refinement.png  used on input lin
-e 324.
+Package pdftex.def Info: ../figures/skiplayer_refinement.png used on input line
+ 324.
 (pdftex.def)             Requested size: 441.01773pt x 161.34724pt.
+
 <../figures/skip_layers.png, id=978, 894.34125pt x 369.38pt>
 File: ../figures/skip_layers.png Graphic file (type png)
+
 <use ../figures/skip_layers.png>
-Package pdftex.def Info: ../figures/skip_layers.png  used on input line 344.
+Package pdftex.def Info: ../figures/skip_layers.png used on input line 344.
 (pdftex.def)             Requested size: 441.01773pt x 182.15321pt.
  [55 <../figures/transpose_conv_1.png> <../figures/transpose_conv_2.png> <../fi
 gures/skiplayer_refinement.png>])
 (./section3.2.tex [56 <../figures/skip_layers.png>]
 <../figures/fcn-8s-vgg.png, id=997, 1204.5pt x 562.1pt>
 File: ../figures/fcn-8s-vgg.png Graphic file (type png)
+
 <use ../figures/fcn-8s-vgg.png>
-Package pdftex.def Info: ../figures/fcn-8s-vgg.png  used on input line 30.
+Package pdftex.def Info: ../figures/fcn-8s-vgg.png used on input line 30.
 (pdftex.def)             Requested size: 441.01773pt x 205.81235pt.
+
 <../figures/fcn-4s-resnet101.png, id=999, 1225.57875pt x 629.35126pt>
 File: ../figures/fcn-4s-resnet101.png Graphic file (type png)
+
 <use ../figures/fcn-4s-resnet101.png>
-Package pdftex.def Info: ../figures/fcn-4s-resnet101.png  used on input line 47
-.
+Package pdftex.def Info: ../figures/fcn-4s-resnet101.png used on input line 47.
+
 (pdftex.def)             Requested size: 441.01773pt x 226.47025pt.
- [57 <../figures/fcn-8s-vgg.png (PNG copy)>]
-<../figures/dropout.jpeg, id=1008, 616.3025pt x 329.23pt>
+ [57 <../figures/fcn-8s-vgg.png (PNG copy)>] <../figures/dropout.jpeg, id=1008,
+ 616.3025pt x 329.23pt>
 File: ../figures/dropout.jpeg Graphic file (type jpg)
+
 <use ../figures/dropout.jpeg>
-Package pdftex.def Info: ../figures/dropout.jpeg  used on input line 62.
+Package pdftex.def Info: ../figures/dropout.jpeg used on input line 62.
 (pdftex.def)             Requested size: 330.76329pt x 176.69644pt.
 
 
@@ -2639,67 +2674,76 @@ Chapter 4.
 (./section4.1.tex
 <../figures/vaihingen_tiles.jpg, id=1053, 514.17094pt x 645.16031pt>
 File: ../figures/vaihingen_tiles.jpg Graphic file (type jpg)
+
 <use ../figures/vaihingen_tiles.jpg>
-Package pdftex.def Info: ../figures/vaihingen_tiles.jpg  used on input line 9.
+Package pdftex.def Info: ../figures/vaihingen_tiles.jpg used on input line 9.
 (pdftex.def)             Requested size: 441.01773pt x 553.37993pt.
  [62
 
 
 
-] [63 <../figures/vaihingen_tiles.jpg>]
-<../figures/vaihingen_2d_table.png, id=1067, 767.86874pt x 610.53094pt>
+] [63 <../figures/vaihingen_tiles.jpg>] <../figures/vaihingen_2d_table.png, id=
+1067, 767.86874pt x 610.53094pt>
 File: ../figures/vaihingen_2d_table.png Graphic file (type png)
+
 <use ../figures/vaihingen_2d_table.png>
-Package pdftex.def Info: ../figures/vaihingen_2d_table.png  used on input line 
-49.
+Package pdftex.def Info: ../figures/vaihingen_2d_table.png used on input line 4
+9.
 (pdftex.def)             Requested size: 441.01773pt x 350.6613pt.
+
 <../figures/potsdam_tiles.png, id=1070, 786.68906pt x 525.46312pt>
 File: ../figures/potsdam_tiles.png Graphic file (type png)
+
 <use ../figures/potsdam_tiles.png>
-Package pdftex.def Info: ../figures/potsdam_tiles.png  used on input line 68.
+Package pdftex.def Info: ../figures/potsdam_tiles.png used on input line 68.
 (pdftex.def)             Requested size: 441.01773pt x 294.58607pt.
  [64 <../figures/vaihingen_2d_table.png>]
 <../figures/potsdam_top_dsm_label.png, id=1079, 869.49844pt x 357.58594pt>
 File: ../figures/potsdam_top_dsm_label.png Graphic file (type png)
+
 <use ../figures/potsdam_top_dsm_label.png>
-Package pdftex.def Info: ../figures/potsdam_top_dsm_label.png  used on input li
-ne 101.
+Package pdftex.def Info: ../figures/potsdam_top_dsm_label.png used on input lin
+e 101.
 (pdftex.def)             Requested size: 441.01773pt x 181.37335pt.
  [65 <../figures/potsdam_tiles.png>]
 <../figures/potsdam_2d_table.png, id=1087, 992.95969pt x 654.94687pt>
 File: ../figures/potsdam_2d_table.png Graphic file (type png)
+
 <use ../figures/potsdam_2d_table.png>
-Package pdftex.def Info: ../figures/potsdam_2d_table.png  used on input line 12
-3.
+Package pdftex.def Info: ../figures/potsdam_2d_table.png used on input line 123
+.
 (pdftex.def)             Requested size: 441.01773pt x 290.8958pt.
-) (./section4.2.tex
-[66 <../figures/potsdam_top_dsm_label.png> <../figures/potsdam_2d_table.png>]
+) (./section4.2.tex [66 <../figures/potsdam_top_dsm_label.png> <../figures/pots
+dam_2d_table.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[67]
-<../figures/augmentation_1.png, id=1103, 224.84pt x 224.84pt>
+[67] <../figures/augmentation_1.png, id=1103, 224.84pt x 224.84pt>
 File: ../figures/augmentation_1.png Graphic file (type png)
+
 <use ../figures/augmentation_1.png>
-Package pdftex.def Info: ../figures/augmentation_1.png  used on input line 95.
+Package pdftex.def Info: ../figures/augmentation_1.png used on input line 95.
 (pdftex.def)             Requested size: 163.72621pt x 163.73386pt.
+
 <../figures/augmentation_2.png, id=1104, 224.84pt x 224.84pt>
 File: ../figures/augmentation_2.png Graphic file (type png)
-<use ../figures/augmentation_2.png>
-Package pdftex.def Info: ../figures/augmentation_2.png  used on input line 100.
 
+<use ../figures/augmentation_2.png>
+Package pdftex.def Info: ../figures/augmentation_2.png used on input line 100.
 (pdftex.def)             Requested size: 163.72621pt x 163.73386pt.
+
 <../figures/augmentation_3.png, id=1105, 224.84pt x 224.84pt>
 File: ../figures/augmentation_3.png Graphic file (type png)
-<use ../figures/augmentation_3.png>
-Package pdftex.def Info: ../figures/augmentation_3.png  used on input line 105.
 
+<use ../figures/augmentation_3.png>
+Package pdftex.def Info: ../figures/augmentation_3.png used on input line 105.
 (pdftex.def)             Requested size: 163.72621pt x 163.73386pt.
+
 <../figures/augmentation_4.png, id=1106, 224.84pt x 224.84pt>
 File: ../figures/augmentation_4.png Graphic file (type png)
-<use ../figures/augmentation_4.png>
-Package pdftex.def Info: ../figures/augmentation_4.png  used on input line 110.
 
+<use ../figures/augmentation_4.png>
+Package pdftex.def Info: ../figures/augmentation_4.png used on input line 110.
 (pdftex.def)             Requested size: 163.72621pt x 163.73386pt.
 
 
@@ -2712,89 +2756,109 @@ res/augmentation_2.png (PNG copy)> <../figures/augmentation_3.png (PNG copy)> <
  346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-VGG19-3c.png Graphic file (ty
 pe png)
-<use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-VGG19-3c.png>
+ <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-VGG19-3c.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-VGG19-3c.p
-ng  used on input line 28.
+ng used on input line 28.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v1.png, id=1127, 462.
 528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v1.png Graphic f
 ile (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v1.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-3c-v1.png  used on input line 33.
+3c-v1.png used on input line 33.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v1.png, id=1128, 462.
 528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v1.png Graphic f
 ile (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v1.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-5c-v1.png  used on input line 38.
+5c-v1.png used on input line 38.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v20.png, id=1129, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v20.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v20.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-3c-v20.png  used on input line 43.
+3c-v20.png used on input line 43.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v20.png, id=1130, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v20.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v20.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-5c-v20.png  used on input line 51.
+5c-v20.png used on input line 51.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v21.png, id=1131, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v21.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v21.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-3c-v21.png  used on input line 56.
+3c-v21.png used on input line 56.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v21.png, id=1132, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v21.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v21.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-5c-v21.png  used on input line 61.
+5c-v21.png used on input line 61.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v22.png, id=1133, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v22.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v22.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-3c-v22.png  used on input line 66.
+3c-v22.png used on input line 66.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v22.png, id=1134, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v22.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v22.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-5c-v22.png  used on input line 71.
+5c-v22.png used on input line 71.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v30.png, id=1135, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v30.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v30.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-3c-v30.png  used on input line 76.
+3c-v30.png used on input line 76.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v30.png, id=1136, 462
 .528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v30.png Graphic 
 file (type png)
+
 <use ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v30.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-5c-v30.png  used on input line 85.
+5c-v30.png used on input line 85.
 (pdftex.def)             Requested size: 352.81552pt x 264.62292pt.
 
 
@@ -2803,22 +2867,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
 <../figures/plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-ResNet101-5c-v30.png, id=1
 138, 462.528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-ResNet101-5c-v30.png 
 Graphic file (type png)
+
 <use ../figures/plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-ResNet101-5c-v30.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-Re
-sNet101-5c-v30.png  used on input line 105.
+sNet101-5c-v30.png used on input line 105.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-ResNet101-5c-v30.png, id=1
 139, 462.528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-ResNet101-5c-v30.png 
 Graphic file (type png)
+
 <use ../figures/plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-ResNet101-5c-v30.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-Re
-sNet101-5c-v30.png  used on input line 110.
+sNet101-5c-v30.png used on input line 110.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 [70 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-VGG19-3c.png> <../figures/plot
 s/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v1.png> <../figures/plots/FCN-8s-VGG1
 9-5c_and_FCN-8s-ResNet101-5c-v1.png> <../figures/plots/FCN-8s-VGG19-5c_and_FCN-
@@ -2827,24 +2896,28 @@ s/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v1.png> <../figures/plots/FCN-8s-VGG1
 151, 462.528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v30.png 
 Graphic file (type png)
+
 <use ../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v30.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-Re
-sNet101-5c-v30.png  used on input line 128.
+sNet101-5c-v30.png used on input line 128.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v32.png, id=1
 152, 462.528pt x 346.896pt>
 File: ../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v32.png 
 Graphic file (type png)
+
 <use ../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v32.png>
 Package pdftex.def Info: ../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-Re
-sNet101-5c-v32.png  used on input line 133.
+sNet101-5c-v32.png used on input line 133.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
- [71 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v20.png> <../fig
-ures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v21.png> <../figures/plots/F
-CN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v21.png> <../figures/plots/FCN-8s-VGG19-
-5c_and_FCN-8s-ResNet101-3c-v22.png> <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8
-s-ResNet101-5c-v22.png> <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-
-3c-v30.png>]
+
+[71 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v20.png> <../figu
+res/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3c-v21.png> <../figures/plots/FC
+N-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v21.png> <../figures/plots/FCN-8s-VGG19-5
+c_and_FCN-8s-ResNet101-3c-v22.png> <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s
+-ResNet101-5c-v22.png> <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-3
+c-v30.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2853,24 +2926,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <../figures/plots/potsdam_iter_losses.png, id=1168, 462.528pt x 346.896pt>
 File: ../figures/plots/potsdam_iter_losses.png Graphic file (type png)
+
 <use ../figures/plots/potsdam_iter_losses.png>
-Package pdftex.def Info: ../figures/plots/potsdam_iter_losses.png  used on inpu
-t line 173.
+Package pdftex.def Info: ../figures/plots/potsdam_iter_losses.png used on input
+ line 173.
 (pdftex.def)             Requested size: 330.76329pt x 248.08168pt.
-[72 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v30.png> <../figu
-res/plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-ResNet101-5c-v30.png> <../figures/
-plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-ResNet101-5c-v30.png>]
+ [72 <../figures/plots/FCN-8s-VGG19-5c_and_FCN-8s-ResNet101-5c-v30.png> <../fig
+ures/plots/FCN-8s-ResNet101-5c-v31_and_FCN-8s-ResNet101-5c-v30.png> <../figures
+/plots/FCN-8s-ResNet101-5c-v32_and_FCN-8s-ResNet101-5c-v30.png>]
 <../figures/plots/potsdam_iter_acc.png, id=1177, 462.528pt x 346.896pt>
 File: ../figures/plots/potsdam_iter_acc.png Graphic file (type png)
+
 <use ../figures/plots/potsdam_iter_acc.png>
-Package pdftex.def Info: ../figures/plots/potsdam_iter_acc.png  used on input l
-ine 185.
+Package pdftex.def Info: ../figures/plots/potsdam_iter_acc.png used on input li
+ne 185.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
+
 <../figures/plots/potsdam_epoch_acc.png, id=1178, 462.528pt x 346.896pt>
 File: ../figures/plots/potsdam_epoch_acc.png Graphic file (type png)
+
 <use ../figures/plots/potsdam_epoch_acc.png>
-Package pdftex.def Info: ../figures/plots/potsdam_epoch_acc.png  used on input 
-line 190.
+Package pdftex.def Info: ../figures/plots/potsdam_epoch_acc.png used on input l
+ine 190.
 (pdftex.def)             Requested size: 218.30162pt x 163.72925pt.
  [73 <../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v30.png>
  <../figures/plots/FCN-8s-ResNet101-5c-v33_and_FCN-8s-ResNet101-5c-v32.png> <..
@@ -2879,44 +2956,54 @@ line 190.
 3125pt x 325.96782pt>
 File: ../figures/conf_matrices/Vaihingen_BKHKN_10_full_reference.png Graphic fi
 le (type png)
+
 <use ../figures/conf_matrices/Vaihingen_BKHKN_10_full_reference.png>
 Package pdftex.def Info: ../figures/conf_matrices/Vaihingen_BKHKN_10_full_refer
-ence.png  used on input line 11.
+ence.png used on input line 11.
 (pdftex.def)             Requested size: 441.01773pt x 212.18494pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 <../figures/conf_matrices/Vaihingen_BKHKN_10_no_boundary.png, id=1194, 677.5312
 5pt x 325.96782pt>
 File: ../figures/conf_matrices/Vaihingen_BKHKN_10_no_boundary.png Graphic file 
 (type png)
+
 <use ../figures/conf_matrices/Vaihingen_BKHKN_10_no_boundary.png>
 Package pdftex.def Info: ../figures/conf_matrices/Vaihingen_BKHKN_10_no_boundar
-y.png  used on input line 20.
+y.png used on input line 20.
 (pdftex.def)             Requested size: 441.01773pt x 212.18494pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 <../figures/conf_matrices/Vaihingen_BKHKN_11_full_reference.png, id=1195, 677.5
 3125pt x 325.96782pt>
 File: ../figures/conf_matrices/Vaihingen_BKHKN_11_full_reference.png Graphic fi
 le (type png)
+
 <use ../figures/conf_matrices/Vaihingen_BKHKN_11_full_reference.png>
 Package pdftex.def Info: ../figures/conf_matrices/Vaihingen_BKHKN_11_full_refer
-ence.png  used on input line 29.
+ence.png used on input line 29.
 (pdftex.def)             Requested size: 441.01773pt x 212.18494pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 <../figures/conf_matrices/Vaihingen_BKHKN_11_no_boundary.png, id=1196, 677.5312
 5pt x 325.96782pt>
 File: ../figures/conf_matrices/Vaihingen_BKHKN_11_no_boundary.png Graphic file 
 (type png)
+
 <use ../figures/conf_matrices/Vaihingen_BKHKN_11_no_boundary.png>
 Package pdftex.def Info: ../figures/conf_matrices/Vaihingen_BKHKN_11_no_boundar
-y.png  used on input line 38.
+y.png used on input line 38.
 (pdftex.def)             Requested size: 441.01773pt x 212.18494pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2932,22 +3019,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 5pt x 325.96782pt>
 File: ../figures/conf_matrices/Potsdam_BKHKN_3_full_reference.png Graphic file 
 (type png)
+
 <use ../figures/conf_matrices/Potsdam_BKHKN_3_full_reference.png>
 Package pdftex.def Info: ../figures/conf_matrices/Potsdam_BKHKN_3_full_referenc
-e.png  used on input line 97.
+e.png used on input line 97.
 (pdftex.def)             Requested size: 441.01773pt x 212.18494pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
 <../figures/conf_matrices/Potsdam_BKHKN_3_no_boundary.png, id=1218, 677.53125pt
  x 325.96782pt>
 File: ../figures/conf_matrices/Potsdam_BKHKN_3_no_boundary.png Graphic file (ty
 pe png)
-<use ../figures/conf_matrices/Potsdam_BKHKN_3_no_boundary.png>
+ <use ../figures/conf_matrices/Potsdam_BKHKN_3_no_boundary.png>
 Package pdftex.def Info: ../figures/conf_matrices/Potsdam_BKHKN_3_no_boundary.p
-ng  used on input line 106.
+ng used on input line 106.
 (pdftex.def)             Requested size: 441.01773pt x 212.18494pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2963,60 +3053,76 @@ rices/Vaihingen_BKHKN_11_full_reference.png> <../figures/conf_matrices/Vaihinge
 n_BKHKN_11_no_boundary.png>] [77 <../figures/conf_matrices/Potsdam_BKHKN_3_full
 _reference.png> <../figures/conf_matrices/Potsdam_BKHKN_3_no_boundary.png>]
 (./section4.5.tex
-<../figures/vaihingen8s/in.png, id=1247, 1910.13625pt x 2555.5475pt>
+<../figures/vaihingen8s/in.png, id=1247, 238.8925pt x 319.1925pt>
 File: ../figures/vaihingen8s/in.png Graphic file (type png)
+
 <use ../figures/vaihingen8s/in.png>
-Package pdftex.def Info: ../figures/vaihingen8s/in.png  used on input line 6.
-(pdftex.def)             Requested size: 132.30666pt x 176.99586pt.
-<../figures/vaihingen8s/label.png, id=1248, 1910.13625pt x 2555.5475pt>
+Package pdftex.def Info: ../figures/vaihingen8s/in.png used on input line 6.
+(pdftex.def)             Requested size: 132.30666pt x 176.7789pt.
+
+<../figures/vaihingen8s/label.png, id=1248, 238.8925pt x 319.1925pt>
 File: ../figures/vaihingen8s/label.png Graphic file (type png)
+
 <use ../figures/vaihingen8s/label.png>
-Package pdftex.def Info: ../figures/vaihingen8s/label.png  used on input line 1
-0.
-(pdftex.def)             Requested size: 132.30666pt x 176.99586pt.
-<../figures/vaihingen8s/inference.png, id=1249, 1910.13625pt x 2555.5475pt>
+Package pdftex.def Info: ../figures/vaihingen8s/label.png used on input line 10
+.
+(pdftex.def)             Requested size: 132.30666pt x 176.7789pt.
+
+<../figures/vaihingen8s/inference.png, id=1249, 238.8925pt x 319.1925pt>
 File: ../figures/vaihingen8s/inference.png Graphic file (type png)
+
 <use ../figures/vaihingen8s/inference.png>
-Package pdftex.def Info: ../figures/vaihingen8s/inference.png  used on input li
-ne 14.
-(pdftex.def)             Requested size: 132.30666pt x 176.99586pt.
-<../figures/vaihingen4s/in.png, id=1250, 1894.07625pt x 2566.58875pt>
+Package pdftex.def Info: ../figures/vaihingen8s/inference.png used on input lin
+e 14.
+(pdftex.def)             Requested size: 132.30666pt x 176.7789pt.
+
+<../figures/vaihingen4s/in.png, id=1250, 236.885pt x 321.2pt>
 File: ../figures/vaihingen4s/in.png Graphic file (type png)
+
 <use ../figures/vaihingen4s/in.png>
-Package pdftex.def Info: ../figures/vaihingen4s/in.png  used on input line 25.
-(pdftex.def)             Requested size: 132.30666pt x 179.24878pt.
-<../figures/vaihingen4s/label.png, id=1251, 1894.07625pt x 2566.58875pt>
+Package pdftex.def Info: ../figures/vaihingen4s/in.png used on input line 25.
+(pdftex.def)             Requested size: 132.30666pt x 179.40517pt.
+
+<../figures/vaihingen4s/label.png, id=1251, 236.885pt x 321.2pt>
 File: ../figures/vaihingen4s/label.png Graphic file (type png)
+
 <use ../figures/vaihingen4s/label.png>
-Package pdftex.def Info: ../figures/vaihingen4s/label.png  used on input line 2
-9.
-(pdftex.def)             Requested size: 132.30666pt x 179.24878pt.
-<../figures/vaihingen4s/inference.png, id=1252, 1894.07625pt x 2566.58875pt>
+Package pdftex.def Info: ../figures/vaihingen4s/label.png used on input line 29
+.
+(pdftex.def)             Requested size: 132.30666pt x 179.40517pt.
+
+<../figures/vaihingen4s/inference.png, id=1252, 236.885pt x 321.2pt>
 File: ../figures/vaihingen4s/inference.png Graphic file (type png)
+
 <use ../figures/vaihingen4s/inference.png>
-Package pdftex.def Info: ../figures/vaihingen4s/inference.png  used on input li
-ne 33.
-(pdftex.def)             Requested size: 132.30666pt x 179.24878pt.
-<../figures/potsdam4s/in.png, id=1253, 6022.5pt x 6022.5pt>
+Package pdftex.def Info: ../figures/vaihingen4s/inference.png used on input lin
+e 33.
+(pdftex.def)             Requested size: 132.30666pt x 179.40517pt.
+
+<../figures/potsdam4s/in.png, id=1253, 752.8125pt x 752.8125pt>
 File: ../figures/potsdam4s/in.png Graphic file (type png)
+
 <use ../figures/potsdam4s/in.png>
-Package pdftex.def Info: ../figures/potsdam4s/in.png  used on input line 44.
-(pdftex.def)             Requested size: 220.50887pt x 220.4581pt.
-<../figures/potsdam4s/label.png, id=1254, 6022.5pt x 6022.5pt>
+Package pdftex.def Info: ../figures/potsdam4s/in.png used on input line 44.
+(pdftex.def)             Requested size: 220.50887pt x 220.50404pt.
+
+<../figures/potsdam4s/label.png, id=1254, 752.8125pt x 752.8125pt>
 File: ../figures/potsdam4s/label.png Graphic file (type png)
+
 <use ../figures/potsdam4s/label.png>
-Package pdftex.def Info: ../figures/potsdam4s/label.png  used on input line 48.
+Package pdftex.def Info: ../figures/potsdam4s/label.png used on input line 48.
+(pdftex.def)             Requested size: 220.50887pt x 220.50404pt.
 
-(pdftex.def)             Requested size: 220.50887pt x 220.4581pt.
-<../figures/potsdam4s/inference.png, id=1255, 6022.5pt x 6022.5pt>
+<../figures/potsdam4s/inference.png, id=1255, 752.8125pt x 752.8125pt>
 File: ../figures/potsdam4s/inference.png Graphic file (type png)
+
 <use ../figures/potsdam4s/inference.png>
-Package pdftex.def Info: ../figures/potsdam4s/inference.png  used on input line
- 52.
-(pdftex.def)             Requested size: 220.50887pt x 220.4581pt.
+Package pdftex.def Info: ../figures/potsdam4s/inference.png used on input line 
+52.
+(pdftex.def)             Requested size: 220.50887pt x 220.50404pt.
 
 
-LaTeX Warning: Float too large for page by 15.43842pt on input line 57.
+LaTeX Warning: Float too large for page by 15.57625pt on input line 57.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3101,13 +3207,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34103 strings out of 492982
- 616661 string characters out of 6134896
- 1094301 words of memory out of 5000000
- 36642 multiletter control sequences out of 15000+600000
- 549018 words of font info for 82 fonts, out of 8000000 for 9000
+ 29828 strings out of 493029
+ 513639 string characters out of 6136235
+ 992507 words of memory out of 5000000
+ 32337 multiletter control sequences out of 15000+600000
+ 22386 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,18n,92p,10400b,2922s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,18n,92p,10400b,2433s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -3141,7 +3247,7 @@ t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist
 fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vnt
 ex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti12.pf
 b>
-Output written on build//main.pdf (96 pages, 110642557 bytes).
+Output written on build//main.pdf (96 pages, 22767422 bytes).
 PDF statistics:
  1544 PDF objects out of 1728 (max. 8388607)
  1225 compressed objects within 13 object streams
