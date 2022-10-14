@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.6 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,22 +18,26 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global}
+  \datalist[entry]{none/global//global/global}
     \entry{book:731838}{book}{}
       \name{author}{1}{}{%
-        {{hash=0c4e33c2968f01dbbfd8f7e6abd017d7}{%
+        {{hash=206876ef6358baa832691e9ec202388f}{%
            family={James\bibnamedelimb B.\bibnamedelimi Campbell\bibnamedelima PhD},
-           family_i={J\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           familyi={J\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod},
            given={Randolph\bibnamedelimb H.\bibnamedelimi Wynne},
-           given_i={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {The Guilford Press}%
       }
-      \strng{namehash}{0c4e33c2968f01dbbfd8f7e6abd017d7}
-      \strng{fullhash}{0c4e33c2968f01dbbfd8f7e6abd017d7}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{206876ef6358baa832691e9ec202388f}
+      \strng{fullhash}{206876ef6358baa832691e9ec202388f}
+      \strng{bibnamehash}{206876ef6358baa832691e9ec202388f}
+      \strng{authorbibnamehash}{206876ef6358baa832691e9ec202388f}
+      \strng{authornamehash}{206876ef6358baa832691e9ec202388f}
+      \strng{authorfullhash}{206876ef6358baa832691e9ec202388f}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Fifth Edition}
@@ -42,18 +46,23 @@
       \field{year}{2011}
     \endentry
     \entry{deathvalley}{online}{}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{day}{27}
-      \field{month}{09}
+      \field{month}{9}
       \field{title}{PIA01349: Color Image of Death Valley, California from SIR-C}
       \field{urlday}{18}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{file}
       \verb https://upload.wikimedia.org/wikipedia/commons/2/20/Death-valley-sar.jpg
+      \endverb
+      \verb{urlraw}
+      \verb https://photojournal.jpl.nasa.gov/catalog/PIA01349
       \endverb
       \verb{url}
       \verb https://photojournal.jpl.nasa.gov/catalog/PIA01349
@@ -61,13 +70,17 @@
       \keyw{digital_image}
     \endentry
     \entry{aerial_dict}{online}{}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labeltitlesource}{title}
       \field{title}{``aerial photograph''}
       \field{urlday}{18}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.merriam-webster.com/dictionary/aerial%20photography
+      \endverb
       \verb{url}
       \verb https://www.merriam-webster.com/dictionary/aerial%20photography
       \endverb
@@ -77,41 +90,48 @@
       \name{author}{3}{}{%
         {{hash=6bc141b45a252ad9ed6d908f170a6de9}{%
            family={Mcglone},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Chris},
-           given_i={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod}}}%
         {{hash=0230a2b8c4465cc65f3b1aa8412c8ba2}{%
            family={Mikhail},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Edward},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
         {{hash=c0d9564f7b996ba13c246d5d1c8e1c64}{%
            family={Bethel},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Jim},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
       \name{editor}{3}{}{%
         {{hash=6bc141b45a252ad9ed6d908f170a6de9}{%
            family={Mcglone},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Chris},
-           given_i={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod}}}%
         {{hash=0230a2b8c4465cc65f3b1aa8412c8ba2}{%
            family={Mikhail},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Edward},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
         {{hash=c0d9564f7b996ba13c246d5d1c8e1c64}{%
            family={Bethel},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Jim},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
       \strng{namehash}{bc76ebfb19a14357d2789222597689d5}
       \strng{fullhash}{bc76ebfb19a14357d2789222597689d5}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{bc76ebfb19a14357d2789222597689d5}
+      \strng{authorbibnamehash}{bc76ebfb19a14357d2789222597689d5}
+      \strng{authornamehash}{bc76ebfb19a14357d2789222597689d5}
+      \strng{authorfullhash}{bc76ebfb19a14357d2789222597689d5}
+      \strng{editorbibnamehash}{bc76ebfb19a14357d2789222597689d5}
+      \strng{editornamehash}{bc76ebfb19a14357d2789222597689d5}
+      \strng{editorfullhash}{bc76ebfb19a14357d2789222597689d5}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Since the publication of the first edition in the 1940s, the Manual of Photogrammetry has served as the comprehensive reference for those working in the field of photogrammetry and for those in other fields who need to use or understand photogrammetric applications. Recent years have seen fundamental changes in photogrammetric theory and practice, due both to technological changes such as the widespread adoption of digital imagery, and also the emergence of separate fields with strong photogrammetric components, such as geographic information systems, computer vision and remote sensing. The Fifth Edition of the Manual provides a guide to photogrammetric practice at the start of the 21st century, integrating new sensors, exploitation techniques and products into the ever-evolving practice of photogrammetry. Positioning technologies, such as {GPS} and inertial navigation systems, have reduced ground control survey costs, while simultaneously reducing the need for ground control surveys by making direct sensor orientation possible. New platforms and sensors, including digital sensors on both airborne and satellite platforms, have become standard alternatives to aerial film data capture. Fully-digital production lines, from acquisition to exploitation, have become the norm. The Internet now allows production to be distributed across the world and final products to be disseminated almost instantaneously. Digital elevation models are now routinely produced using lidar and ifsar, without traditional stereo imagery. The practice of photogrammetry now requires familiarity with all these technologies and more. The outline of this edition attempts to reflect the new structure of the field. The emphasis is on digital methods and products, although the rapidly changing technology precludes the detailed description of operating procedures and software. There is much more mathematical content than in the previous edition, particularly in projective geometry and statistics, and discussions of digital image processing and computer vision algorithms to provide insight into digital production operations. It is hoped that this will provide background for many of the new automated exploitation techniques now being introduced, and also serve as an entry point for those from other fields who will use this book as a reference.}
@@ -124,19 +144,23 @@
     \endentry
     \entry{book:834597}{book}{}
       \name{author}{1}{}{%
-        {{hash=953ae7ffa7a27e42a1bd40f9450df02a}{%
+        {{hash=1e4c223f7ba517c4c85d34b9cd3b2f21}{%
            family={David\bibnamedelimb P.\bibnamedelimi Paine},
-           family_i={D\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim P\bibinitperiod},
            given={James\bibnamedelimb D.\bibnamedelimi Kiser},
-           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
-      \strng{namehash}{953ae7ffa7a27e42a1bd40f9450df02a}
-      \strng{fullhash}{953ae7ffa7a27e42a1bd40f9450df02a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{1e4c223f7ba517c4c85d34b9cd3b2f21}
+      \strng{fullhash}{1e4c223f7ba517c4c85d34b9cd3b2f21}
+      \strng{bibnamehash}{1e4c223f7ba517c4c85d34b9cd3b2f21}
+      \strng{authorbibnamehash}{1e4c223f7ba517c4c85d34b9cd3b2f21}
+      \strng{authornamehash}{1e4c223f7ba517c4c85d34b9cd3b2f21}
+      \strng{authorfullhash}{1e4c223f7ba517c4c85d34b9cd3b2f21}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3}
@@ -146,19 +170,23 @@
     \endentry
     \entry{book:28867}{book}{}
       \name{author}{1}{}{%
-        {{hash=7913190f3ad3e57d3be46fb1702f9b55}{%
+        {{hash=70efffdca957b5bb52b8aa1c0211a67a}{%
            family={Linda\bibnamedelimb G.\bibnamedelimi Shapiro},
-           family_i={L\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           familyi={L\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim S\bibinitperiod},
            given={George\bibnamedelimb C.\bibnamedelimi Stockman},
-           given_i={G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Prentice Hall}%
       }
-      \strng{namehash}{7913190f3ad3e57d3be46fb1702f9b55}
-      \strng{fullhash}{7913190f3ad3e57d3be46fb1702f9b55}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{70efffdca957b5bb52b8aa1c0211a67a}
+      \strng{fullhash}{70efffdca957b5bb52b8aa1c0211a67a}
+      \strng{bibnamehash}{70efffdca957b5bb52b8aa1c0211a67a}
+      \strng{authorbibnamehash}{70efffdca957b5bb52b8aa1c0211a67a}
+      \strng{authornamehash}{70efffdca957b5bb52b8aa1c0211a67a}
+      \strng{authorfullhash}{70efffdca957b5bb52b8aa1c0211a67a}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780130307965, 0130307963}
@@ -169,13 +197,17 @@
       \list{organization}{1}{%
         {The MathWorks, Inc.}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labeltitlesource}{title}
       \field{title}{Semantic Segmentation Basics}
       \field{urlday}{20}
-      \field{urlmonth}{04}
+      \field{urlmonth}{4}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.mathworks.com/help/vision/ug/semantic-segmentation-basics.html
+      \endverb
       \verb{url}
       \verb http://www.mathworks.com/help/vision/ug/semantic-segmentation-basics.html
       \endverb
@@ -184,55 +216,68 @@
       \name{author}{1}{}{%
         {{hash=f6460fd92d75b292e8cf2b56abb02f32}{%
            family={Bo},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Huang},
-           given_i={H\bibinitperiod}}}%
+           giveni={H\bibinitperiod}}}%
       }
       \list{organization}{1}{%
-        {Technische Universität München}%
+        {Technische Universit{ä}t M{ü}nchen}%
       }
       \strng{namehash}{f6460fd92d75b292e8cf2b56abb02f32}
       \strng{fullhash}{f6460fd92d75b292e8cf2b56abb02f32}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{f6460fd92d75b292e8cf2b56abb02f32}
+      \strng{authorbibnamehash}{f6460fd92d75b292e8cf2b56abb02f32}
+      \strng{authornamehash}{f6460fd92d75b292e8cf2b56abb02f32}
+      \strng{authorfullhash}{f6460fd92d75b292e8cf2b56abb02f32}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{10}
-      \field{month}{02}
+      \field{month}{2}
       \field{title}{Image Semantic Segmentation}
       \field{urlday}{20}
-      \field{urlmonth}{04}
+      \field{urlmonth}{4}
       \field{urlyear}{2018}
       \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.tum.de/display/lfdv/Image+Semantic+Segmentation
+      \endverb
       \verb{url}
       \verb https://wiki.tum.de/display/lfdv/Image+Semantic+Segmentation
       \endverb
     \endentry
     \entry{delmerico2011building}{inproceedings}{}
       \name{author}{3}{}{%
-        {{hash=880a04ff9f2cd091f4e79884197334d8}{%
+        {{hash=3e5bba10174f01ed5434f817964b07e4}{%
            family={Delmerico},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Jeffrey\bibnamedelima A},
-           given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=deef35152b4152719fbf94431f0fa6af}{%
            family={David},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Philip},
-           given_i={P\bibinitperiod}}}%
-        {{hash=ffa9d8931d22ccdfdfea4614e64aa699}{%
+           giveni={P\bibinitperiod}}}%
+        {{hash=9cfe6b83e3e83c5d60d37fc86a862ccc}{%
            family={Corso},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Jason\bibnamedelima J},
-           given_i={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{4105d632cf32d7f8581101aa37288586}
-      \strng{fullhash}{4105d632cf32d7f8581101aa37288586}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{6bad3bf151bdf0f501da94a97b469932}
+      \strng{fullhash}{6bad3bf151bdf0f501da94a97b469932}
+      \strng{bibnamehash}{6bad3bf151bdf0f501da94a97b469932}
+      \strng{authorbibnamehash}{6bad3bf151bdf0f501da94a97b469932}
+      \strng{authornamehash}{6bad3bf151bdf0f501da94a97b469932}
+      \strng{authorfullhash}{6bad3bf151bdf0f501da94a97b469932}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Intelligent Robots and Systems (IROS), 2011 IEEE/RSJ International Conference on}
@@ -243,29 +288,33 @@
     \endentry
     \entry{pham2000current}{article}{}
       \name{author}{3}{}{%
-        {{hash=2fcfcbbcf9942d64bf021bc36c5daa59}{%
+        {{hash=d2f67f9f844b8752f05e751708099284}{%
            family={Pham},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={Dzung\bibnamedelima L},
-           given_i={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
         {{hash=0786880c98de616350d4d3d04ce340ec}{%
            family={Xu},
-           family_i={X\bibinitperiod},
+           familyi={X\bibinitperiod},
            given={Chenyang},
-           given_i={C\bibinitperiod}}}%
-        {{hash=bdada49ec2d07cfb5577e467c706cc81}{%
+           giveni={C\bibinitperiod}}}%
+        {{hash=8bfa40ef9412e1b582dfe0ab4e517639}{%
            family={Prince},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={Jerry\bibnamedelima L},
-           given_i={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
       }
-      \strng{namehash}{b69aea15c12baa187098b80878da9750}
-      \strng{fullhash}{b69aea15c12baa187098b80878da9750}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{ed268d04bf79827f54f2545f727c4306}
+      \strng{fullhash}{ed268d04bf79827f54f2545f727c4306}
+      \strng{bibnamehash}{ed268d04bf79827f54f2545f727c4306}
+      \strng{authorbibnamehash}{ed268d04bf79827f54f2545f727c4306}
+      \strng{authornamehash}{ed268d04bf79827f54f2545f727c4306}
+      \strng{authorfullhash}{ed268d04bf79827f54f2545f727c4306}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual review of biomedical engineering}
@@ -280,27 +329,31 @@
       \name{author}{3}{}{%
         {{hash=c8f972354ef8b1760eeb8bcd0a8c19b8}{%
            family={Forouzanfar},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Mohamad},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
         {{hash=4b1a666f7e371c3818fee2634f7802c3}{%
            family={Forghani},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Nosratallah},
-           given_i={N\bibinitperiod}}}%
+           giveni={N\bibinitperiod}}}%
         {{hash=16c206c72c14588b412455c3ad01eaa8}{%
            family={Teshnehlab},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Mohammad},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
       \strng{namehash}{921d41c12d816c277d06d3295123c236}
       \strng{fullhash}{921d41c12d816c277d06d3295123c236}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{921d41c12d816c277d06d3295123c236}
+      \strng{authorbibnamehash}{921d41c12d816c277d06d3295123c236}
+      \strng{authornamehash}{921d41c12d816c277d06d3295123c236}
+      \strng{authorfullhash}{921d41c12d816c277d06d3295123c236}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Engineering Applications of Artificial Intelligence}
@@ -315,32 +368,36 @@
       \name{author}{4}{}{%
         {{hash=7bb2d83991df51fab82e334ba89d1132}{%
            family={Wu},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={Wei},
-           given_i={W\bibinitperiod}}}%
-        {{hash=00b12ff8640b395934908317db5abc6c}{%
+           giveni={W\bibinitperiod}}}%
+        {{hash=aef3029361bfe450f9bb1b44aae288d6}{%
            family={Chen},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Albert\bibnamedelima YC},
-           given_i={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
         {{hash=1f1b5a611871b013dd18b84a54bbb23f}{%
            family={Zhao},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Liang},
-           given_i={L\bibinitperiod}}}%
-        {{hash=ffa9d8931d22ccdfdfea4614e64aa699}{%
+           giveni={L\bibinitperiod}}}%
+        {{hash=9cfe6b83e3e83c5d60d37fc86a862ccc}{%
            family={Corso},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Jason\bibnamedelima J},
-           given_i={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
       \strng{namehash}{95a5b9d20e620247996b4690be15bbe3}
-      \strng{fullhash}{e575715f0de0e488262b10c2e927710b}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{fullhash}{81d60095cf41424d0eca6f26ba58fd49}
+      \strng{bibnamehash}{95a5b9d20e620247996b4690be15bbe3}
+      \strng{authorbibnamehash}{95a5b9d20e620247996b4690be15bbe3}
+      \strng{authornamehash}{95a5b9d20e620247996b4690be15bbe3}
+      \strng{authorfullhash}{81d60095cf41424d0eca6f26ba58fd49}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International journal of computer assisted radiology and surgery}
@@ -353,24 +410,28 @@
     \endentry
     \entry{george2012mr}{article}{}
       \name{author}{2}{}{%
-        {{hash=0206b7ff9ff7d380666413d47998911e}{%
+        {{hash=89732f7a51ef34638a8e743cff3811a1}{%
            family={George},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={E\bibnamedelima Ben},
-           given_i={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
         {{hash=04a3552b3e25a5a99c4624d34d497d9c}{%
            family={Karnan},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={M},
-           given_i={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Citeseer}%
       }
-      \strng{namehash}{fdca19f00c6ea4a72f6887805920f295}
-      \strng{fullhash}{fdca19f00c6ea4a72f6887805920f295}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{5b35e7fd818831e2f4a181d1de6cbc66}
+      \strng{fullhash}{5b35e7fd818831e2f4a181d1de6cbc66}
+      \strng{bibnamehash}{5b35e7fd818831e2f4a181d1de6cbc66}
+      \strng{authorbibnamehash}{5b35e7fd818831e2f4a181d1de6cbc66}
+      \strng{authornamehash}{5b35e7fd818831e2f4a181d1de6cbc66}
+      \strng{authorfullhash}{5b35e7fd818831e2f4a181d1de6cbc66}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International journal of engineering and technology (IJET)}
@@ -385,37 +446,41 @@
       \name{author}{5}{}{%
         {{hash=00ed67fd4421fd402b494d63169a1bb4}{%
            family={Kamalakannan},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Sridharan},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=163de15010a660f8813195e4858529d0}{%
            family={Gururajan},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Arunkumar},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=2c668f5d936ba1a0bb2dc5b7fa89c030}{%
            family={Sari-Sarraf},
-           family_i={S\bibinithyphendelim S\bibinitperiod},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
            given={Hamed},
-           given_i={H\bibinitperiod}}}%
+           giveni={H\bibinitperiod}}}%
         {{hash=ea028242308e69f84cfa86bb3f983b56}{%
            family={Long},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={Rodney},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
         {{hash=2dbaa1a2302cf67c0d7b29a644ab8457}{%
            family={Antani},
-           family_i={A\bibinitperiod},
+           familyi={A\bibinitperiod},
            given={Sameer},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {IEEE}%
       }
       \strng{namehash}{cb0148792c57b1ae3987369ff891b097}
       \strng{fullhash}{6ccd0930f39fdac72679fb10578f1c9a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{cb0148792c57b1ae3987369ff891b097}
+      \strng{authorbibnamehash}{cb0148792c57b1ae3987369ff891b097}
+      \strng{authornamehash}{cb0148792c57b1ae3987369ff891b097}
+      \strng{authorfullhash}{6ccd0930f39fdac72679fb10578f1c9a}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
@@ -428,24 +493,28 @@
     \endentry
     \entry{gehrig1999dead}{inproceedings}{}
       \name{author}{2}{}{%
-        {{hash=666cebc737b70186cbdae064c6e900b6}{%
+        {{hash=b0e3763c8edbbd41eb7731f3dd0e9c37}{%
            family={Gehrig},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Stefan\bibnamedelima K},
-           given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=47fc0b396640933079bfb15d4cbb009d}{%
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b581a713ba6f3fed66fd11cf4ebae6a5}{%
            family={Stein},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Fridtjof\bibnamedelima J},
-           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{73d6295afd2da003ba23b935388202b8}
-      \strng{fullhash}{73d6295afd2da003ba23b935388202b8}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{cc4bd849e1d6ad54276d469299e7996d}
+      \strng{fullhash}{cc4bd849e1d6ad54276d469299e7996d}
+      \strng{bibnamehash}{cc4bd849e1d6ad54276d469299e7996d}
+      \strng{authorbibnamehash}{cc4bd849e1d6ad54276d469299e7996d}
+      \strng{authornamehash}{cc4bd849e1d6ad54276d469299e7996d}
+      \strng{authorfullhash}{cc4bd849e1d6ad54276d469299e7996d}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Intelligent Robots and Systems, 1999. IROS'99. Proceedings. 1999 IEEE/RSJ International Conference on}
@@ -460,16 +529,21 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{day}{16}
-      \field{month}{05}
+      \field{month}{5}
       \field{title}{2D Semantic Labeling Contest - Vaihingen}
       \field{urlday}{19}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html
+      \endverb
       \verb{url}
       \verb http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html
       \endverb
@@ -479,16 +553,21 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{day}{16}
-      \field{month}{05}
+      \field{month}{5}
       \field{title}{2D Semantic Labeling Contest}
       \field{urlday}{19}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html
+      \endverb
       \verb{url}
       \verb http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html
       \endverb
@@ -497,42 +576,46 @@
       \name{author}{6}{}{%
         {{hash=15816dfa46a0362437949c7231d91c37}{%
            family={Rottensteiner},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Franz},
-           given_i={F\bibinitperiod}}}%
+           giveni={F\bibinitperiod}}}%
         {{hash=d6dd8d38013c5f2b052dfa5171217bea}{%
            family={Sohn},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Gunho},
-           given_i={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod}}}%
         {{hash=6accec71131d836afc250ebb6462fac3}{%
            family={Gerke},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Markus},
-           given_i={M\bibinitperiod}}}%
-        {{hash=2389b4c373e2ba01bf39439050a2c669}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=deee5d40c06294b976a527d423f702d5}{%
            family={Wegner},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={Jan\bibnamedelima Dirk},
-           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
         {{hash=b4f50153fbb9f85b1943e327074cee26}{%
            family={Breitkopf},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Uwe},
-           given_i={U\bibinitperiod}}}%
+           giveni={U\bibinitperiod}}}%
         {{hash=dc19cd186d04b609d2f58a14059bae31}{%
            family={Jung},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={Jaewook},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
       \strng{namehash}{39cce4ec9f17c5e6939d4da8c6c7d130}
-      \strng{fullhash}{de1c8411e5593f2b6c5c49b35ad351f8}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{fullhash}{16ce8358e9ae5e5d061a058ee495e676}
+      \strng{bibnamehash}{39cce4ec9f17c5e6939d4da8c6c7d130}
+      \strng{authorbibnamehash}{39cce4ec9f17c5e6939d4da8c6c7d130}
+      \strng{authornamehash}{39cce4ec9f17c5e6939d4da8c6c7d130}
+      \strng{authorfullhash}{16ce8358e9ae5e5d061a058ee495e676}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ISPRS Journal of Photogrammetry and Remote Sensing}
@@ -546,9 +629,9 @@
       \name{author}{1}{}{%
         {{hash=6b1b95cdca60865947b9a309e5e904f6}{%
            family={Mitchell},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Tom},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {New York}%
@@ -558,8 +641,12 @@
       }
       \strng{namehash}{6b1b95cdca60865947b9a309e5e904f6}
       \strng{fullhash}{6b1b95cdca60865947b9a309e5e904f6}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{6b1b95cdca60865947b9a309e5e904f6}
+      \strng{authorbibnamehash}{6b1b95cdca60865947b9a309e5e904f6}
+      \strng{authornamehash}{6b1b95cdca60865947b9a309e5e904f6}
+      \strng{authorfullhash}{6b1b95cdca60865947b9a309e5e904f6}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0071154673, 0071154671}
@@ -570,27 +657,31 @@
       \name{author}{3}{}{%
         {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
            family={Goodfellow},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Ian},
-           given_i={I\bibinitperiod}}}%
+           giveni={I\bibinitperiod}}}%
         {{hash=40a8e4774982146adc2688546f54efb2}{%
            family={Bengio},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Yoshua},
-           given_i={Y\bibinitperiod}}}%
+           giveni={Y\bibinitperiod}}}%
         {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
            family={Courville},
-           family_i={C\bibinitperiod},
+           familyi={C\bibinitperiod},
            given={Aaron},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {MIT Press}%
       }
       \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{\url{http://www.deeplearningbook.org}}
@@ -601,14 +692,19 @@
       \name{author}{1}{}{%
         {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
            family={Krizhevsky},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Alex},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{c5e3a676e2ac1164b3afcd539c131fc9}
       \strng{fullhash}{c5e3a676e2ac1164b3afcd539c131fc9}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authorbibnamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authornamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authorfullhash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Learning Multiple Layers of Features from Tiny Images}
@@ -618,66 +714,79 @@
       \name{author}{1}{}{%
         {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
            family={Krizhevsky},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Alex},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{c5e3a676e2ac1164b3afcd539c131fc9}
       \strng{fullhash}{c5e3a676e2ac1164b3afcd539c131fc9}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authorbibnamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authornamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authorfullhash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The CIFAR-10 dataset}
       \field{urlday}{19}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.cs.toronto.edu/~kriz/cifar.html
+      \endverb
       \verb{url}
       \verb http://www.cs.toronto.edu/~kriz/cifar.html
       \endverb
     \endentry
     \entry{5453203}{inproceedings}{}
       \name{author}{6}{}{%
-        {{hash=7cb11b8f6b72754ee6e25f46eee0968e}{%
+        {{hash=b54ab8820402e537ebf2a32637ff9709}{%
            family={Goodfellow},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={I.\bibnamedelimi J.},
-           given_i={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=21248221b0f473d7eabe5d429aab72cc}{%
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f21e936179fd2f3731a7ef53c532b2cc}{%
            family={Koenig},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={N.},
-           given_i={N\bibinitperiod}}}%
-        {{hash=15cd02aa154a0c15c229175ae9810fc1}{%
+           giveni={N\bibinitperiod}}}%
+        {{hash=fbbae12b8c94f422e12b770b3844c71e}{%
            family={Muja},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=7e9030c4fa36f266f44a229b1998cef1}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=875487f26666870de527e487d78bdb49}{%
            family={Pantofaru},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={C.},
-           given_i={C\bibinitperiod}}}%
-        {{hash=c411e64036b15315f8502e4433556fbc}{%
+           giveni={C\bibinitperiod}}}%
+        {{hash=52539e7243abfb5e41453de2e9ac65a4}{%
            family={Sorokin},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={A.},
-           given_i={A\bibinitperiod}}}%
-        {{hash=9fa2065bf12e9fca8488e907c2dd5093}{%
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b248437e8ecd44c0c8e14e4d79e4b39}{%
            family={Takayama},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={L.},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{36e8b89124c66617fe560cc107447a49}
-      \strng{fullhash}{c106fd2588b582fe82d35bc28ddcaa9a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{cf4c5032ebe6358e49f6bc4aee9af088}
+      \strng{fullhash}{449b9d14f1d629c0f93dd39bc1cf7f4e}
+      \strng{bibnamehash}{cf4c5032ebe6358e49f6bc4aee9af088}
+      \strng{authorbibnamehash}{cf4c5032ebe6358e49f6bc4aee9af088}
+      \strng{authornamehash}{cf4c5032ebe6358e49f6bc4aee9af088}
+      \strng{authorfullhash}{449b9d14f1d629c0f93dd39bc1cf7f4e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2010 5th ACM/IEEE International Conference on Human-Robot Interaction (HRI)}
       \field{issn}{2167-2121}
-      \field{month}{03}
+      \field{month}{3}
       \field{title}{Help me help you: Interfaces for personal robots}
       \field{year}{2010}
       \field{pages}{187\bibrangedash 188}
@@ -691,19 +800,19 @@
       \name{author}{3}{}{%
         {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
            family={Krizhevsky},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Alex},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
            family={Sutskever},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Ilya},
-           given_i={I\bibinitperiod}}}%
-        {{hash=881b7655f3886f90a9400902a521acdb}{%
+           giveni={I\bibinitperiod}}}%
+        {{hash=813bd95fe553e6079cd53a567b238287}{%
            family={Hinton},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Geoffrey\bibnamedelima E.},
-           given_i={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {New York, NY, USA}%
@@ -711,15 +820,19 @@
       \list{publisher}{1}{%
         {ACM}%
       }
-      \strng{namehash}{a2ca3db133a11a15a681899a15f5d6aa}
-      \strng{fullhash}{a2ca3db133a11a15a681899a15f5d6aa}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{fullhash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{bibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authornamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0001-0782}
       \field{journaltitle}{Commun. ACM}
-      \field{month}{05}
+      \field{month}{5}
       \field{number}{6}
       \field{title}{ImageNet Classification with Deep Convolutional Neural Networks}
       \field{volume}{60}
@@ -729,6 +842,9 @@
       \verb{doi}
       \verb 10.1145/3065386
       \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/3065386
+      \endverb
       \verb{url}
       \verb http://doi.acm.org/10.1145/3065386
       \endverb
@@ -737,19 +853,23 @@
       \name{author}{2}{}{%
         {{hash=5543e82359e26b035efc009cb3efff9d}{%
            family={Ioffe},
-           family_i={I\bibinitperiod},
+           familyi={I\bibinitperiod},
            given={Sergey},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
            family={Szegedy},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Christian},
-           given_i={C\bibinitperiod}}}%
+           giveni={C\bibinitperiod}}}%
       }
       \strng{namehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
       \strng{fullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorbibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authornamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorfullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -760,42 +880,49 @@
       \verb{eprint}
       \verb 1502.03167
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1502.03167
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1502.03167
       \endverb
     \endentry
     \entry{6909616}{inproceedings}{}
       \name{author}{4}{}{%
-        {{hash=987f36ecaadc2113951923f36dd60944}{%
+        {{hash=5cbacbda240080575ebd6787619ed30d}{%
            family={Taigman},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Y.},
-           given_i={Y\bibinitperiod}}}%
-        {{hash=93ef14cd2681e05473f6f03a73ce9bab}{%
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7148de383baa80de3a6b13dd22492adc}{%
            family={Yang},
-           family_i={Y\bibinitperiod},
+           familyi={Y\bibinitperiod},
            given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=cd218588457a5e8baf7951653efd7c9a}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=6cb5af0e649387de5bbfdb150cc7a786}{%
            family={Ranzato},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=d87b4c39d69f1056666a9a400a36f998}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=2cc01c022d231d8328418a118bb99d6f}{%
            family={Wolf},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={L.},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{ed30cceafe053c08f02c7ea3663ae22b}
-      \strng{fullhash}{ece4b2938422b7ceaaa456eef27ec516}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{a03fdf91916e9c91b27086a732aab690}
+      \strng{fullhash}{6f98ed2607426318c2fbdb0b55d8021a}
+      \strng{bibnamehash}{a03fdf91916e9c91b27086a732aab690}
+      \strng{authorbibnamehash}{a03fdf91916e9c91b27086a732aab690}
+      \strng{authornamehash}{a03fdf91916e9c91b27086a732aab690}
+      \strng{authorfullhash}{6f98ed2607426318c2fbdb0b55d8021a}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2014 IEEE Conference on Computer Vision and Pattern Recognition}
       \field{issn}{1063-6919}
-      \field{month}{06}
+      \field{month}{6}
       \field{title}{DeepFace: Closing the Gap to Human-Level Performance in Face Verification}
       \field{year}{2014}
       \field{pages}{1701\bibrangedash 1708}
@@ -807,19 +934,23 @@
     \endentry
     \entry{fisher1936use}{article}{}
       \name{author}{1}{}{%
-        {{hash=35dd876b7f17d154bcff325475f5d212}{%
+        {{hash=080c7b813993bf6086f25dc255091c25}{%
            family={Fisher},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Ronald\bibnamedelima A},
-           given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley Online Library}%
       }
-      \strng{namehash}{35dd876b7f17d154bcff325475f5d212}
-      \strng{fullhash}{35dd876b7f17d154bcff325475f5d212}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{080c7b813993bf6086f25dc255091c25}
+      \strng{fullhash}{080c7b813993bf6086f25dc255091c25}
+      \strng{bibnamehash}{080c7b813993bf6086f25dc255091c25}
+      \strng{authorbibnamehash}{080c7b813993bf6086f25dc255091c25}
+      \strng{authornamehash}{080c7b813993bf6086f25dc255091c25}
+      \strng{authorfullhash}{080c7b813993bf6086f25dc255091c25}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annals of human genetics}
@@ -834,26 +965,26 @@
       \name{author}{4}{}{%
         {{hash=3900d60f687642dc81ade3f6d3dddb15}{%
            family={Kotzias},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Dimitrios},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
         {{hash=8a2a310cc5bd33d36b7e82bf952e3597}{%
            family={Denil},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Misha},
-           given_i={M\bibinitperiod}}}%
-        {{hash=f0c607e07790eb5b3996d607725bf370}{%
-           prefix={de},
-           prefix_i={d\bibinitperiod},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cf269f9a5106a41ad53847a68a27db1c}{%
            family={Freitas},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Nando},
-           given_i={N\bibinitperiod}}}%
+           giveni={N\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
         {{hash=4940852a16a84802eb98552d6deace24}{%
            family={Smyth},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Padhraic},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Sydney, NSW, Australia}%
@@ -862,9 +993,13 @@
         {ACM}%
       }
       \strng{namehash}{75ffb0da2fe670a685ded38907103604}
-      \strng{fullhash}{02936699487f3e65a86f4d73637fc519}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{fullhash}{224b5267982f5f5b41f2d2dc1a8e396f}
+      \strng{bibnamehash}{75ffb0da2fe670a685ded38907103604}
+      \strng{authorbibnamehash}{75ffb0da2fe670a685ded38907103604}
+      \strng{authornamehash}{75ffb0da2fe670a685ded38907103604}
+      \strng{authorfullhash}{224b5267982f5f5b41f2d2dc1a8e396f}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
@@ -877,6 +1012,9 @@
       \verb{doi}
       \verb 10.1145/2783258.2783380
       \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/2783258.2783380
+      \endverb
       \verb{url}
       \verb http://doi.acm.org/10.1145/2783258.2783380
       \endverb
@@ -886,9 +1024,9 @@
       \name{author}{1}{}{%
         {{hash=2806d496d05f17b9408509408863d75a}{%
            family={Sutton},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Richard},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Cambridge, Mass}%
@@ -898,8 +1036,12 @@
       }
       \strng{namehash}{2806d496d05f17b9408509408863d75a}
       \strng{fullhash}{2806d496d05f17b9408509408863d75a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{2806d496d05f17b9408509408863d75a}
+      \strng{authorbibnamehash}{2806d496d05f17b9408509408863d75a}
+      \strng{authornamehash}{2806d496d05f17b9408509408863d75a}
+      \strng{authorfullhash}{2806d496d05f17b9408509408863d75a}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0262193986, 0262193981}
@@ -910,9 +1052,9 @@
       \name{author}{1}{}{%
         {{hash=addab24057a6b45ca4b85eacd6b56821}{%
            family={Bertsekas},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Dimitri},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Belmont, Mass}%
@@ -922,8 +1064,12 @@
       }
       \strng{namehash}{addab24057a6b45ca4b85eacd6b56821}
       \strng{fullhash}{addab24057a6b45ca4b85eacd6b56821}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{addab24057a6b45ca4b85eacd6b56821}
+      \strng{authorbibnamehash}{addab24057a6b45ca4b85eacd6b56821}
+      \strng{authornamehash}{addab24057a6b45ca4b85eacd6b56821}
+      \strng{authorfullhash}{addab24057a6b45ca4b85eacd6b56821}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-1886529106, 1886529108}
@@ -934,99 +1080,120 @@
       \name{author}{2}{}{%
         {{hash=51653b99e2331eed55fb1328e674877e}{%
            family={Ndirango},
-           family_i={N\bibinitperiod},
+           familyi={N\bibinitperiod},
            given={Anthony},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=ff77fe4b80e593023dc9d43b3a5c35ec}{%
            family={Lee},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={Tyler},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {Intel Corporation}%
       }
       \strng{namehash}{aabb3c126b4281c915ef83cb9bee93e6}
       \strng{fullhash}{aabb3c126b4281c915ef83cb9bee93e6}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{aabb3c126b4281c915ef83cb9bee93e6}
+      \strng{authorbibnamehash}{aabb3c126b4281c915ef83cb9bee93e6}
+      \strng{authornamehash}{aabb3c126b4281c915ef83cb9bee93e6}
+      \strng{authorfullhash}{aabb3c126b4281c915ef83cb9bee93e6}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{08}
+      \field{day}{8}
       \field{month}{12}
       \field{title}{End-to-End Speech Recognition with neon}
       \field{urlday}{20}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ai.intel.com/end-end-speech-recognition-neon
+      \endverb
       \verb{url}
       \verb https://ai.intel.com/end-end-speech-recognition-neon
       \endverb
     \endentry
     \entry{mnist_dataset}{online}{}
       \name{author}{2}{}{%
-        {{hash=9378d0604719abd1b87a5b82362151a5}{%
+        {{hash=c6e70904db62a9508fd8c8c9167c163e}{%
            family={Yann\bibnamedelima LeCun},
-           family_i={Y\bibinitperiod\bibinitdelim L\bibinitperiod},
+           familyi={Y\bibinitperiod\bibinitdelim L\bibinitperiod},
            given={Corinna\bibnamedelima Cortes},
-           given_i={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=846ace6aa78f87a4d8adc8acc6fe4b9e}{%
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=57683730ceb22e5d170051dedfc04a8e}{%
            family={Burges},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Christopher\bibnamedelima J.C.},
-           given_i={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
-      \strng{namehash}{4791e8a776fa00b16cc5aa6a169d9055}
-      \strng{fullhash}{4791e8a776fa00b16cc5aa6a169d9055}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{688724548584be9623fe17b0f18e0613}
+      \strng{fullhash}{688724548584be9623fe17b0f18e0613}
+      \strng{bibnamehash}{688724548584be9623fe17b0f18e0613}
+      \strng{authorbibnamehash}{688724548584be9623fe17b0f18e0613}
+      \strng{authornamehash}{688724548584be9623fe17b0f18e0613}
+      \strng{authorfullhash}{688724548584be9623fe17b0f18e0613}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{THE MNIST DATABASE of handwritten digits}
       \field{urlday}{20}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://yann.lecun.com/exdb/mnist/
+      \endverb
       \verb{url}
       \verb http://yann.lecun.com/exdb/mnist/
       \endverb
     \endentry
     \entry{imagenet_cvpr09}{inproceedings}{}
       \name{author}{6}{}{%
-        {{hash=b0af3b3071faa5094b78e43437ecf2b2}{%
+        {{hash=cbaf4f8829c5ef01cf9659d1d6975526}{%
            family={Deng},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={J.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=09a095a4ec00163d55402ef86d09984f}{%
+           giveni={J\bibinitperiod}}}%
+        {{hash=955e4fa0c47a616eecedbeeb06aa65fa}{%
            family={Dong},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={W.},
-           given_i={W\bibinitperiod}}}%
-        {{hash=bdb31aaab98b7965089b0d14d5fc618a}{%
+           giveni={W\bibinitperiod}}}%
+        {{hash=edd3c4a3b6388614c15fdfa581b52069}{%
            family={Socher},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={R.},
-           given_i={R\bibinitperiod}}}%
-        {{hash=504ff59e19fe1b8342a2337e3632121e}{%
+           giveni={R\bibinitperiod}}}%
+        {{hash=4db47e780a7092458880617d8c3231f7}{%
            family={Li},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={L.-J.},
-           given_i={L\bibinithyphendelim J\bibinitperiod}}}%
-        {{hash=81297ce1d44b1a2582d01bb25868c1ab}{%
+           giveni={L\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=1a48ecf9984adc4526895c8abf1d2b80}{%
            family={Li},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={K.},
-           given_i={K\bibinitperiod}}}%
-        {{hash=da789b30a7a73dc9d999aa6cc2b4a96c}{%
+           giveni={K\bibinitperiod}}}%
+        {{hash=f536a9246365f63717886015403a0964}{%
            family={Fei-Fei},
-           family_i={F\bibinithyphendelim F\bibinitperiod},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
            given={L.},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{249eee277e2efb2066f6dde018b2fe56}
-      \strng{fullhash}{b75b1dd14a76200542aac2a635db3ce2}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{e727e8b64d4e11a52e90122d423e12b6}
+      \strng{fullhash}{fec3a590a384f905f4a8183a7c8ec390}
+      \strng{bibnamehash}{e727e8b64d4e11a52e90122d423e12b6}
+      \strng{authorbibnamehash}{e727e8b64d4e11a52e90122d423e12b6}
+      \strng{authornamehash}{e727e8b64d4e11a52e90122d423e12b6}
+      \strng{authorfullhash}{fec3a590a384f905f4a8183a7c8ec390}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{CVPR09}
@@ -1035,21 +1202,25 @@
     \endentry
     \entry{doi:10.1113/jphysiol.1959.sp006308}{article}{}
       \name{author}{2}{}{%
-        {{hash=ba47d7bd2cc31cceb76dc476d957ab48}{%
+        {{hash=1646506790ad176e490735afb7cc92f6}{%
            family={H.},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Hubel\bibnamedelima D.},
-           given_i={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=0bae28ad9c3f543c9c53372d0ef60d60}{%
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=fec906f09a6abaeb994c3d4bc5773d9e}{%
            family={N.},
-           family_i={N\bibinitperiod},
+           familyi={N\bibinitperiod},
            given={Wiesel\bibnamedelima T.},
-           given_i={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
-      \strng{namehash}{861f57b93961488e550b1cc4dcd9be48}
-      \strng{fullhash}{861f57b93961488e550b1cc4dcd9be48}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{c9e5705374a516cd108682b956e261fb}
+      \strng{fullhash}{c9e5705374a516cd108682b956e261fb}
+      \strng{bibnamehash}{c9e5705374a516cd108682b956e261fb}
+      \strng{authorbibnamehash}{c9e5705374a516cd108682b956e261fb}
+      \strng{authornamehash}{c9e5705374a516cd108682b956e261fb}
+      \strng{authorfullhash}{c9e5705374a516cd108682b956e261fb}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Physiology}
@@ -1064,6 +1235,9 @@
       \verb{eprint}
       \verb https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1959.sp006308
       \endverb
+      \verb{urlraw}
+      \verb https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/jphysiol.1959.sp006308
+      \endverb
       \verb{url}
       \verb https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/jphysiol.1959.sp006308
       \endverb
@@ -1072,29 +1246,33 @@
       \name{author}{4}{}{%
         {{hash=d0ab8cbca75df7aa3e0b6024d60ac5f8}{%
            family={Lecun},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={Yann},
-           given_i={Y\bibinitperiod}}}%
+           giveni={Y\bibinitperiod}}}%
         {{hash=ac762f2592005edf6bad58f566967c6c}{%
            family={Bottou},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Léon},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
         {{hash=40a8e4774982146adc2688546f54efb2}{%
            family={Bengio},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Yoshua},
-           given_i={Y\bibinitperiod}}}%
+           giveni={Y\bibinitperiod}}}%
         {{hash=844e183692f08a63f99285330fcf90cc}{%
            family={Haffner},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Patrick},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
       }
       \strng{namehash}{f7ce6caf843f284e299ac4d8b37d6357}
       \strng{fullhash}{2ec348724dbea153e32003064457e9e8}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{f7ce6caf843f284e299ac4d8b37d6357}
+      \strng{authorbibnamehash}{f7ce6caf843f284e299ac4d8b37d6357}
+      \strng{authornamehash}{f7ce6caf843f284e299ac4d8b37d6357}
+      \strng{authorfullhash}{2ec348724dbea153e32003064457e9e8}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE}
@@ -1107,69 +1285,73 @@
       \name{author}{12}{}{%
         {{hash=2a74ec28b731b015747e2af5f0b519e1}{%
            family={Russakovsky},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Olga},
-           given_i={O\bibinitperiod}}}%
+           giveni={O\bibinitperiod}}}%
         {{hash=0ae7fdc13773f928525f673b05f37149}{%
            family={Deng},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Jia},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=18c26ddba8b9dd77f278213fd4e93ce4}{%
            family={Su},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Hao},
-           given_i={H\bibinitperiod}}}%
+           giveni={H\bibinitperiod}}}%
         {{hash=bdb3759bbe6ab0618874848557abd459}{%
            family={Krause},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Jonathan},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=434c8ee62c507c93be09958bae942da5}{%
            family={Satheesh},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Sanjeev},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=e3f8564120f7528479a3ea1b507bd705}{%
            family={Ma},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Sean},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=6e8d947dd72de23b8500095b595e1e99}{%
            family={Huang},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Zhiheng},
-           given_i={Z\bibinitperiod}}}%
+           giveni={Z\bibinitperiod}}}%
         {{hash=e91a4c2044bccdbef249eabc886ff988}{%
            family={Karpathy},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Andrej},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=c8d6add84efe17681e0d4968ebf47fdc}{%
            family={Khosla},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Aditya},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
         {{hash=9c5821708eb9cc9bc6c92c66ada53892}{%
            family={Bernstein},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Michael},
-           given_i={M\bibinitperiod}}}%
-        {{hash=ad327617ae56ac5e0522568c50eed9c8}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=963e9b2526a7150c418b4e9e9d19a82f}{%
            family={Berg},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Alexander\bibnamedelima C.},
-           given_i={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
         {{hash=cd00ce5bc45f687c432e52e0fa1a7aa6}{%
            family={Fei-Fei},
-           family_i={F\bibinithyphendelim F\bibinitperiod},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
            given={Li},
-           given_i={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod}}}%
       }
       \strng{namehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
-      \strng{fullhash}{2f85dbf303db3e3e3c676bc2cec94d6a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{fullhash}{59755200ef94ffc1362c28c17d315fe0}
+      \strng{bibnamehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{authorbibnamehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{authornamehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{authorfullhash}{59755200ef94ffc1362c28c17d315fe0}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Computer Vision (IJCV)}
@@ -1187,16 +1369,21 @@
       \list{organization}{1}{%
         {Stanford Vision Lab, Stanford University, Princeton University}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labeltitlesource}{title}
       \field{day}{13}
       \field{month}{10}
       \field{title}{ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012)}
       \field{urlday}{20}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://image-net.org/challenges/LSVRC/2012/results.html
+      \endverb
       \verb{url}
       \verb http://image-net.org/challenges/LSVRC/2012/results.html
       \endverb
@@ -1205,19 +1392,24 @@
       \name{author}{2}{}{%
         {{hash=9d16b7284df92c9adaee86c37ab992df}{%
            family={Simonyan},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Karen},
-           given_i={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod}}}%
         {{hash=c72fc39e94030f67717052309266a44d}{%
            family={Zisserman},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Andrew},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{fullhash}{25d2f3c4577a6632d37f0126cc781232}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authorbibnamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authornamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authorfullhash}{25d2f3c4577a6632d37f0126cc781232}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1228,6 +1420,9 @@
       \verb{eprint}
       \verb 1409.1556
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1409.1556
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1409.1556
       \endverb
@@ -1236,49 +1431,53 @@
       \name{author}{8}{}{%
         {{hash=9fce03efe6b3331a1b93ed2e7c0da9d5}{%
            family={Jia},
-           family_i={J\bibinitperiod},
+           familyi={J\bibinitperiod},
            given={Yangqing},
-           given_i={Y\bibinitperiod}}}%
+           giveni={Y\bibinitperiod}}}%
         {{hash=4ce499f8943cac7cba0a73388d289a2e}{%
            family={Shelhamer},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Evan},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
         {{hash=913090a0d65c7a300c602f5a5a5a61e3}{%
            family={Donahue},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Jeff},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=1ebce94a92f410fe090dc3da9c8b632e}{%
            family={Karayev},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Sergey},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
            family={Long},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={Jonathan},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
            family={Girshick},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Ross},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
         {{hash=b7cd28a25c761aa64034ab0997a2b6ec}{%
            family={Guadarrama},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Sergio},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
            family={Darrell},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Trevor},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \strng{namehash}{782e24b57c1ce46bd023e6fd3c9a4b69}
       \strng{fullhash}{26c9d416aa13679c636c9c93d6a0b432}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{782e24b57c1ce46bd023e6fd3c9a4b69}
+      \strng{authorbibnamehash}{782e24b57c1ce46bd023e6fd3c9a4b69}
+      \strng{authornamehash}{782e24b57c1ce46bd023e6fd3c9a4b69}
+      \strng{authorfullhash}{26c9d416aa13679c636c9c93d6a0b432}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1408.5093}
@@ -1287,25 +1486,34 @@
     \endentry
     \entry{caffe_model_zoo}{online}{}
       \name{author}{1}{}{%
-        {{hash=5245f6374c58a361b13c30d1c90c1dc6}{%
+        {{hash=4e8e949afba84ead5c1620ab6ff64d27}{%
            family={Hasanpour},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Seyyed\bibnamedelima Hossein},
-           given_i={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{5245f6374c58a361b13c30d1c90c1dc6}
-      \strng{fullhash}{5245f6374c58a361b13c30d1c90c1dc6}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{4e8e949afba84ead5c1620ab6ff64d27}
+      \strng{fullhash}{4e8e949afba84ead5c1620ab6ff64d27}
+      \strng{bibnamehash}{4e8e949afba84ead5c1620ab6ff64d27}
+      \strng{authorbibnamehash}{4e8e949afba84ead5c1620ab6ff64d27}
+      \strng{authornamehash}{4e8e949afba84ead5c1620ab6ff64d27}
+      \strng{authorfullhash}{4e8e949afba84ead5c1620ab6ff64d27}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{27}
-      \field{month}{03}
+      \field{month}{3}
       \field{title}{Model Zoo · BVLC/caffe Wiki · GitHub}
       \field{urlday}{21}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014
+      \endverb
       \verb{url}
       \verb https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014
       \endverb
@@ -1314,29 +1522,34 @@
       \name{author}{4}{}{%
         {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
            family={He},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Kaiming},
-           given_i={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod}}}%
         {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
            family={Zhang},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Xiangyu},
-           given_i={X\bibinitperiod}}}%
+           giveni={X\bibinitperiod}}}%
         {{hash=bb295293acacd54387339079ebbe4ead}{%
            family={Ren},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Shaoqing},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Jian},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
       \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1347,6 +1560,9 @@
       \verb{eprint}
       \verb 1512.03385
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1512.03385
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1512.03385
       \endverb
@@ -1355,29 +1571,34 @@
       \name{author}{4}{}{%
         {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
            family={He},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={Kaiming},
-           given_i={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod}}}%
         {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
            family={Zhang},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Xiangyu},
-           given_i={X\bibinitperiod}}}%
+           giveni={X\bibinitperiod}}}%
         {{hash=bb295293acacd54387339079ebbe4ead}{%
            family={Ren},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Shaoqing},
-           given_i={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod}}}%
         {{hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Jian},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
       \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1388,27 +1609,34 @@
       \verb{eprint}
       \verb 1603.05027
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1603.05027
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1603.05027
       \endverb
     \endentry
     \entry{DBLP:journals/corr/ZeilerF13}{article}{}
       \name{author}{2}{}{%
-        {{hash=2e8f0042fa52e2976f90a025ddf6268c}{%
+        {{hash=90d345b65e166a9cfc0c6ddec4ddc3d6}{%
            family={Zeiler},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Matthew\bibnamedelima D.},
-           given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
         {{hash=a6784304d1cc890b2cb6c6c7f2f3fd76}{%
            family={Fergus},
-           family_i={F\bibinitperiod},
+           familyi={F\bibinitperiod},
            given={Rob},
-           given_i={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{f7e365559d3f8f8ce2795177db498f8d}
-      \strng{fullhash}{f7e365559d3f8f8ce2795177db498f8d}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{85ff4f1b7cd8e8f00fa953ed2f69136a}
+      \strng{fullhash}{85ff4f1b7cd8e8f00fa953ed2f69136a}
+      \strng{bibnamehash}{85ff4f1b7cd8e8f00fa953ed2f69136a}
+      \strng{authorbibnamehash}{85ff4f1b7cd8e8f00fa953ed2f69136a}
+      \strng{authornamehash}{85ff4f1b7cd8e8f00fa953ed2f69136a}
+      \strng{authorfullhash}{85ff4f1b7cd8e8f00fa953ed2f69136a}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1419,6 +1647,9 @@
       \verb{eprint}
       \verb 1311.2901
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1311.2901
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1311.2901
       \endverb
@@ -1427,28 +1658,32 @@
       \name{author}{3}{}{%
         {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
            family={Long},
-           family_i={L\bibinitperiod},
+           familyi={L\bibinitperiod},
            given={Jonathan},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=4ce499f8943cac7cba0a73388d289a2e}{%
            family={Shelhamer},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Evan},
-           given_i={E\bibinitperiod}}}%
+           giveni={E\bibinitperiod}}}%
         {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
            family={Darrell},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Trevor},
-           given_i={T\bibinitperiod}}}%
+           giveni={T\bibinitperiod}}}%
       }
       \strng{namehash}{4f969c1eddab717aa873b0a90831c45a}
       \strng{fullhash}{4f969c1eddab717aa873b0a90831c45a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{authorbibnamehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{authornamehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{authorfullhash}{4f969c1eddab717aa873b0a90831c45a}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
-      \field{month}{06}
+      \field{month}{6}
       \field{title}{Fully Convolutional Networks for Semantic Segmentation}
       \field{year}{2015}
     \endentry
@@ -1456,89 +1691,103 @@
       \name{author}{2}{}{%
         {{hash=9d16b7284df92c9adaee86c37ab992df}{%
            family={Simonyan},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Karen},
-           given_i={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod}}}%
         {{hash=c72fc39e94030f67717052309266a44d}{%
            family={Zisserman},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={Andrew},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{fullhash}{25d2f3c4577a6632d37f0126cc781232}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{bibnamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authorbibnamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authornamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authorfullhash}{25d2f3c4577a6632d37f0126cc781232}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{08}
+      \field{day}{8}
       \field{month}{10}
       \field{title}{Very Deep Convolutional Networks for Large-Scale Visual Recognition}
       \field{urlday}{21}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.robots.ox.ac.uk/~vgg/research/very_deep
+      \endverb
       \verb{url}
       \verb http://www.robots.ox.ac.uk/~vgg/research/very_deep
       \endverb
     \endentry
     \entry{DBLP:journals/corr/LinMBHPRDZ14}{article}{}
       \name{author}{10}{}{%
-        {{hash=39623fde08830e7b03d45da02a7d9541}{%
+        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
            family={Lin},
-           family_i={L\bibinitperiod},
-           given={Tsung{-}Yi},
-           given_i={T\bibinitperiod}}}%
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
         {{hash=d980bc6930f008a0fb5fa667785f2309}{%
            family={Maire},
-           family_i={M\bibinitperiod},
+           familyi={M\bibinitperiod},
            given={Michael},
-           given_i={M\bibinitperiod}}}%
-        {{hash=7fb5d63526c99636c99cf3173d2ea13c}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=8f74ba6d25e498a6a4044b39ee30c903}{%
            family={Belongie},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Serge\bibnamedelima J.},
-           given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=a71c24d4fbc61648588bb1dc5009779c}{%
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=41d1867a5948033a654e06e5a0c87f22}{%
            family={Bourdev},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Lubomir\bibnamedelima D.},
-           given_i={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=008bd42dfafb05123122b3d372206abc}{%
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c2c60ceb4a241891e128295a5ae80aef}{%
            family={Girshick},
-           family_i={G\bibinitperiod},
+           familyi={G\bibinitperiod},
            given={Ross\bibnamedelima B.},
-           given_i={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
         {{hash=797fc3624ba315db58eef7279ace5bf3}{%
            family={Hays},
-           family_i={H\bibinitperiod},
+           familyi={H\bibinitperiod},
            given={James},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
         {{hash=e52876f830a8a20786ff3e4d7dd6f083}{%
            family={Perona},
-           family_i={P\bibinitperiod},
+           familyi={P\bibinitperiod},
            given={Pietro},
-           given_i={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod}}}%
         {{hash=aedcd3831845183e070aef16857d83ea}{%
            family={Ramanan},
-           family_i={R\bibinitperiod},
+           familyi={R\bibinitperiod},
            given={Deva},
-           given_i={D\bibinitperiod}}}%
+           giveni={D\bibinitperiod}}}%
         {{hash=ecd149fdcb3e0503881d49e545744c3d}{%
-           family={Dollár},
-           family_i={D\bibinitperiod},
+           family={Doll{á}r},
+           familyi={D\bibinitperiod},
            given={Piotr},
-           given_i={P\bibinitperiod}}}%
-        {{hash=4749e91c0b2618fc42478fccbd430ff9}{%
+           giveni={P\bibinitperiod}}}%
+        {{hash=0eae2d56a9cbb037c64028d6573877a7}{%
            family={Zitnick},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={C.\bibnamedelimi Lawrence},
-           given_i={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
-      \strng{namehash}{f00bb8f6c6b6cf75d157061d422e3a16}
-      \strng{fullhash}{a86253f88d65e00aa90d21dfb7340828}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{fullhash}{99c0d934968c1f6af7da091395340c35}
+      \strng{bibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorbibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authornamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorfullhash}{99c0d934968c1f6af7da091395340c35}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1549,6 +1798,9 @@
       \verb{eprint}
       \verb 1405.0312
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1405.0312
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1405.0312
       \endverb
@@ -1558,52 +1810,61 @@
         {Graphics}%
         {3D Vision Laboratory - Department of Computer Science - University of North Carolina at Chapel Hill}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labeltitlesource}{title}
       \field{day}{10}
       \field{month}{12}
       \field{title}{ILSVRC2015 Results}
       \field{urlday}{21}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://image-net.org/challenges/LSVRC/2015/results
+      \endverb
       \verb{url}
       \verb http://image-net.org/challenges/LSVRC/2015/results
       \endverb
     \endentry
     \entry{pascal-voc-2011}{misc}{}
       \name{author}{5}{}{%
-        {{hash=6f9d5e1141ddaa8c4ca535a774d3b287}{%
+        {{hash=b238e543a5f5967004bd87fe51af1b53}{%
            family={Everingham},
-           family_i={E\bibinitperiod},
+           familyi={E\bibinitperiod},
            given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=6ef9a53bf3d23a5c978ccfb789063cd9}{%
+           giveni={M\bibinitperiod}}}%
+        {{hash=991d15a9ac8c45292e2aa7bfc8c28007}{%
            family={Van\bibnamedelima Gool},
-           family_i={V\bibinitperiod},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
            given={L.},
-           given_i={L\bibinitperiod}}}%
-        {{hash=31c7ad1851eccd0f6945cfeb1837db74}{%
+           giveni={L\bibinitperiod}}}%
+        {{hash=03fe732f745576c10e0c06a73741997b}{%
            family={Williams},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={C.\bibnamedelimi K.\bibnamedelimi I.},
-           given_i={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=040d564039db67d9a6a03b8d5eefd2fc}{%
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=18b28a498fc18943accd93ed7d96eda9}{%
            family={Winn},
-           family_i={W\bibinitperiod},
+           familyi={W\bibinitperiod},
            given={J.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=97369408412c30098d093b32665c772e}{%
+           giveni={J\bibinitperiod}}}%
+        {{hash=e77fd9dd5d9af3c798867760f8828744}{%
            family={Zisserman},
-           family_i={Z\bibinitperiod},
+           familyi={Z\bibinitperiod},
            given={A.},
-           given_i={A\bibinitperiod}}}%
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{67e8a9d1ab817419995d96c6f4dc6278}
-      \strng{fullhash}{28ba0ff31436f4439f9631ee2eccd878}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{b7d68679e69a4f3570011ffbc81a36f9}
+      \strng{fullhash}{fb7cdb2319af0b29e7ab9fe57bcd1de4}
+      \strng{bibnamehash}{b7d68679e69a4f3570011ffbc81a36f9}
+      \strng{authorbibnamehash}{b7d68679e69a4f3570011ffbc81a36f9}
+      \strng{authornamehash}{b7d68679e69a4f3570011ffbc81a36f9}
+      \strng{authorfullhash}{fb7cdb2319af0b29e7ab9fe57bcd1de4}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{http://www.pascal-network.org/challenges/VOC/voc2011/workshop/index.html}
@@ -1613,16 +1874,21 @@
       \list{organization}{1}{%
         {The MatConvNet Team}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labeltitlesource}{title}
       \field{day}{21}
       \field{month}{11}
       \field{title}{Pretrained VGG19 - MatConvNet}
       \field{urlday}{22}
-      \field{urlmonth}{01}
+      \field{urlmonth}{1}
       \field{urlyear}{2018}
       \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+      \endverb
       \verb{url}
       \verb http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
       \endverb
@@ -1631,37 +1897,46 @@
       \list{organization}{1}{%
         {The MatConvNet Team}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labeltitlesource}{title}
       \field{day}{30}
-      \field{month}{09}
+      \field{month}{9}
       \field{title}{Pretrained ResNet101 - MatConvNet}
       \field{urlday}{27}
-      \field{urlmonth}{02}
+      \field{urlmonth}{2}
       \field{urlyear}{2018}
       \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.vlfeat.org/matconvnet/models/imagenet-resnet-101-dag.mat
+      \endverb
       \verb{url}
       \verb http://www.vlfeat.org/matconvnet/models/imagenet-resnet-101-dag.mat
       \endverb
     \endentry
     \entry{DBLP:journals/corr/KingmaB14}{article}{}
       \name{author}{2}{}{%
-        {{hash=1e072d74f4ac1094c9c26e1b592cea4a}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
            family={Kingma},
-           family_i={K\bibinitperiod},
+           familyi={K\bibinitperiod},
            given={Diederik\bibnamedelima P.},
-           given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
         {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
            family={Ba},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Jimmy},
-           given_i={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{c1670936fba733d1cb2d4c23bce95c6e}
-      \strng{fullhash}{c1670936fba733d1cb2d4c23bce95c6e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1672,6 +1947,9 @@
       \verb{eprint}
       \verb 1412.6980
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1412.6980
       \endverb
@@ -1681,50 +1959,59 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labeltitlesource}{title}
       \field{day}{16}
-      \field{month}{05}
+      \field{month}{5}
       \field{title}{2D Semantic Labeling Contest - Potsdam}
       \field{urlday}{19}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
       \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-potsdam.html
+      \endverb
       \verb{url}
       \verb http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-potsdam.html
       \endverb
     \endentry
     \entry{quang2015efficient}{inproceedings}{}
       \name{author}{4}{}{%
-        {{hash=a241a08ddf34acbced087d3f92e76af0}{%
+        {{hash=db18de43aa6ffc0a23a92315455df303}{%
            family={Quang},
-           family_i={Q\bibinitperiod},
+           familyi={Q\bibinitperiod},
            given={Nguyen\bibnamedelima Tien},
-           given_i={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=806ee6376bdb44073acb81d7f990a1d2}{%
+           giveni={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=d0f4b09ab985b60e795f1865f0ee84ac}{%
            family={Thuy},
-           family_i={T\bibinitperiod},
+           familyi={T\bibinitperiod},
            given={Nguyen\bibnamedelima Thi},
-           given_i={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=c4ec61e39b5625ceee18fa71aa0df4c9}{%
+           giveni={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b1df1a5f05fb376e994128051082ca30}{%
            family={Sang},
-           family_i={S\bibinitperiod},
+           familyi={S\bibinitperiod},
            given={Dinh\bibnamedelima Viet},
-           given_i={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=118f31125d7d6ad499942862cd5f317b}{%
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=6c8dbd2245c18d5c607192efa38016d3}{%
            family={Binh},
-           family_i={B\bibinitperiod},
+           familyi={B\bibinitperiod},
            given={Huynh\bibnamedelimb Thi\bibnamedelima Thanh},
-           given_i={H\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+           giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {ACM}%
       }
-      \strng{namehash}{c82b8478d1a33c84ca408396c3391cad}
-      \strng{fullhash}{05e222399a6abd136a44410aa740f688}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{9d3adde15e6248c5d46c41c86a01e474}
+      \strng{fullhash}{f88606889eeb4a214a1978ca2d7ed9c2}
+      \strng{bibnamehash}{9d3adde15e6248c5d46c41c86a01e474}
+      \strng{authorbibnamehash}{9d3adde15e6248c5d46c41c86a01e474}
+      \strng{authornamehash}{9d3adde15e6248c5d46c41c86a01e474}
+      \strng{authorfullhash}{f88606889eeb4a214a1978ca2d7ed9c2}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the sixth international symposium on information and communication technology}
@@ -1735,11 +2022,11 @@
     \endentry
     \entry{duytv-2017}{thesis}{}
       \name{author}{1}{}{%
-        {{hash=cea29e83df8e9bcc51e0c64a02483c24}{%
+        {{hash=d08aee68f4331d5203d535fc24213eb6}{%
            family={Duy},
-           family_i={D\bibinitperiod},
+           familyi={D\bibinitperiod},
            given={Trinh\bibnamedelima Van},
-           given_i={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
       \list{institution}{3}{%
         {Department of Computer Science, School of Information}%
@@ -1749,10 +2036,14 @@
       \list{location}{1}{%
         {1st, Dai Co Viet street, Hanoi, Vietnam}%
       }
-      \strng{namehash}{cea29e83df8e9bcc51e0c64a02483c24}
-      \strng{fullhash}{cea29e83df8e9bcc51e0c64a02483c24}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \strng{namehash}{d08aee68f4331d5203d535fc24213eb6}
+      \strng{fullhash}{d08aee68f4331d5203d535fc24213eb6}
+      \strng{bibnamehash}{d08aee68f4331d5203d535fc24213eb6}
+      \strng{authorbibnamehash}{d08aee68f4331d5203d535fc24213eb6}
+      \strng{authornamehash}{d08aee68f4331d5203d535fc24213eb6}
+      \strng{authorfullhash}{d08aee68f4331d5203d535fc24213eb6}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -1764,13 +2055,17 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Working Group III/4 - Test result for 2D labeling (Vaihingen): buildings, Participant: T. V. Duy}
       \field{urlday}{24}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_vaih/2D_labeling_Vaih_details_BKHN_4/index.html
+      \endverb
       \verb{url}
       \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_vaih/2D_labeling_Vaih_details_BKHN_4/index.html
       \endverb
@@ -1780,13 +2075,17 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Working Group III/4 - Test result for 2D labeling (Vaihingen): buildings, Participant: M. N. Duc and S. D. Viet}
       \field{urlday}{24}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_vaih/2D_labeling_Vaih_details_BKHN10/index.html
+      \endverb
       \verb{url}
       \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_vaih/2D_labeling_Vaih_details_BKHN10/index.html
       \endverb
@@ -1796,13 +2095,17 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Working Group III/4 - Test result for 2D labeling (Vaihingen): buildings, Participant: M. N. Duc and S. D. Viet}
       \field{urlday}{24}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_vaih/2D_labeling_Vaih_details_BKHN11/index.html
+      \endverb
       \verb{url}
       \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_vaih/2D_labeling_Vaih_details_BKHN11/index.html
       \endverb
@@ -1812,13 +2115,17 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Semantic Labeling Contest (2D): Results}
       \field{urlday}{26}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www2.isprs.org/commissions/comm2/wg4/vaihingen-2d-semantic-labeling-contest.html
+      \endverb
       \verb{url}
       \verb http://www2.isprs.org/commissions/comm2/wg4/vaihingen-2d-semantic-labeling-contest.html
       \endverb
@@ -1828,13 +2135,17 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Working Group III/4 - Test result for 2D labeling (Potsdam): buildings, Participant: T. V. Duy}
       \field{urlday}{24}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_potsdam/2D_labeling_Potsdam_details_BKHN_2/index.html
+      \endverb
       \verb{url}
       \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_potsdam/2D_labeling_Potsdam_details_BKHN_2/index.html
       \endverb
@@ -1844,13 +2155,17 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Working Group III/4 - Test result for 2D labeling (Potsdam): buildings, Participant: M. N. Duc and S. D. Viet}
       \field{urlday}{24}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_potsdam/2D_labeling_Potsdam_details_BKHN_3/index.html
+      \endverb
       \verb{url}
       \verb http://ftp.ipi.uni-hannover.de/ISPRS_WGIII_website/ISPRSIII_4_Test_results/2D_labeling_potsdam/2D_labeling_Potsdam_details_BKHN_3/index.html
       \endverb
@@ -1860,18 +2175,22 @@
         {International Society for Photogrammetry}%
         {Remote Sensing}%
       }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labeltitlesource}{title}
       \field{title}{ISPRS Semantic Labeling Contest (2D): Results}
       \field{urlday}{26}
-      \field{urlmonth}{05}
+      \field{urlmonth}{5}
       \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www2.isprs.org/commissions/comm2/wg4/potsdam-2d-semantic-labeling.html
+      \endverb
       \verb{url}
       \verb http://www2.isprs.org/commissions/comm2/wg4/potsdam-2d-semantic-labeling.html
       \endverb
     \endentry
-  \endsortlist
+  \enddatalist
 \endrefsection
 \endinput
 
